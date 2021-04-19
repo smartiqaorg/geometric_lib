@@ -1,3 +1,9 @@
+# User agreement 
+
+Please check out License Agreement for personal usage terms and limitations
+
+---
+
 # Math formulas
 ## Area
 - Circle: S = πR²
