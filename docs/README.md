@@ -1,3 +1,4 @@
+# User agreement 
 
 # How to use calculator:
 1. Run `python calculate.py`
