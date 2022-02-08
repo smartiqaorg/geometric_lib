@@ -1,3 +1,4 @@
+Edited by Islam Gochiaev
 # Math formulas
 ## Area
 - Circle: S = πR²
