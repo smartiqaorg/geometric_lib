@@ -1,4 +1,5 @@
 # Math formulas
+#Company
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab
