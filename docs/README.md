@@ -1,4 +1,4 @@
-# Math formulas
+# Math formulas #area and perimeter
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab
