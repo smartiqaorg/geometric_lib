@@ -1,6 +1,6 @@
 # Math formulas
 ## Area
-- Circle: S = πR²
+- Circle: Ploshad' = πR²
 - Rectangle: S = ab
 - Square: S = a²
 
