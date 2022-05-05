@@ -1,7 +1,7 @@
 # Math formulas
 ## Area
-- Circle: S = πR²
-- Rectangle: S = ab
+- Aircle: Ploshad' = πR²
+- sdectangle: S = ab
 - Square: S = a²
 
 ## Perimeter
