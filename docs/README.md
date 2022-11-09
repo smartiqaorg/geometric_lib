@@ -1,5 +1,5 @@
-# Math formulas
-## Area
+# Maath formulas
+## Aarea
 - Circle: S = πR²
 - Rectangle: S = ab
 - Square: S = a²
