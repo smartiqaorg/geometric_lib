@@ -2,9 +2,9 @@
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab
-- Square: S = a²
+- Square: S = a² 3232321
 
 ## Perimeter
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
-- Square: P = 4a
+- Square: P = 4a 43242341
