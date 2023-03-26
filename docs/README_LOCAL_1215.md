@@ -1,4 +1,3 @@
-# User agreement 
 
 # How to use calculator:
 1. Run `python calculate.py`
@@ -20,4 +19,3 @@
 - Square: `P = 4a`
 - Triangle: `P = a + b + c`
 
-Some change for Lesson 6 practice

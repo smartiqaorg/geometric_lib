@@ -1,4 +1,3 @@
-# User agreement 
 
 # How to use calculator:
 1. Run `python calculate.py`
@@ -15,9 +14,19 @@
 - Triangle: `S = sqrt(p * (p-a) * (p-b) * (p-c))` where p is semiperimeter
 
 ## Perimeter
+<<<<<<< HEAD
 - Circle: `P = 2πR`
 - Rectangle: `P = 2a + 2b`
 - Square: `P = 4a`
 - Triangle: `P = a + b + c`
 
-Some change for Lesson 6 practice
+||||||| parent of 438b89a (L-05: Add user agreement)
+- Circle: P = 2πR
+- Rectangle: P = 2a + 2b
+- Square: P = 4a
+=======
+- Circle: P = 2πR
+- Rectangle: P = 2a + 2b
+- Square: P = 4a
+
+>>>>>>> 438b89a (L-05: Add user agreement)
