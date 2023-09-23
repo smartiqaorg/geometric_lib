@@ -31,3 +31,7 @@
 - def area(a,h): - Принимает значения a,h и возвращает значение площади. Пример: area(5,10) = 25
 
 - def perimeter(a,b,c): - Принимает значения a,b,c и возвращает значение периметра. Пример: perimeter(1,2,3) = 6
+
+## Commits:
+- <6b5d890> add triangle.py, edit rectangle.py
+- <d238f6b> add rectangle.py
