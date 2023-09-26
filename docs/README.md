@@ -8,3 +8,7 @@
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+
+
+#Molotkin K.N. 26.09.2023
+-Molotkin K.N. 26.09.2023
