@@ -1,3 +1,7 @@
+### Edit by Maxim
+
+---
+
 # Math formulas
 ## Area
 - Circle: S = πR²
