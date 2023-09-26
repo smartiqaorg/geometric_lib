@@ -1,4 +1,4 @@
-# Math formulas
+# Math formulas Git6 BimBimBamBam
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab
