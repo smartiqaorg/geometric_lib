@@ -12,5 +12,6 @@ def area(a, h):
     return a * h / 2
 
 
-def perimeter(a, b, c): 
+def perimeter(a, b, c):
+    '''Принимает 3 числа a,b,c и возвращает сумму этих чисел/периметр треугольника'''
     return a + b + c
