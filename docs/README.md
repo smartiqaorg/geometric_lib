@@ -28,29 +28,35 @@
 - Square: P = 4a
 
 ㅤ
-#### Функции:
+#### В программах были использованы следующие функции:
 1. **rectangle.py**
 - area(a, b) 
-Для нахождения площади прямоуголька/квадрата
+![фото](img/1.1.png)
 ``` 
     cin: 4 6
     cout: 24
 ```
 
+
 - perimeter(a, b):
+![фото](img/1.2.png)
 ```
     cin: 5 3
     cout: 16
 ```
 
+
 2. **triangle.py** 
 - area(a, h)
+![фото](img/2.1.png)
 ```
     cin: 6 6
     cout: 18
 ```
 
+
 - perimeter(a, b, c)
+![фото](img/2.2.png)
 ```
     cin: 2 5 9
     cout: 16
@@ -61,6 +67,17 @@
 
 ---
 ### ___История изменения проекта с хешами комитов (кроме последней записи)___
+
+__Сommit745a958300e8ce18a2cc9ede7b773b1e735cd337__
+Author: Максим Капленков <mkkaplenkov@gmail.com> 
+Date:   Thu Sep 29 16:42:02 2023 +0300
+>   Message: foto add
+
+__Сommit d2a720b7f7cdb7f25897f89049a3ddb10c7267f2__
+Author: Максим Капленков <mkkaplenkov@gmail.com> 
+Date:   Thu Sep 28 15:29:28 2023 +0300
+>   Message: docs: triangle.py <perimeter>
+
 
 __Сommit befe3e7bdebbaaca6c82b294ce0ade63963cfba8__
 Author: Максим Капленков <mkkaplenkov@gmail.com> 
