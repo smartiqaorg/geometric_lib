@@ -1,4 +1,4 @@
-# Math formulas, realised in lib
+# Math formulas, realised in lib 
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab
@@ -11,24 +11,38 @@
 - Square: P = 4a
 - Triangle: P = a + b + c
 
-# Functions with examples
-## Circle with R = 10
-- S = 3,14 * 10^2 = 314 
-- P = 2 * 3,14 * 10 = 62,8
+# Files with discriptions of functions and examples
+## [circle.py](https://github.com/tamerland05/geometric_lib/blob/main/circle.py)
+### area(r) : Get a Radius of cercle and return his area.
+example of call: area(10) = 314 -- same with -- S = 3,14 * 10^2 = 314 
 
-## Rectangle with a = 5, b = 4
-- S = a * b = 20
-- R = 2 * (a + b) = 18
+### perimeter(r) : Get a Radius of cercle and return his perimeter.
+example of call: perimeter(10) = 68,2 -- same with -- P = 2 * 3,14 * 10 = 62,8
 
-## Square with a = 7
-- S = 7^2 = 49
-- P = 4 * 7 = 28
+## [rectangle.py](https://github.com/tamerland05/geometric_lib/blob/main/rectangle.py)
+### area(a, b) : Get height a and weight b of rectangle and return his area.
+example of call: area(5, 4) = 20 -- same with -- S = a * b = 20
 
-# Triangle with a = 2, b = 3, c = 4 and h(a) = 8
-- S = 2 * 8 / 2 = 8
-- P = 2 + 3 + 4 = 9
+### perimeter(a, b) : Get height: a and weight: b of rectangle and return his perimeter.
+example of call: perimeter(5, 4) = 18 -- same with -- R = 2 * (a + b) = 18
+
+## [square.py](https://github.com/tamerland05/geometric_lib/blob/main/square.py)
+### area(a, b) : Get side of square and return his area.
+example of call: area(7) = 49 -- same with -- S = 7^2 = 49
+
+### perimeter(a, b) : Get side of square and return his perimeter.
+example of call: perimeter(7) = 28 -- same with -- P = 4 * 7 = 28
+
+## [triangle.py](https://github.com/tamerland05/geometric_lib/blob/main/triangle.py)
+### area(a, h) : Get side of triange and height lowered onto her and return area.
+example of call: area(2, 8) = 8 -- same with -- S = 2 * 8 / 2 = 8
+
+### perimeter(a, b, c) : Get sides of triangle and return his perimeter.
+example of call: perimeter(2, 3, 4) = 9 -- same with -- P = 2 + 3 + 4 = 9
 
 # History of project with hashes
 74e38b4931e5b59eda2f40231b80677cae13d581 (HEAD -> main, origin/main, origin/HEAD) all right, this is last commit
+
 ab47decada28da763e91bd260485918a32eaac42 Error of calculating perimeter in rectangle.py was fixed
+
 4eeae320f01baa3467584e9592ecd726b690bed9 Laba1 add rectangle.py
