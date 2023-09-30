@@ -8,7 +8,7 @@ def area(a, b):
 
 def perimeter(a, b):
 	"""
- 	Get heiaght: a and weight: b of rectangle and return his perimeter
+ 	Get height: a and weight: b of rectangle and return his perimeter
  	------------------------------------------------------------------
         example of call: perimeter(5, 4) = 18
         """
