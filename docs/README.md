@@ -49,3 +49,13 @@
 
     **Например:** на вход поступило число a = 9.
     На выходе получится число, равное 4 * 9 = **36**.
+## History of project changes
+* 73ec3170c0a04318d14541f220378bfbed3ce364 (HEAD -> main) added annotation to the triangle file
+* 7c12ffbdf014666cef62139cc291f41a28d00b87 added annotation to the square file
+* 625426a9944c34853c5b661889c6f1cf8aa43d3c added annotation to the rectangle file
+* 02c12a05142374721f4a6be08d7bdfe1f561b4e3 added annotation to the circle file
+* 180149012293c9f643385a17f37735b737b0b588 add def
+* 6848adf997b4dab41b4f2f9715cbf0a3b43cc80d corrected the mistake rectangle.py
+* 16196c8f56342494238caf2a25c63dc38193c844 add rectangle.py
+* d078c8d9ee6155f3cb0e577d28d337b791de28e2 (origin/main, origin/HEAD) L-03: Docs added
+* 8ba9aeb3cea847b63a91ac378a2a6db758682460 L-03: Circle and square added
