@@ -18,11 +18,11 @@ def area(r):<br/>
 return math.pi * r * r <br/>
 ### Function calculating perimeter
 ###### "Takes a number r and returns the result of multiplying it by 2 and multiplying it by pi"
-    in: 9
-    out: 55,54...
 def perimeter(r):<br/>
 return 2 * math.pi * r <br/>
-.
+
+    in: 9
+    out: 55,54...
 ---
 
 ## Rectangle.py
