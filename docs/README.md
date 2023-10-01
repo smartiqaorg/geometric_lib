@@ -68,6 +68,16 @@
 ---
 ### ___История изменения проекта с хешами комитов (кроме последней записи)___
 
+__Сommit e1829c46b57a7e85da9c462ab3af5d14fa5da77b__
+Author: Максим Капленков <mkkaplenkov@gmail.com> 
+Date:   Thu Sep 29 17:39:51 2023 +0300
+>   Message: ALL all changes to the files have been added
+
+__Сommit e38e2d6921ebea6d11299dd97dc32a178c94d27e__
+Author: Максим Капленков <mkkaplenkov@gmail.com> 
+Date:   Thu Sep 29 17:31:32 2023 +0300
+>   Message: docs: all changes to the files have been added
+
 __Сommit745a958300e8ce18a2cc9ede7b773b1e735cd337__
 Author: Максим Капленков <mkkaplenkov@gmail.com> 
 Date:   Thu Sep 29 16:42:02 2023 +0300
