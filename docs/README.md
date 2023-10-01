@@ -34,12 +34,11 @@ def area(a, b):<br/>
 return a*b <br/>
 ### Function calculating perimeter
 ###### "Takes numbers a and b and returns the result of their addition and multiplication by 2"
-    in: 4 8
-    out: 24
-
 def area(a, b):<br/>
 return (a+b)*2 <br/>
-.
+    
+    in: 4 8
+    out: 24
 ---
 
 ## Square.py
@@ -51,11 +50,11 @@ def area(a):<br/>
 return a*a <br/>
 ### Function calculating perimeter
 ###### "Takes the number a and returns the result of multiplying it by 4"
-    in: 5
-    out: 20
 def area(a): <br/> 
 return 4*a <br/>
-.
+
+    in: 5
+    out: 20
 ---
 
 ## Triangle.py
@@ -67,11 +66,11 @@ def area(a, h):<br/>
 return (a*h)/2 <br/>
 ### Function calculating perimeter
 ###### "Takes numbers a, b, c and returns the result of their addition"
-    in: 4 8 6
-    out: 18
 def area(a, b, c):<br/>
 return a+b+c <br/>
-.
+    
+    in: 4 8 6
+    out: 18
 ---
 
 ## Project change history with commit hashes (except for the last entry)
