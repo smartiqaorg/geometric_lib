@@ -15,13 +15,14 @@ added to the files rectangle.py, triangle.py, square.py.__
     in: 8
     out: 201,06...
 def area(r):<br/>
-return math.pi * r * r 
+return math.pi * r * r <br/>
 ### Function calculating perimeter
 ###### "Takes a number r and returns the result of multiplying it by 2 and multiplying it by pi"
     in: 9
     out: 55,54...
 def perimeter(r):<br/>
-return 2 * math.pi * r 
+return 2 * math.pi * r <br/>
+.
 ---
 
 ## Rectangle.py
@@ -29,16 +30,16 @@ return 2 * math.pi * r
 ###### "Takes numbers a and b and returns the result of their multiplication"
     in: 4 8
     out: 32
-def area(a, b):  
+def area(a, b):<br/>
 return a*b <br/>
 ### Function calculating perimeter
 ###### "Takes numbers a and b and returns the result of their addition and multiplication by 2"
-```
-in: 4 8
-out: 24
-```
-def area(a, b):  
+    in: 4 8
+    out: 24
+
+def area(a, b):<br/>
 return (a+b)*2 <br/>
+.
 ---
 
 ## Square.py
@@ -46,14 +47,15 @@ return (a+b)*2 <br/>
 ###### "Takes the number a and returns the result of squaring"
     in: 5
     out: 25
-def area(a):  
+def area(a):<br/> 
 return a*a <br/>
 ### Function calculating perimeter
 ###### "Takes the number a and returns the result of multiplying it by 4"
     in: 5
     out: 20
-def area(a):  
+def area(a): <br/> 
 return 4*a <br/>
+.
 ---
 
 ## Triangle.py
@@ -61,14 +63,15 @@ return 4*a <br/>
 ###### "Takes numbers a and h and returns the result of their multiplication divided by 2"
     in: 4 10
     out: 7
-def area(a, h):  
+def area(a, h):<br/>  
 return (a*h)/2 <br/>
 ### Function calculating perimeter
 ###### "Takes numbers a, b, c and returns the result of their addition"
     in: 4 8 6
     out: 18
-def area(a, b, c):  
+def area(a, b, c):<br/>
 return a+b+c <br/>
+.
 ---
 
 ## Project change history with commit hashes (except for the last entry)
