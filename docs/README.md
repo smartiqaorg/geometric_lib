@@ -1,5 +1,8 @@
 # Geometric Lib
-## Supports working with 4 geometric figures:
+
+- ***Calculates the area and perimeter of geometric figures***
+
+## Supports working with:
 - circle
 - rectangle
 - square
@@ -7,16 +10,57 @@
 
 ### 1) Circle
 - `def area(r)` receives *the radius* of the circle and returns it's area, calculated by the formula **S = πR<sup>2</sup>**
+    > import math \
+     result = area(3) \
+     print(result) \
+  > \
+  `28.274333882308138`
 - `def perimeter(r)` receives *the radius* of the circle and returns it's perimeter, calculated by the formula **P = 2πR**
+    > import math \
+     result = perimeter(3) \
+     print(result) \
+  > \
+  `18.84955592153876`
 
 ### 2) Rectangle
 - `def area(a, b)` receives *the length of sides* of the rectangle and returns it's area, calculated by the formula **S = a * b**
+    > result = area(2, 3) \
+     print(result) \
+  > \
+  `6`
 - `def perimeter(a, b)` receives *the length of sides* of the rectangle and returns it's perimeter, calculated by the formula **P = 2 * (a + b)**
+    > result = perimeter(2, 3) \
+     print(result) \
+  > \
+  `10`
 
 ### 3) Square
 - `def area(a)` receives *the length of side* of the square and returns it's area, calculated by the formula **S = a<sup>2</sup>**
+    > result = area(2) \
+     print(result) \
+  > \
+  `4`
 - `def perimeter(a)` receives *the length of side* of the square and returns it's perimeter, calculated by the formula **P = 4 * a**
+    > result = perimeter(2) \
+     print(result) \
+  > \
+  `8`
 
 ### 4) Triangle
 - `def area(a, h)` receives *the length of the triangle base* and *it's height* and returns area, calculated by the formula **S = a * (h / 2)**
+    > result = area(5, 4) \
+     print(result) \
+  > \
+  `10`
 - `def perimeter(a, b, c)` receives *the length of all triangle's sides*  and returns it's perimeter, calculated by the formula **P = a + b + c**
+    > result = perimeter(1, 2, 3) \
+     print(result) \
+  > \
+  `6`
+
+
+## The history of this project can be tracked by the following commits:
+- `README.md modified` *055f7bf*
+- `mistake in rectangle.py fixed` *5bfe594*
+- `mistake in rectangle.py fixed and new features triangle.py added` *9f08693*
+- `new features rectangle.py added` *45f6c37*
