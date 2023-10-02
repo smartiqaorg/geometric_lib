@@ -60,6 +60,8 @@
 
 
 ## The history of this project can be tracked by the following commits:
+- `delete accidentally added .idea directory` *c743c70*
+- `declaration of functions added and README.md` *a77ba4f*
 - `README.md modified` *055f7bf*
 - `mistake in rectangle.py fixed` *5bfe594*
 - `mistake in rectangle.py fixed and new features triangle.py added` *9f08693*
