@@ -1,6 +1,6 @@
 def area(a, h): 
 
-    ```
+    """
     This function calculates the area of a triangle based on its base length 'a' and height 'h'.
 
     Formula:
@@ -12,14 +12,13 @@ def area(a, h):
     
     Return value:
     - area (float): The area of the triangle.
-
-    ```
+    """
 
     return a * h / 2 
 
 def perimeter(a, b, c): 
 
-    ```
+    """
     This function calculates the perimeter of a triangle based on its side lengths 'a', 'b', and 'c'.
 
     Formula:
@@ -32,6 +31,6 @@ def perimeter(a, b, c):
     
     Return value:
     - perimeter (float): The perimeter of the triangle.
-    ```
+    """
 
     return a + b + c 
