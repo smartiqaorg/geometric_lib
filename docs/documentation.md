@@ -59,11 +59,12 @@
 > ***Пример: in 3,4,5; out 12.***
 
 # История изменения проекта:
-```
-### _8ba9aeb_ L-03: Circle and square added
-### _d078c8d_ L-03: Docs added
-### _9765d6d_ added rectangle
-### _70cdab2_ added triangle
-### _41d3607_ fixed rectangle
-### _bc6917c_ Function descriptions added, documentation added
-```
+| Hashes    | Commits                       |
+| :-        | :---------:                   |
+| _8ba9aeb_ | L-03: Circle and square added |
+| _d078c8d_ | L-03: Docs added |
+| _9765d6d_ | added rectangle |
+| _70cdab2_ | added triangle |
+| _41d3607_ | fixed rectangle |
+| _bc6917c_ | Function descriptions added, documentation added |
+
