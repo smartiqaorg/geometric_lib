@@ -5,6 +5,6 @@
 - Square: S = a²
 
 ## Perimeter
-- Circle: P = 2πR
+- Circle: P = 2πR => l = πD
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
