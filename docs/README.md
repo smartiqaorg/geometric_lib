@@ -60,6 +60,7 @@
 
 
 ## The history of this project can be tracked by the following commits:
+- `update README.md` *c6bcee7*
 - `delete accidentally added .idea directory` *c743c70*
 - `declaration of functions added and README.md` *a77ba4f*
 - `README.md modified` *055f7bf*
