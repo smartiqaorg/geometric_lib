@@ -1,6 +1,6 @@
 def area(a, b): 
 
-    ```
+    """
     This function calculates the area of a rectangle based on its length 'a' and width 'b'.
 
     Formula:
@@ -12,13 +12,13 @@ def area(a, b):
     
     Return value:
     - area (float): The area of the rectangle.
-    ```
+    """
 
     return a * b 
 
 def perimeter(a, b): 
 
-    ```
+    """
     This function calculates the perimeter of a rectangle based on its length 'a' and width 'b'.
 
     Formula:
@@ -30,6 +30,6 @@ def perimeter(a, b):
     
     Return value:
     - perimeter (float): The perimeter of the rectangle.
-    ```
+    """
 
     return (a + b) * 2 
