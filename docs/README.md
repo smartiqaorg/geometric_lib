@@ -1,4 +1,4 @@
-#ffffff
+rgb(9, 105, 218)
 # Math formulas
 ## Area
 - Circle: S = πR²
