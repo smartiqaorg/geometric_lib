@@ -20,5 +20,7 @@
 - 7f19109dad606ee08e383fe9aff9dcc5e555f6e1
 - a48899f182a12b07f24317520b4af5c4c4a84e5a
 
-- def area(r):
-    return math.pi * r * r
+```
+def perimeter(a, b): 
+    return 2*(a + b)
+```
