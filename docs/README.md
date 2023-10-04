@@ -9,8 +9,8 @@
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
 
-  ## circle.py
-'''python
+  ## Circle
+```python
 import math
 '''
 Модуль math предоствляет обширный функционал для проведения вычислений 
@@ -28,16 +28,16 @@ def perimeter(r):
     Возвращает периметр круга, вычисляя его по формуле: 2 * π * r
     '''
     return 2 * math.pi * r
-'''
+```
 ### Example
-'''python
+```python
 r = 2
 print (f"Area = area(r)); Perimetr = {perimetr(r)}")
 
 
 Area = 12.566370614359172; Perimeter = 12.566370614359172
 '''
-## rectangle.py
+## Rectangle
 '''python
 def area(a, b):
     '''
@@ -53,18 +53,18 @@ def perimeter(a, b):
     Возвращает периметр прямоугольника, вычисляя его по формуле: 2 * (a + b)
     '''
     return 2 * (a + b)
-'''
+```
 ### Example
-'''python
+```python
 a = 3
 b = 5
 print (f"Area = fare(a, b)}; Perimetr = {perimetr(a, b)}")
 
 
 Area = 15; Perimetr = 16
-'''
-## square.py
-'''python
+```
+## Square
+```python
 def area(a):
     '''
     Принимает число, которое является стороной квадрата: a
@@ -79,17 +79,17 @@ def perimeter(a):
     Возваращает периметр квадрата, вычисляя его по формуле: 4 * a
     '''
     return 4 * a
-'''
+```
 ### Example
-'''python
+```python
 a = 2
 print (f"Area = {area(a)}; Perimetr = {perimetr(a)}")
 
 
 Area = 4; Perimetr = 8
-'''
-## triangle.py
-'''python
+```
+## Triangle
+```python
 def area(a, h):
     '''
     Принимает два числа, одно из них является стороной треугольника, другое его высотой: a, h
@@ -102,9 +102,9 @@ def perimeter(a, b, c):
     Возвращает периметр треугольника, вычисляя его по формуле: a + b + c
     '''
     return a + b + c
-'''
+```
 ### Example
-'''python
+```python
 a = 3
 b = 4
 с = 5
@@ -113,9 +113,9 @@ print (f"Area = {area(a, h)}; Perimetr = {perimetr(a, b, c)}")
 
 
 Area = 3; Perimetr = 12
-'''
+```
 ## Commit History
-'
+`
 commit 0ea3156cdb629211698a9259f96ab69bc20447b4 (HEAD -> math)
 Author: Валерий Николаевич Пряжников <144845869+SNDSG@users.noreply.github.com>
 Date:   Wed Oct 4 18:24:19 2023 +0300
@@ -145,4 +145,4 @@ Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:54:08 2021 +0300
 
     L-03: Circle and square added
-'
+`
