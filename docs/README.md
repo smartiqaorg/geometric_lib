@@ -67,3 +67,18 @@
 `def perimeter(a, b, c):` <sup>_получает на вход значение длинны сторон треугольника, например 4, 5, б_</sup>
 
 `return a + b + c` <sup>_выдаёт значение периметра такого треугольника, в нашем случае 15_</sup>
+
+## Последние комиты:
+
+C:\Users\79117\Desktop\блтбстжзн\исрпо\geometric_lib>git log
+commit 97f0ebe0d315a047606e21468a76ddd0e74aa111 (HEAD -> new_features_412909)
+Author: kukustic <kust.07.04.05@gmail.com>
+Date:   Wed Oct 4 14:05:47 2023 +0300
+
+    added full documentation
+
+commit 4316c342d26a33e3c50db10ee5cbf6d994a5ee2e
+Author: kukustic <kust.07.04.05@gmail.com>
+Date:   Wed Oct 4 10:48:56 2023 +0300
+
+    added comments on functions and documentation
