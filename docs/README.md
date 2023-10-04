@@ -1,8 +1,8 @@
 # Math formulas
 ## Area
 
-  - Circle: S = πR²
-    - Rectangle: S = ab
+- Circle: S = πR²
+- Rectangle: S = ab
 - Square: S = a²
 - Triangle: S = (a*h)/2
   
