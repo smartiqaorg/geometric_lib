@@ -27,7 +27,7 @@ def perimeter(r):
 - Square: P = 4a
 - Triangle: P = a + b + c
 
-# Solution description 
+# Solution description : 
 ## Area
 
 - Circle: Takes radius r, returns the product of r times r times pi. Example: takes r=4, returns 50.265482457...
