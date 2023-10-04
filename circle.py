@@ -2,9 +2,24 @@ import math
 
 
 def area(r):
-    return math.pi * r * r
+	'''
+	Возвращает площадь курга
+
+	Параметры: 
+			r(float): радиус круга
+	Возвращаемое значение:
+			area(r): площадь круга
+	'''
+	return math.pi * r * r
 
 
 def perimeter(r):
-    return 2 * math.pi * r
+    '''
+    Возвращает периметр курга
 
+    Параметры: 
+                        r(float): радиус круга
+    Возвращаемое значение:
+                        perimetr(r): периметр круга
+    '''
+    return 2 * math.pi * r
