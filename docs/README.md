@@ -36,9 +36,9 @@ print (f"Area = area(r)); Perimetr = {perimetr(r)}")
 
 
 Area = 12.566370614359172; Perimeter = 12.566370614359172
-'''
+```
 ## Rectangle
-'''python
+```python
 def area(a, b):
     '''
     Принимает два числа, которые являются сторонами прямоугольника: a, b
