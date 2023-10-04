@@ -192,6 +192,3 @@ Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
 Date:   Tue Sep 26 03:22:33 2023 +0300
 
     the file has been declared
-Zagolovok 1
-- zagolovok 2
-  - zagolovok 3
