@@ -5,7 +5,8 @@
 - Rectangle: S = ab
 - Square: S = a²
 - Triangle: S = (a*h)/2
-'''ruby
+  
+'''
   import math
 
 
