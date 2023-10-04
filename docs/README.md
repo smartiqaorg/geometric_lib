@@ -5,7 +5,8 @@
 - Rectangle: S = ab
 - Square: S = a²
 - Triangle: S = (a*h)/2
-'''  import math
+'''ruby
+  import math
 
 
 def area(r):
