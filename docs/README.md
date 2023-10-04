@@ -8,11 +8,11 @@
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
 # Описание проекта:
-    ## Файлы:
-    - cercle.py
-    - rectangle.py
-    - square.py
-    - triangle.py
+## Файлы:
+- cercle.py
+- rectangle.py
+- square.py
+- triangle.py
 # Описание функций:
 ## cercle.py
 ### area(r)
