@@ -161,6 +161,69 @@ Area = 6
 Perimeter = 12
 ```
 
+## история изменения проекта с хэшами коммитов
+
+commit e0a536566922b2a67e87ddaf2049e40ad983c1dc
+Author: ssandaa <oziniek.art@mail.ru>
+Date:   Wed Oct 4 01:26:11 2023 +0300
+
+    general description of the solution
+
+commit 2c39fd30c9555c78603d18ac59a538b53b8e53d3
+Author: ssandaa <oziniek.art@mail.ru>
+Date:   Wed Oct 4 00:33:00 2023 +0300
+
+    added documentation to triangle.py
+
+commit 623b387b9c99d44620d5314d47923c03cf4c9e0a
+Author: ssandaa <oziniek.art@mail.ru>
+Date:   Wed Oct 4 00:32:11 2023 +0300
+
+    added documentation to square.py
+
+commit c1485d6e8f6cd831a3298019962efaf3f0960fb3
+Author: ssandaa <oziniek.art@mail.ru>
+Date:   Wed Oct 4 00:30:44 2023 +0300
+
+    added documentation to rectangle.py
+
+commit f64475df0b87ec1d0300ab52ca2748e843d4f76e
+Author: ssandaa <oziniek.art@mail.ru>
+Date:   Wed Oct 4 00:28:26 2023 +0300
+
+    added documentation to circle.py
+
+commit b03f070a9193a2b46f4060bbe0a622e96f1629a9 (new_features_314041, main)
+Author: ssandaa <oziniek.art@mail.ru>
+Date:   Sat Sep 16 23:11:21 2023 +0300
+
+    correted the mistake rectangle.py
+
+commit f9a0010b40648c5bb8ebec25b487196e0218dcfa
+Author: ssandaa <oziniek.art@mail.ru>
+Date:   Sat Sep 16 22:48:48 2023 +0300
+
+    add triangle.py
+
+commit 83b2df4cee24fafed0ce89bc6091b2ef4a26ba23
+Author: ssandaa <144237596+ssandaa@users.noreply.github.com>
+Date:   Sat Sep 16 22:42:23 2023 +0300
+
+    add rectangle.py
+
+commit d078c8d9ee6155f3cb0e577d28d337b791de28e2 (origin/main, origin/HEAD)
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added
+
+commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300
+
+    L-03: Circle and square added
+
+
 
 
 
