@@ -6,10 +6,8 @@ Geometric Lib is a Python library designed for handling geometric data and calcu
 
 ## Table of Contents
 - [Math formulas](#mathformulas)
-- [Usage](#usage)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
+- [Geometric Shapes](#geometricshapes)
+- [Example usage](#exampleusage)
 
 
 ## Math formulas
@@ -63,7 +61,7 @@ def area(a, b):
 def perimeter(a, b):
     return 2 * (a + b)
 ```
-## Triangle
+### `Triangle`
 
 ### Area
 
@@ -115,3 +113,4 @@ distance_between_points = distance(point1, point2)
 ```python
 - 1st comit: d7f6500e3f60fabf6e5b34a775e32c7c2cc1f159
 - 2nd commit: c36612c5975a3cd8fcfd2b06ed7c636efb725de1
+- 3rd commit: 1b2700c19ba0af1b43d71865c85bcc18a0c1bc84 (new README)
