@@ -6,6 +6,10 @@ def area(a):
                 a (int): side of the square
             Returns:
                 (int): area of the square
+        
+        Example:
+            input -> 2 (a)
+            output -> 4 (a * a)
     '''
 
     return a * a
@@ -18,6 +22,10 @@ def perimeter(a):
                 a (int): side of the square
             Returns:
                 (int): perimeter of the square
+                
+        Example:
+            input -> 2 (a)
+            output -> 8 (4 * a)
     '''
 
     return 4 * a

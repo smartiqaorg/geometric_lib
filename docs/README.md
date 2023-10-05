@@ -60,10 +60,14 @@
 
 
 ## The history of this project can be tracked by the following commits:
+
+- `declaration for circle.py fixed, README.md updated` *f829ae1*
 - `update README.md` *c6bcee7*
 - `delete accidentally added .idea directory` *c743c70*
 - `declaration of functions added and README.md` *a77ba4f*
 - `README.md modified` *055f7bf*
 - `mistake in rectangle.py fixed` *5bfe594*
 - `mistake in rectangle.py fixed and new features triangle.py added` *9f08693*
-- `new features rectangle.py added` *45f6c37*
+- `new features rectangle.py added` *45f6c37* 
+- `L-03: Docs added` *d078c8d* 
+- `L-03: Circle and square added` *8ba9aeb*
