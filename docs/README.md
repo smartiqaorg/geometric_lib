@@ -3,11 +3,17 @@
 - Circle: S = πR²
 - Rectangle: S = ab
 - Square: S = a²
+- Triangle: S = a * h / 2
 
 ## Perimeter
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+- Triangle: P = a + b + c
+
+## Общее описание библиотеки
+    Данная библиотека позволяет получить площадь и периметр различных фигур таких как окружность,
+    прямоугольник, квадрат, треугольник
 
 ## circle.py
 ### def area(r):
@@ -92,3 +98,6 @@
 
 #### Примеры вызова
     perimeter(3, 4, 5) -> 12
+
+## История коммитов
+![img.png](img.png)
