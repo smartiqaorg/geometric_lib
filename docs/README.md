@@ -123,7 +123,42 @@
 - return 4 * a
 - output -> 40
 
+# История изменения проекта с хешами комитов
 
+commit 2fe452ffc8a11f27db3d3ef4bfda030340ffca89
+
+    Добавлена документация для файла triangle.py
+
+commit 9020d24b7ac71a5b043a28a41d31b129a71052ff
+
+    Добавлена документация для файла square.py
+
+commit f5f90628c921aed1136e39eadd4d5b6a17b136e5
+
+    Добавлена документация для файла rectangle.py
+
+commit 8f74ce86252886714d69f3bddd02b5109528f447
+
+    Добавлена документация для файла circle.py
+commit 9e2815ecdc1a28549f966f26ff6b8f127666c485 
+
+    Была исправлена ошибка в файле rectangle.py
+
+commit 18119a89f20fddd39ecb6a34261ce9902f4e89b7
+
+    Добавлен новый файл triangle.py
+
+commit 8b7aa3fc169811236a6c53b33f6b24e27f4f0810
+
+    Добавлен новый файл rectangle.py
+
+commit d078c8d9ee6155f3cb0e577d28d337b791de28e2 
+
+    L-03: Docs added
+
+commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+
+    L-03: Circle and square added
 
 
 
