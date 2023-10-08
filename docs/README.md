@@ -13,13 +13,13 @@ The project collected functions for calculating the area and perimeter of basic 
 - **area(float a, float b)** - return area of rectangle with sides **a**, **b**.
   
 ~~~text
-area(5, 10) --> 50
+area(5, 10) --> 50.0
 ~~~
 
 - **perimeter(float a, float b)** - return perimeter of rectangle with sides **a**, **b**.
   
 ~~~text
-perimeter(5, 10) --> 30
+perimeter(5, 10) --> 30.0
 ~~~
 
 ### In the file circle.py
@@ -41,13 +41,13 @@ perimeter(5) --> 31
 - **area(float a)** - return area of square with side **a**
 
 ~~~text
-area(5) --> 25
+area(5) --> 25.0
 ~~~
 
 - **perimeter(float a)** - return perimeter of square with side **a**
 
 ~~~text
-perimeter(5) --> 20
+perimeter(5) --> 20.0
 ~~~
 
 ### In the file triangle.py
@@ -55,13 +55,13 @@ perimeter(5) --> 20
 - **area(float a, float h)** - return area of triangle with side **a** and height **h**
 
 ~~~text
-area(5, 10) --> 25
+area(5, 10) --> 25.0
 ~~~
 
 - **perimeter(float a, float b, float c)** - return perimeter of triangle with sides **a**, **b**, **c**
 
 ~~~text
-perimter(1, 2, 3) --> 6
+perimter(1, 2, 3) --> 6.0
 ~~~
 
 ## The story of commits
@@ -81,9 +81,9 @@ perimter(1, 2, 3) --> 6
     git commit -m "fixed bugs in rectangle.py and added triangle.py"
     ~~~
 
-###Hashes of commits
+### Hashes of commits
 
-![picture not found](https://sun9-17.userapi.com/impg/Vu_7FM5QRMUJZuw25nT5-wANZwZY9h9k3DRXkg/CD7_7NK7iSQ.jpg?size=942x64&quality=96&sign=113f7f4991ba8d40240dac067ebc0b52&type=album)
+![picture not found](https://sun9-10.userapi.com/impg/kS4KIKKTzoCSIvbRGdfGuZda7GC76X7MprGOJQ/o2HzeJ4o2UE.jpg?size=511x79&quality=96&sign=4d2048d250ae2e83e01b5875020f0a8b&type=album)
 
 ## Math formulas
 

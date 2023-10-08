@@ -10,8 +10,8 @@ def area(a, h):
             area_triangle (float): площадь треугольника в квадратынх сантиметрах;
 
         Примеры использования:
-            area(5, 2) --> 5;
-            area(5.5, 4) --> 11;
+            area(5, 2) --> 5.0;
+            area(5.5, 4) --> 11.0;
     '''
     return a * h / 2 
 
@@ -28,7 +28,7 @@ def perimeter(a, b, c):
             perimeter_triangle (float): периметр треугольника;
 
         Примеры исспользования:
-            perimeter(1, 2, 3) --> 6;
+            perimeter(1, 2, 3) --> 6.0;
             perimeter(1.1, 2.2, 3.3) --> 6.6;
     ''' 
     return a + b + c 
