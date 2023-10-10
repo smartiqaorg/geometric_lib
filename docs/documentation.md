@@ -67,5 +67,4 @@
 | _70cdab2_ | added triangle |
 | _41d3607_ | fixed rectangle |
 | _bc6917c_ | Function descriptions added, documentation added |
-| _3343921_ | added tables of hashes and commits |
 
