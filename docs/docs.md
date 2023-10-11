@@ -116,41 +116,26 @@
 
     perimeter(5, 6, 7)          18
 ### История изменения проекта с хешами комитов (кроме последней записи)
-### Коммит 8
-Hash: **7b614f591aefdcfd380e546513a677c79191bdb5** 
-
-Author: Sanchell1o <trollbabich1@mail.ru>
-
-Date:   Mon Oct 9 21:41:46 2023 +0300
-
-    added documentation
-
-### Коммит 7
-Hash: **8317900c461b00a6a1ec1293aa61e4424054acc1**
-
-Author: Sanchell1o <trollbabich1@mail.ru>
-
-Date:   Mon Oct 9 21:41:34 2023 +0300
-
-    added documentation
 
 ### Коммит 6
-Hash: **5609b1be73be76a5b50ba13c573688e8c711b2c9**
+Hash: **0aca9cca28e306dabe1c5cf740a5bfa4e226ebda**
 
 Author: Sanchell1o <trollbabich1@mail.ru>
 
-Date:   Mon Oct 9 21:41:23 2023 +0300
+Date:   Wed Oct 11 19:34:53 2023 +0300
 
-    added documentation
+    Added documentation for rectangle.py and square.py
+
 
 ### Коммит 5
-Hash: **307520e095f65c701d1caff7878b7546a04e1e46**
+Hash: **d183d7c48e71c7aa37be66a970ee6bad80ac1811**
 
 Author: Sanchell1o <trollbabich1@mail.ru>
 
-Date:   Mon Oct 9 21:40:02 2023 +0300
+Date:   Wed Oct 11 19:33:56 2023 +0300
 
-    added documentation
+    Added documentation for circle.py and triangle.py
+
 
 ### Коммит 4
 Hash: **0efe2f20abda9f9492a81e38c6b61dee3268e664**
