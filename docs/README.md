@@ -19,7 +19,7 @@
  
 # Описание функций с примерами вывода
 ## circle.py
-'''
+```
 import math
 
 
@@ -42,7 +42,7 @@ def perimeter(r):
 '''
     return 2 * math.pi * r
 
-'''
+```
 
 ## rectangle.py
 
