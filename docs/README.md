@@ -63,13 +63,12 @@
 |8ba9aeb| L-03: Circle and square added|
 |d078c8d| L-03: Docs added|
 |31e6fa2| Added rectangle.py|
-|80450e1|Added triangle.py and fixed bug|
-|0b4469b||
-|9093c8f||
-|||
+|80450e1| Added triangle.py and fixed bug|
+|0b4469b| new rectangle|
+|9093c8f| modifie: rectangle.py|
 |62973e6| add comment in triangle.py|
 |7216273| add comment in square.py|
 |88e5288| add comment in rectangle.py|
 |ff1acf8| add comment in circle.py|
-|||
+|6924247| Added tables of hashes and commits|
 
