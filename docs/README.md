@@ -58,15 +58,17 @@
 
 
 # История изменения проекта:
-|Hashes||Commits|
-|:-|:---------:|
-|8682460| L-03: Circle and square added|
-|1de28e2| L-03: Docs added|
-|df4ae80| add new file rectangle.py|
-|af5c397| Исправлена в rectangle.py|
-|5b0970d| Исправлена в rectangle.py|
-|e8acfc6| Add comment in rectangle.py|
-|e810e1c| docs:Add comment in rectangle.py|
-|b085b9d| docs:Add comment in square.py|
-|bc17060| docs:Add comment in triangle.py|
-|bbcce60| docs:Add comment in circle.py|
+| Hashes  | Commits                                      |
+| :---:   | ---:                                         | 
+| 8ba9aeb | L-03: Circle and square added                |
+| d078c8d | L-03: Docs added                             |
+| 0dfe13b | add new file rectangle.py                    |
+| e7b013e | Исправлена в rectangle.py                    |
+| 5968034 | Исправлена в rectangle.py                    |
+| 0976d73 | Add comment in rectangle.py                  |
+| a64d8b3 | docs:Add comment in rectangle.py             |
+| 6d5711c | docs:Add comment in square.py                |
+| 70b844e | docs:Add comment in triangle.py              |
+| 28c6cd9 | docs:Add comment in circle.py                |
+| 4d82d0a | docs: Update documentation in docs/README.md |
+
