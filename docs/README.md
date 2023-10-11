@@ -139,7 +139,7 @@ print(perimeter(3 , 4 , 5))
 
 # Вывод истории изменений проекта с хэшами коммитов
 ```
-b97fbd8 added documentation to the file
+b97fbd8 (HEAD -> main) added documentation to the file
 ce6445c added documentation to the file
 95226ed added documentation to the file
 de6f714 added documentation to the file
