@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-def area(a, b): 
-    return a * b 
-
-def perimeter(a, b): 
-    return a + b
-=======
 def area(a, b):
+    '''Получает стороны прямоугольника, возвращает площадь'''
     return a * b
 
+
 def perimeter(a, b):
+    '''Получает стороны прямоугольника, возвращает периметр'''
     return (a + b)*2
->>>>>>> 408594
