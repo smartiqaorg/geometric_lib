@@ -130,7 +130,7 @@ def perimeter(a, b, c):
 |d078c8d | L-03: Docs added|
 |00641e2| feat: add calc for a rectangle|
 |5f42811| feat: add a calc for a triangle|
-|00b082c| fix: fix a cacl in rectangle.py|
+|00b082c| fix: fix a calс in rectangle.py|
 |f446c1c| docs: new comments for circle.py|
 |d4d85df| docs: new comments for rectangle.py|
 |7b0cef6| docs new comments for square.py|
