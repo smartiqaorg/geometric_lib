@@ -58,8 +58,8 @@
 ***Пример: in 1,2,3; out 6.***
 
 #История изменения проекта:
-|Hashes||Commits|
-|:-|:---------:|
+|Hashes| Commits|
+|:-     |:---------:|
 |8ba9aeb| L-03: Circle and square added|
 |d078c8d| L-03: Docs added|
 |31e6fa2| Added rectangle.py|
