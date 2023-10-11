@@ -18,13 +18,13 @@
 -  На выход пользователь получает площадь и периметр фигуры
  
 # Описание функций с примерами вывода
-### circle.py
+## circle.py
 
-### rectangle.py
+## rectangle.py
 
-### square.py
+## square.py
 
-### triangle.py
+## triangle.py
 
 # История изменения проекта
 - commit e7456d6c56195c43f33324277952e1c5ce317dd8 (origin/main, origin/HEAD)
