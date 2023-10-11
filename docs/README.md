@@ -107,8 +107,10 @@ def perimeter(a, b, c):
 ```
 
 # История изменения проекта
-- commit e7456d6c56195c43f33324277952e1c5ce317dd8 (origin/main, origin/HEAD)
-   - L-03: Fixed rectangle bug
+```
+commit e7456d6c56195c43f33324277952e1c5ce317dd8 (origin/main, origin/HEAD)
+L-03: Fixed rectangle bug
+```
 
 - commit c67c74a78def5eb48951800f91086a9cc9b0bbc1
    - L-03: Added rectangle.py
