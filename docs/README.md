@@ -99,7 +99,7 @@ triangle_perimeter = perimeter(side1, side2, side3)
 print(f"Triangle Area: {triangle_area}")
 print(f"Triangle Perimeter: {triangle_perimeter}")
 ```
-#Commit History
+# Commit History
 
 | Hash      | Branch              | Commit comment                |
 |-----------|---------------------|-------------------------------|
