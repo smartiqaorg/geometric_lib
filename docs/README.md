@@ -1,10 +1,17 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+# Документация
+## circle.py
+1. Функция area() считает площадь, взяв в параметр радиус( r ). 
+- Получает число - радиус круга.
+- Возращает число - пложадь круга.
+```
+def area( r ):
+    return math.pi * r * r 
+ ```
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+2. Функция perimeter( r ) считает пириметр, взяв в параметр радиус( r ).
+- Получает число - радиус круга.
+- Возращает число - переметр круга.
+```
+def perimeter(r):
+    return 2 * math.pi * r 
+ ```
