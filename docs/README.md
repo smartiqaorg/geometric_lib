@@ -18,7 +18,7 @@
 
 ## Описание каждой функции с примерами вывода
 
-[***Circle.py***](C:\Users\Maksim\Desktop\Fork лабы\geometric_lib\circle.py)
+[***[Circle.py](C:\Users\Maksim\Desktop\Fork лабы\geometric_lib\circle.py)***] 
 
 *def area(r)*
 Функция отвечает за нахождение площади круга.
@@ -30,7 +30,7 @@
 Она принимает на вход радиус и находит периметр по формуле - 2 * math.pi * r
 Вход: 3 Выход: 18,84
 
-[***Rectangle.py***](C:\Users\Maksim\Desktop\Fork лабы\geometric_lib\rectangle.py)
+***[Rectangle.py](C:\Users\Maksim\Desktop\Fork лабы\geometric_lib\rectangle.py)***
 
 *def area(a,b)*
 Функция отвечает за нахождение площади прямоугольника.
@@ -42,7 +42,7 @@
 Она принимает на вход стороны прямоугольника и находит периметр по формуле - (a + b) * 2
 Вход: 2 5 Выход: 14
 
-[***Square.py***](C:\Users\Maksim\Desktop\Fork лабы\geometric_lib\square.py)
+***[Square.py](C:\Users\Maksim\Desktop\Fork лабы\geometric_lib\square.py)***
 
 *def area(a)*
 Функция отвечает за нахождение площади квадрата.
@@ -54,7 +54,7 @@
 Она принимает на вход сторону квадрата и находит периметр по формуле - a * 4
 Вход: 5 Выход: 20
 
-[***Triangle.py***](C:\Users\Maksim\Desktop\Fork лабы\geometric_lib\triangle.py)
+***[Triangle.py](C:\Users\Maksim\Desktop\Fork лабы\geometric_lib\triangle.py)*** 
 
 *def area(a, h)*
 Функция отвечает за нахождение площади треугольника.
