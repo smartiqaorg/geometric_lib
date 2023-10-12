@@ -25,7 +25,7 @@ rectangle_perimeter = perimeter(length, width)
 
 print(f"Rectangle Area: {rectangle_area}")
 print(f"Rectangle Perimeter: {rectangle_perimeter}")
-
+```
 ## Square
 
 ### Functions
@@ -48,7 +48,7 @@ square_perimeter = perimeter(side_length)
 
 print(f"Square Area: {square_area}")
 print(f"Square Perimeter: {square_perimeter}")
-
+```
 ## Circle
 
 ### Functions
@@ -71,7 +71,7 @@ circle_perimeter = perimeter(radius)
 
 print(f"Circle Area: {circle_area}")
 print(f"Circle Circumference: {circle_perimeter}")
-
+```
 ## Triangle
 
 ### Functions
@@ -98,13 +98,13 @@ triangle_perimeter = perimeter(side1, side2, side3)
 
 print(f"Triangle Area: {triangle_area}")
 print(f"Triangle Perimeter: {triangle_perimeter}")
-
+```
 #Commit History
 
-| Hash    | Branch              | Commit comment
-|---------|---------------------|--------------------------------------------------------------
-|8ba9aeb3c| main                | L-03: Circle and square added
-|d078c8d9e| main                | L-03: Docs added
-|b9831c8ba| new_features_409474 | Added file rectangle.py
-|e731ca9fe| new_features_409474 | Fixed mistake rectangle.py
-|598605be6| main                | Added comments to functions
+| Hash      | Branch              | Commit comment                |
+|-----------|---------------------|-------------------------------|
+| 8ba9aeb3c | main                | L-03: Circle and square added |
+| d078c8d9e | main                | L-03: Docs added              |
+| b9831c8ba | new_features_409474 | Added file rectangle.py       |
+| e731ca9fe | new_features_409474 | Fixed mistake rectangle.py    |
+| 598605be6 | main                | Added comments to functions   |
