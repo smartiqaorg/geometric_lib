@@ -17,4 +17,3 @@ def perimeter(r):
             r (int) : радиус окружности
     """
     return 2 * math.pi * r
-
