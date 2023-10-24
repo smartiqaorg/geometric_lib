@@ -1,27 +1,31 @@
+import unittest
+import math
 from circle import area, perimeter
-from tests.unittest.TEST_DATA import TEST_CIRCLE_AREA_DATA, TEST_CIRCLE_PERIMETER_DATA
 
 
-"""Тестирование Area"""
-print("_______ПЛОЩАДЬ_______\n")
-for test_data in TEST_CIRCLE_AREA_DATA:
-    radius = test_data[0]
-    expected_result = test_data[1]
+class TestCircleFunctions(unittest.TestCase):
+    def test_area(self):
+        """
+        Test the area function for different radius values.
+        """
+        # Test for radius r = 3
+        self.assertAlmostEqual(area(3), math.pi * 3 * 3)
+        # Test for radius r = 5
+        self.assertAlmostEqual(area(5), math.pi * 5 * 5)
+        # Test for radius r = 7
+        self.assertAlmostEqual(area(7), math.pi * 7 * 7)
 
-    if round(area(radius), 2) == expected_result:
-        print(f"Успешно!\nВходные данные: {radius}\nВыходные данные: {expected_result}\n")
+    def test_perimeter(self):
+        """
+        Test the perimeter function.
+        """
+        # Test for radius r = 3
+        self.assertAlmostEqual(perimeter(3), 2 * math.pi * 3)
+        # Test for radius r = 5
+        self.assertAlmostEqual(perimeter(5), 2 * math.pi * 5)
+        # Test for radius r = 7
+        self.assertAlmostEqual(perimeter(7), 2 * math.pi * 7)
 
-    else:
-        print(f"Неудачно!\nВходные данные: {radius}\nОжидалось: {expected_result}\nВыходные данные: {round(area(radius), 2)}\n")
 
-
-"""Тестирование Perimeter"""
-print("_______ПЕРИМЕТР_______\n")
-for test_data in TEST_CIRCLE_PERIMETER_DATA:
-    radius = test_data[0]
-    expected_result = test_data[1]
-
-    if round(perimeter(radius), 2) == expected_result:
-        print(f"Успешно!\nВходные данные: {radius}\nВыходные данные: {expected_result}\n")
-    else:
-        print(f"Неудачно!\nВходные данные: {radius}\nОжидалось: {expected_result}\nВыходные данные: {round(perimeter(radius), 2)}\n")
+if __name__ == '__main__':
+    unittest.main()

@@ -1,23 +1,34 @@
+import unittest
 from square import area, perimeter
-from tests.unittest.TEST_DATA import TEST_SQUARE_AREA_DATA, TEST_SQUARE_PERIMETER_DATA
 
 
-print("_______ПЛОЩАДЬ_______")
-for test_data in TEST_SQUARE_AREA_DATA:
-    side_a = test_data[0]
-    expected_result = test_data[1]
+class TestSquareFunctions(unittest.TestCase):
+    def test_area(self):
+        """
+        Tests the area function.
+        """
+        # Test for side a = 3
+        self.assertAlmostEqual(area(3), 9)
 
-    if round(area(side_a),2) == expected_result:
-        print(f"Успешно!\nВходные данные: сторона a = {side_a}\nОжидалось: {expected_result}\n")
-    else:
-        print(f"Неудачно!\nВходные данные: сторона a = {side_a}\nОжидалось: {expected_result}\nВыходные данные: {round(area(side_a),2)}\n")
+        # Test for side a = 5
+        self.assertAlmostEqual(area(5), 25)
 
-print("_______ПЕРИМЕТР_______")
-for test_data in TEST_SQUARE_PERIMETER_DATA:
-    side_a = test_data[0]
-    expected_result = test_data[1]
+        # Test for side a = 7
+        self.assertAlmostEqual(area(7), 49)
 
-    if round(perimeter(side_a),2) == expected_result:
-        print(f"Успешно!\nВходные данные: сторона a = {side_a}\nОжидалось: {expected_result}\n")
-    else:
-        print(f"Неудачно!\nВходные данные: сторона a = {side_a}\nОжидалось: {expected_result}\nВыходные данные: {round(perimeter(side_a),2)}\n")
+    def test_perimeter(self):
+        """
+        Test the perimeter function with different input values.
+        """
+        # Test for side a = 3
+        self.assertAlmostEqual(perimeter(3), 12)
+
+        # Test for side a = 5
+        self.assertAlmostEqual(perimeter(5), 20)
+
+        # Test for side a = 7
+        self.assertAlmostEqual(perimeter(7), 28)
+
+
+if __name__ == '__main__':
+    unittest.main()

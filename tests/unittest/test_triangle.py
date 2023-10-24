@@ -1,26 +1,28 @@
+import unittest
 from triangle import area, perimeter
-from tests.unittest.TEST_DATA import TEST_TRIANGLE_AREA_DATA, TEST_TRIANGLE_PERIMETER_DATA
 
 
-print("_______ПЛОЩАДЬ_______")
-for test_data in TEST_TRIANGLE_AREA_DATA:
-    side_a = test_data[0]
-    height = test_data[1]
-    expected_result = test_data[2]
+class TestTriangleFunctions(unittest.TestCase):
+    def test_area(self):
+        """
+        Test the area function.
+        """
+        # Test for side a = 3, height = 4
+        self.assertAlmostEqual(area(3, 4), 6)
+        # Test for side a = 5, height = 8
+        self.assertAlmostEqual(area(5, 8), 20)
+        # Test for side a = 7, height = 10
+        self.assertAlmostEqual(area(7, 10), 35)
 
-    if round(area(side_a, height), 2) == expected_result:
-        print(f"Успешно!\nВходные данные: сторона a = {side_a}, высота = {height}\nОжидалось: {expected_result}\n")
-    else:
-        print(f"Неудачно!\nВходные данные: сторона a = {side_a}, высота = {height}\nОжидалось: {expected_result}\nВыходные данные: {round(area(side_a, height), 2)}\n")
+    def test_perimeter(self):
+        """
+        Test the perimeter function.
+        The function tests the perimeter function with different sets of side lengths and verifies the expected results.
+        """
+        self.assertAlmostEqual(perimeter(3, 4, 5), 12)  # Test for sides a = 3, b = 4, c = 5
+        self.assertAlmostEqual(perimeter(5, 5, 5), 15)  # Test for sides a = 5, b = 5, c = 5
+        self.assertAlmostEqual(perimeter(7, 8, 9), 24)  # Test for sides a = 7, b = 8, c = 9
 
-print("_______ПЕРИМЕТР_______")
-for test_data in TEST_TRIANGLE_PERIMETER_DATA:
-    side_a = test_data[0]
-    side_b = test_data[1]
-    side_c = test_data[2]
-    expected_result = test_data[3]
 
-    if round(perimeter(side_a, side_b, side_c), 2) == expected_result:
-        print(f"Успешно!\nВходные данные: сторона a = {side_a}, сторона b = {side_b}, сторона c = {side_c}\nОжидалось: {expected_result}\n")
-    else:
-        print(f"Неудачно!\nВходные данные: сторона a = {side_a}, сторона b = {side_b}, сторона c = {side_c}\nОжидалось: {expected_result}\nВыходные данные: {round(perimeter(side_a, side_b, side_c), 2)}\n")
+if __name__ == '__main__':
+    unittest.main()
