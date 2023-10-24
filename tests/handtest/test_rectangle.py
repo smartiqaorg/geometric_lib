@@ -1,30 +1,24 @@
-import unittest
 from rectangle import area, perimeter
+from tests.unittest.TEST_DATA import TEST_RECTANGLE_AREA_DATA, TEST_RECTANGLE_PERIMETER_DATA
 
+"""_______ПЛОЩАДЬ_______\n"""
+for test_data in TEST_RECTANGLE_AREA_DATA:
+    side_a = test_data[0]
+    side_b = test_data[1]
+    expected_result = test_data[2]
 
-class TestRectangleFunctions(unittest.TestCase):
-    def test_area(self):
-        """
-        Test the area function.
-        """
-        # Test for sides a = 3, b = 4
-        self.assertAlmostEqual(area(3, 4), 12)
-        # Test for sides a = 5, b = 7
-        self.assertAlmostEqual(area(5, 7), 35)
-        # Test for sides a = 2, b = 6
-        self.assertAlmostEqual(area(2, 6), 12)
+    if round(area(side_a, side_b), 2) == expected_result:
+        print(f"Успешно!\nВходные данные: сторона a = {side_a}, сторона b = {side_b}\nВыходные данные: {expected_result}\n")
+    else:
+        print(f"Неудачно!\nВходные данные: сторона a = {side_a}, сторона b = {side_b}\nОжидалось: {expected_result}\nВыходные данные: {round(area(side_a, side_b), 2)}\n")
 
-    def test_perimeter(self):
-        """
-        Test the perimeter function.
-        """
-        # Test for sides a = 3, b = 4
-        self.assertAlmostEqual(perimeter(3, 4), 14)
-        # Test for sides a = 5, b = 7
-        self.assertAlmostEqual(perimeter(5, 7), 24)
-        # Test for sides a = 2, b = 6
-        self.assertAlmostEqual(perimeter(2, 6), 16)
+"""_______ПЕРИМЕТР_______\n"""
+for test_data in TEST_RECTANGLE_PERIMETER_DATA:
+    side_a = test_data[0]
+    side_b = test_data[1]
+    expected_result = test_data[2]
 
-
-if __name__ == '__main__':
-    unittest.main()
+    if round(perimeter(side_a, side_b), 2) == expected_result:
+        print(f"Успешно!\nВходные данные: сторона a = {side_a}, сторона b = {side_b}\nВыходные данные: {expected_result}\n")
+    else:
+        print(f"Неудачно!\nВходные данные: сторона a = {side_a}, сторона b = {side_b}\nОжидалось: {expected_result}\nВыходные данные: {round(perimeter(side_a, side_b), 2)}\n")
