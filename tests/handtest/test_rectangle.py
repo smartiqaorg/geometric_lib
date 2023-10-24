@@ -1,5 +1,5 @@
 from rectangle import area, perimeter
-from tests.unittest.TEST_DATA import TEST_RECTANGLE_AREA_DATA, TEST_RECTANGLE_PERIMETER_DATA
+from TEST_DATA import TEST_RECTANGLE_AREA_DATA, TEST_RECTANGLE_PERIMETER_DATA
 
 """_______ПЛОЩАДЬ_______\n"""
 for test_data in TEST_RECTANGLE_AREA_DATA:

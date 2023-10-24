@@ -1,5 +1,5 @@
 from square import area, perimeter
-from tests.unittest.TEST_DATA import TEST_SQUARE_AREA_DATA, TEST_SQUARE_PERIMETER_DATA
+from TEST_DATA import TEST_SQUARE_AREA_DATA, TEST_SQUARE_PERIMETER_DATA
 
 
 print("_______ПЛОЩАДЬ_______")

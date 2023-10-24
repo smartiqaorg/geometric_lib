@@ -1,5 +1,5 @@
 from triangle import area, perimeter
-from tests.unittest.TEST_DATA import TEST_TRIANGLE_AREA_DATA, TEST_TRIANGLE_PERIMETER_DATA
+from TEST_DATA import TEST_TRIANGLE_AREA_DATA, TEST_TRIANGLE_PERIMETER_DATA
 
 
 print("_______ПЛОЩАДЬ_______")

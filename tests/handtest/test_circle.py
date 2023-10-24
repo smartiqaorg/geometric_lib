@@ -1,5 +1,5 @@
 from circle import area, perimeter
-from tests.unittest.TEST_DATA import TEST_CIRCLE_AREA_DATA, TEST_CIRCLE_PERIMETER_DATA
+from TEST_DATA import TEST_CIRCLE_AREA_DATA, TEST_CIRCLE_PERIMETER_DATA
 
 
 """Тестирование Area"""
