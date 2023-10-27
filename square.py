@@ -5,7 +5,6 @@ def area(a):
     Пример: a=4, area(4)=16
     '''
     return a * a
-
 def perimeter(a):
     '''
     Принимает число a - сторона квадрата
