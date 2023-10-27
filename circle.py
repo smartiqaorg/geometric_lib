@@ -6,7 +6,6 @@ def area(r):
     Пример: r=4, area(4)=50.26548245743669
     '''
     return math.pi * r * r
-
 def perimeter(r):
     '''
     Принимает число r - радиус круга
