@@ -30,4 +30,6 @@ def perimeter(a, b):
             input: 2 5
             output: 14
     '''
+    if a == 0 or b == 0:
+        return 0
     return 2*(a + b)
