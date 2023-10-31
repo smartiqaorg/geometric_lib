@@ -20,3 +20,4 @@ def perimeter(r):
                 output: 62.83185307179586
     '''
     return 2 * math.pi * r
+print(area(3.5))
