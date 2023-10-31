@@ -12,7 +12,7 @@ def area(a, h):
             Example:
                 input: 5 10
                 output: 25.0
-        '''
+    '''
     return a * h / 2
 
 def perimeter(a, b, c):
@@ -25,5 +25,5 @@ def perimeter(a, b, c):
                 c (int) : side c of a triangle
             Returns:
                 a + b + c : perimeter (int)
-        '''
+    '''
     return a + b + c

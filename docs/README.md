@@ -8,11 +8,11 @@
 | **[square](#Square)**       |    a²    |      4a       |
 | **[triangle](#Triangle)**   | 1/2(ah)  |   a + b + c   |
 
-
 ---
 # Functions description
 ## Circle
 #### `def area(r)`
+
 Accepts circle radius (int), returns circle area (int).
 
     Example:
