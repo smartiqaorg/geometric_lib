@@ -8,3 +8,64 @@
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+
+# Общее описание программы
+## В этом проекте предоставлены формулы для подсчета периметра и площади фигур.
+- Треугольника
+- Круга 
+- Прямоугольника
+- квадрата
+
+# Описание программ
+## Квадрат
+### Периметр
+- принимает сторону квадрата и возвращает периметр 
+### Площадь
+- принимает сторону квадрата и возвращает площадь
+
+## Прямоуголльник 
+### Периметр
+- принимает 2 стороны прямоугольника и возвращает периметр 
+### Площадь
+- принимает 2 стороны прямоугольника и возвращает площадь
+
+## Круг
+### Периметр
+- принимает радиус круга и возвращает периметр 
+### Площадь
+- принимает радиус круга и возвращает площадь
+
+## Треугольник
+### Периметр
+- принимает сторону и высоту треугольника и возвращает периметр 
+### Площадь
+- принимает сторону и высоту и возвращает площадь
+
+# Project change history with commit hashes
+-     commit 73e40cab4749bbde53221d6b931a6c619f52487b
+      Author: StepanKurganskij <stepkakurganskij@yandex.ru>
+      Date:   Tue Sep 19 11:09:35 2023 +0300
+
+      I add rectangle.py
+-     commit 3072beadba1cb8747ae344cfd06316fa0252ac77
+      Author: StepanKurganskij <stepkakurganskij@yandex.ru>
+      Date:   Tue Sep 19 11:14:10 2023 +0300
+
+      I add triangle.py
+-     commit 20e355fab30dff23fa6ba1135485ca84a18d6a7a (origin/main, origin/HEAD)
+      Author: StepanKurganskij <stepkakurganskij@yandex.ru>
+      Date:   Tue Sep 19 11:15:57 2023 +0300
+
+      I change file rectangle.py
+-     commit 08de508207f2bc49b67a98f73dbf3b38006186d9 (HEAD -> main)
+      Author: TTamXX <stepkakurganskij@yandex.ru>
+      Date:   Wed Sep 20 16:05:51 2023 +0300
+
+      Добавил комментарии
+-     commit 78da4979490c73061b94f34f0b3c2a8d22a1b0b2 (HEAD -> main)
+      Author: TTamXX <stepkakurganskij@yandex.ru>
+      Date:   Tue Oct 3 12:56:01 2023 +0300
+
+      i add docs
+
+
