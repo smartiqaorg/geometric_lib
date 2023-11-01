@@ -128,3 +128,4 @@ Accepts triangle sides, returns triangle perimeter.
 - 3575695 added a new file
 - f2e9748 (origin/main, origin/HEAD, main) fixed a mistake in rectangle.py
 - 6d17900 (HEAD -> new_features_412963) commented all of the functions
+- c2094bc added a unit test file for each source file. The following commits are describing tests implementation
