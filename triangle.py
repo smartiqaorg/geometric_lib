@@ -13,7 +13,8 @@ def area(a, h):
                 input: 5 10
                 output: 25.0
     '''
-    return a * h / 2
+    if a >= 0 and h >= 0:
+        return a * h / 2
 
 def perimeter(a, b, c):
     '''
@@ -28,4 +29,5 @@ def perimeter(a, b, c):
     '''
     if a == 0 or b == 0 or c == 0:
         return 'incorrect input'
-    return a + b + c
+    if a > 0 and b > 0 and c > 0:
+        return a + b + c

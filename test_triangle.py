@@ -15,6 +15,9 @@ class TriangleTestCase(unittest.TestCase):
     def test_str_input_area(self):
         with self.assertRaises(TypeError):
             area('a', 10)
+    def test_negative_input_area(self):
+        res = area(-1, 10)
+        self.assertEqual(res, None)
     def test_perimeter(self):
         res = perimeter(2, 3, 5)
         self.assertEqual(res, 10)
@@ -27,3 +30,6 @@ class TriangleTestCase(unittest.TestCase):
     def test_str_input_perimeter(self):
         with self.assertRaises(TypeError):
             perimeter('a', 10, 2)
+    def test_negative_input_perimeter(self):
+        res = perimeter(-1, 10, 100)
+        self.assertEqual(res, None)

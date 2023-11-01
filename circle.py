@@ -8,7 +8,8 @@ def area(r):
             input: 10
             output: 314.1592653589793
     '''
-    return math.pi * r * r
+    if r >= 0:
+        return math.pi * r * r
 
 
 def perimeter(r):
@@ -19,5 +20,5 @@ def perimeter(r):
                 input: 10
                 output: 62.83185307179586
     '''
-    return 2 * math.pi * r
-print(area(3.5))
+    if r >= 0:
+        return 2 * math.pi * r
