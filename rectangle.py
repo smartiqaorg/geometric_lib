@@ -33,3 +33,4 @@ def perimeter(a, b):
     if a == 0 or b == 0:
         return 0
     return 2*(a + b)
+print(area(3.5, 7.2))
