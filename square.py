@@ -18,4 +18,5 @@ def perimeter(a):
             input: 10
             output: 40
     '''
-    return 4 * a
+    if a == int(a) or a == float(a):
+        return 4 * a
