@@ -26,4 +26,6 @@ def perimeter(a, b, c):
             Returns:
                 a + b + c : perimeter (int)
     '''
+    if a == 0 or b == 0 or c == 0:
+        return 'incorrect input'
     return a + b + c
