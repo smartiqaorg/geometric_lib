@@ -19,6 +19,9 @@ class CircleTestCase(unittest.TestCase):
     def test_str_input_area(self):
         with self.assertRaises(TypeError):
             area('a')
+    def test_negative_input_area(self):
+        res = area(-1)
+        self.assertEqual(res, None)
     def test_perimeter(self):
         res = perimeter(5)
         self.assertEqual(res, 31.41592653589793)
@@ -34,4 +37,6 @@ class CircleTestCase(unittest.TestCase):
     def test_str_input_perimeter(self):
         with self.assertRaises(TypeError):
             perimeter('a')
-
+    def test_negative_input_perimeter(self):
+        res = perimeter(-1)
+        self.assertEqual(res, None)

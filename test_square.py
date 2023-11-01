@@ -15,7 +15,9 @@ class SquareTestCase(unittest.TestCase):
     def test_str_input_area(self):
         with self.assertRaises(TypeError):
             area('a')
-
+    def test_negative_input_area(self):
+        res = perimeter(-1)
+        self.assertEqual(res, None)
     def test_perimeter(self):
         res = perimeter(5)
         self.assertEqual(res, 20)
@@ -28,3 +30,6 @@ class SquareTestCase(unittest.TestCase):
     def test_str_input_perimeter(self):
         with self.assertRaises(ValueError):
             perimeter('a')
+    def test_negative_input_perimeter(self):
+        res = perimeter(-1)
+        self.assertEqual(res, None)

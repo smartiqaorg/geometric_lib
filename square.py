@@ -7,7 +7,8 @@ def area(a):
             input: 10
             output: 100
     '''
-    return a * a
+    if a >= 0:
+        return a * a
 
 
 def perimeter(a):
@@ -18,5 +19,5 @@ def perimeter(a):
             input: 10
             output: 40
     '''
-    if a == int(a) or a == float(a):
+    if (a == int(a) or a == float(a)) and a >= 0:
         return 4 * a
