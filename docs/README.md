@@ -8,6 +8,17 @@
 - square
 - triangle
 
+## Pay attention:
+- supports working *ONLY* with positive integers
+- in `my_unittest.py` you can find some Unit tests for functions in this library
+
+## Errors you might get and their meaning:
+- `Negative Length` means that you have entered negative value
+- `Zero Length` means that you have entered zero value
+- `Invalid Length` means that you have entered string value
+- `Not Integer Length` means that you have entered float value
+
+
 ### 1) Circle
 - `def area(r)` receives *the radius* of the circle and returns it's area, calculated by the formula **S = πR<sup>2</sup>**
     > import math \
@@ -61,6 +72,7 @@
 
 ## The history of this project can be tracked by the following commits:
 
+- `declaration updated` *0b2dc6f*
 - `declaration for circle.py fixed, README.md updated` *f829ae1*
 - `update README.md` *c6bcee7*
 - `delete accidentally added .idea directory` *c743c70*
