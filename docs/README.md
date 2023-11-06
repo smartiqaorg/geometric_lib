@@ -83,7 +83,96 @@ perimter(1, 2, 3) --> 6.0
 
 ### Hashes of commits
 
-![picture not found](https://sun9-10.userapi.com/impg/kS4KIKKTzoCSIvbRGdfGuZda7GC76X7MprGOJQ/o2HzeJ4o2UE.jpg?size=511x79&quality=96&sign=4d2048d250ae2e83e01b5875020f0a8b&type=album)
+![picture not found](https://sun9-56.userapi.com/impg/1qMs6sOvh0ur5wlqyv6yYpYCX_O4KVXfA0Z2xg/1pDUDmM8dA4.jpg?size=514x173&quality=96&sign=eb9687074282d786174b02ac86c5f3ef&type=album)
+
+## Tests
+
+Added groups of tests for rectangle, triangle, circle and square.
+
+### Rectangle
+
+#### area
+
+|Group of tests|Works correctly|Expected result|Real Result|Date|
+|--------------|---------------|-----------------|----------------------------|-------------------------|
+|test_area_normal|✅|result by math formula|result by math formula|06.11.2023|
+|test_area_strings|❌|exception|result by Python|06.11.2023|
+|test_area_negative|❌|exception|result by formula|06.11.2023|
+|test_area_zero_mul|❌|exception|result by formula|06.11.2023|
+|test_area_objects|✅|exception|exception|06.11.2023|
+
+#### perimeter
+
+|Group of tests|Works correctly|Expected result|Real Result|Date|
+|--------------|---------------|-----------------|----------------------------|-------------------------|
+|test_perimeter_normal|✅|result by math formula|result by math formula|06.11.2023|
+|test_perimeter_strings|❌|exception|result by Python|06.11.2023|
+|test_perimeter_negative|❌|exception|result by formula|06.11.2023|
+|test_perirmeter_zero_mul|❌|exception|result by formula|06.11.2023|
+|test_perimeter_objects|✅|exception|exception|06.11.2023|
+
+### Square
+
+#### area
+
+|Group of tests|Works correctly|Expected result|Real Result|Date|
+|--------------|---------------|-----------------|----------------------------|-------------------------|
+|test_area_normal|✅|result by math formula|result by math formula|06.11.2023|
+|test_area_strings|✅|exception|exception|06.11.2023|
+|test_area_not_positive|❌|exception|result by formula|06.11.2023|
+|test_area_objects|✅|exception|exception|06.11.2023|
+
+#### perimeter
+
+|Group of tests|Works correctly|Expected result|Real Result|Date|
+|--------------|---------------|-----------------|----------------------------|-------------------------|
+|test_area_normal|✅|result by math formula|result by math formula|06.11.2023|
+|test_area_strings|❌|exception|result by Python|06.11.2023|
+|test_area_not_positive|❌|exception|result by formula|06.11.2023|
+|test_area_objects|✅|exception|exception|06.11.2023|
+
+### Circle
+
+#### area
+
+|Group of tests|Works correctly|Expected result|Real Result|Date|
+|--------------|---------------|-----------------|----------------------------|-------------------------|
+|test_area_normal|✅|result by math formula|result by math formula|06.11.2023|
+|test_area_strings|✅|exception|exception|06.11.2023|
+|test_area_negative|❌|exception|result by formula|06.11.2023|
+|test_area_objects|✅|exception|exception|06.11.2023|
+
+#### perimeter
+
+|Group of tests|Works correctly|Expected result|Real Result|Date|
+|--------------|---------------|-----------------|----------------------------|-------------------------|
+|test_area_normal|✅|result by math formula|result by math formula|06.11.2023|
+|test_area_strings|✅|exception|exception|06.11.2023|
+|test_area_negative|❌|exception|result by formula|06.11.2023|
+|test_area_objects|✅|exception|exception|06.11.2023|
+
+### Triangle
+
+#### area
+
+|Group of tests|Works correctly|Expected result|Real Result|Date|
+|--------------|---------------|-----------------|----------------------------|-------------------------|
+|test_area_normal|✅|result by math formula|result by math formula|06.11.2023|
+|test_area_strings|✅|exception|exception|06.11.2023|
+|test_area_negative|❌|exception|result by formula|06.11.2023|
+|test_area_zero_mul|❌|exception|result by formula|06.11.2023|
+|test_area_objects|✅|exception|exception|06.11.2023|
+
+#### perimeter
+
+|Group of tests|Works correctly|Expected result|Real Result|Date|
+|--------------|---------------|-----------------|----------------------------|-------------------------|
+|test_area_normal|✅|result by math formula|result by math formula|06.11.2023|
+|test_perimeter_incorrect|❌|result by triangle inequality theorem|result by formula|06.11.2023|
+|test_area_strings|❌|exception|result by Python|06.11.2023|
+|test_area_negative|❌|exception|result by formula|06.11.2023|
+|test_area_zero_mul|❌|exception|result by formula|06.11.2023|
+|test_area_objects|✅|exception|exception|06.11.2023|
 
 ## Math formulas
 

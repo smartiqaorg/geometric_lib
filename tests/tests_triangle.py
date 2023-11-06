@@ -35,9 +35,9 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 3000000000000000000000000000, 'wrong answer')
 
     def test_perimeter_incorrect(self):
-        self.assertRaises(Exception, perimeter, 1.0, 1.0, 20.0, msg="such triangle isn't exists")
-        self.assertRaises(Exception, perimeter, 0, 1.0, 1.0, msg="such triangle isn't exists")
-        self.assertRaises(Exception, perimeter, 1.0, 5.0, 100.0, msg="such triangle isn't exists")
+        self.assertNotEqual(perimeter(1.0, 1.0, 20.0), 22.0, msg="such triangle isn't exists")
+        self.assertNotEqual(perimeter(0, 1.0, 1.0), 2.0,  msg="such triangle isn't exists")
+        self.assertNotEqual(perimeter(1.0, 5.0, 100.0), 106.0, msg="such triangle isn't exists")
 
 
     def test_perimeter_strings(self):
