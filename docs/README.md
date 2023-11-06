@@ -83,7 +83,7 @@ perimter(1, 2, 3) --> 6.0
 
 ### Hashes of commits
 
-![picture not found](https://sun9-56.userapi.com/impg/1qMs6sOvh0ur5wlqyv6yYpYCX_O4KVXfA0Z2xg/1pDUDmM8dA4.jpg?size=514x173&quality=96&sign=eb9687074282d786174b02ac86c5f3ef&type=album)
+![picture not found](https://sun9-5.userapi.com/impg/FqALz2c9iPK72eD7_Uws1fvEijKcT_Hkcbe9PA/2viVLLKt2VY.jpg?size=517x190&quality=96&sign=da61e2d6fc30e7ec1ff35a11ec67e560&type=album)
 
 ## Tests
 
