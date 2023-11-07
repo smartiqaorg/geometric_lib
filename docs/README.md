@@ -161,7 +161,10 @@ commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
     L-03: Circle and square added
 
 
-
+# Unittest
+В код также были добавлены тесты для каждой из программ rectangle.py, cycle.py, square.py, triangle.py.
+Параметры для проверки были взяты из примеров работы функций, описанных выше.
+Все тесты работают корректно.
 
 
 
