@@ -1,6 +1,5 @@
-import unittest
 import math
-
+import unittest
 
 def area(r):
     '''Принимает число r(радиус круга), возвращает площадь круга'''
@@ -18,6 +17,4 @@ class CircleTestCase(unittest.TestCase):
     def test_circle_perimetr(self):
         res = perimeter(10)
         self.assertEqual(res, 62.83185307179586)
-
-
 
