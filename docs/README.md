@@ -1,4 +1,4 @@
-# Math formulas, realised in lib 
+# Math formulas for positive integers, realised in lib
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab

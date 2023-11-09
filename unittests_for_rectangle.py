@@ -15,9 +15,23 @@ class RectangleTestCase(unittest.TestCase):
         res = area(5, 4)
         self.assertEqual(res, 20, "Incorrect multy with simple numbers in area in rectangle.")
 
-    def test_inc_mul(self):
+    def test_inc_mul_1(self):
         try:
             res = area('5', '4')
+        except Exception as e:
+            res = e.__class__
+        self.assertEqual(res, TypeError, "Incorrect catch exceptions in area in rectangle.")
+
+    def test_inc_mul_2(self):
+        try:
+            res = area(5, '4')
+        except Exception as e:
+            res = e.__class__
+        self.assertEqual(res, TypeError, "Incorrect catch exceptions in area in rectangle.")
+
+    def test_inc_mul_3(self):
+        try:
+            res = area(-5, 4)
         except Exception as e:
             res = e.__class__
         self.assertEqual(res, TypeError, "Incorrect catch exceptions in area in rectangle.")
@@ -34,9 +48,23 @@ class RectangleTestCase(unittest.TestCase):
         res = perimeter(5, 4)
         self.assertEqual(res, 18, "Incorrect sum with simple numbers in perimeter in rectangle.")
 
-    def test_inc_sum(self):
+    def test_inc_sum_1(self):
         try:
             res = area('5', '4')
+        except Exception as e:
+            res = e.__class__
+        self.assertEqual(res, TypeError, "Incorrect catch exceptions in perimeter in rectangle.")
+
+    def test_inc_sum_2(self):
+        try:
+            res = area(5, '4')
+        except Exception as e:
+            res = e.__class__
+        self.assertEqual(res, TypeError, "Incorrect catch exceptions in perimeter in rectangle.")
+
+    def test_inc_sum_3(self):
+        try:
+            res = area(-5, 4)
         except Exception as e:
             res = e.__class__
         self.assertEqual(res, TypeError, "Incorrect catch exceptions in perimeter in rectangle.")

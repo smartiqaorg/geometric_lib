@@ -12,9 +12,16 @@ class CircleTestCase(unittest.TestCase):
         res = area(10)
         self.assertEqual(res, 100 * pi, "Incorrect multy square of simple radius in area in circle.")
 
-    def test_inc_square(self):
+    def test_inc_square_1(self):
         try:
             res = area('10')
+        except Exception as e:
+            res = e.__class__
+        self.assertEqual(res, TypeError, "Incorrect catch exceptions in area in circle.")
+
+    def test_inc_square_2(self):
+        try:
+            res = area(-10)
         except Exception as e:
             res = e.__class__
         self.assertEqual(res, TypeError, "Incorrect catch exceptions in area in circle.")
@@ -27,9 +34,16 @@ class CircleTestCase(unittest.TestCase):
         res = perimeter(10)
         self.assertEqual(res, 20 * pi, "Incorrect mul simple radius in perimeter in circle.")
 
-    def test_inc_mul(self):
+    def test_inc_mul_1(self):
         try:
             res = area('10')
+        except Exception as e:
+            res = e.__class__
+        self.assertEqual(res, TypeError, "Incorrect catch exceptions in perimeter in circle.")
+
+    def test_inc_mul_2(self):
+        try:
+            res = area(-10)
         except Exception as e:
             res = e.__class__
         self.assertEqual(res, TypeError, "Incorrect catch exceptions in perimeter in circle.")
