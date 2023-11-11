@@ -157,6 +157,15 @@ print(res)  # Output: 9.0
 
 ## История изменений
 
+### commit `90ed8a2`
+
+Автор:
+Alex Dashkevich
+Дата:
+Sat Nov 11 20:01:11 2023
+Текст коммита: 
+Added unittests for each file function
+
 ### commit `0ad4f68`
 
 Автор:
