@@ -1,0 +1,4 @@
+import test_circle
+import test_square
+import test_triangle
+import test_rectangle
