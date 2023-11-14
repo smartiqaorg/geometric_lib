@@ -129,3 +129,4 @@ def perimeter(a):
 - kimurtim19 | Thu Sep 21 22:16:20 2023 +0300 | ac7d98ef0e73390f935c0d09e36fd97e2965d4c5 | documentation for square.py
 - kimurtim19 | Thu Sep 21 22:09:34 2023 +0300 | 71ec08efc8f7a830bf3bfbadaf9709d0c246b5d5 | documentation for rectangle.py
 - kimurtim19 | Thu Sep 21 21:54:12 2023 +0300 | da40b302f5d91b20e10fa641baeaffc1f522ed09 | documentation for circle.py
+- kimurtim19 | Tue Nov 14 16:12:32 2023 +0300 | 88cce5b2461f70867c74495a8869158a44d13fd4 | 4 unittests have been added
