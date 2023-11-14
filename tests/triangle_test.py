@@ -1,6 +1,8 @@
 import unittest
 from triangle import area, perimeter
-
+'''
+Test for triangle
+'''
 class TriangleTestCase(unittest.TestCase):
     def test_zero_sides(self):
         res_area = area(0, 0)

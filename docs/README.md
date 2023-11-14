@@ -238,7 +238,7 @@ print(f"The perimeter of the triangle with sides {side_a}, {side_b}, and {side_c
 
 We use the `unittest` module to test the functions for calculating the area and perimeter of each shape.
 
-### Tests
+### Tests code
 
 #### 1. circle_test.py:
 ```python

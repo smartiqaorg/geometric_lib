@@ -1,6 +1,8 @@
 import unittest
 from rectangle import area, perimeter
-
+'''
+Test for rectangle
+'''
 class RectangleTestCase(unittest.TestCase):
     def test_zero_dimensions(self):
         res_area = area(0, 0)
