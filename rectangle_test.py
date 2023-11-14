@@ -59,11 +59,6 @@ class RectangleTestCase(unittest.TestCase):
 
 
 
- 
-    
-    
-
-
 
 def area(a, b):
     '''Принимает 2 числа а,b и возвращает результат умножения а на b.
