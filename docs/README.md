@@ -234,6 +234,142 @@ print(f"The perimeter of the triangle with sides {side_a}, {side_b}, and {side_c
       L-03: Circle and square added
  ```
 
+## Testing
+
+We use the `unittest` module to test the functions for calculating the area and perimeter of each shape.
+
+### Tests
+
+#### 1. circle_test.py:
+```python
+import unittest
+from circle import area, perimeter
+
+class CircleTestCase(unittest.TestCase):
+    def test_zero_radius(self):
+        res_area = area(0)
+        res_perimeter = perimeter(0)
+        self.assertEqual(res_area, 0)
+        self.assertEqual(res_perimeter, 0)
+
+    def test_valid_radius(self):
+        res_area = area(5)
+        res_perimeter = perimeter(5)
+        self.assertEqual(res_area, 78.54)
+        self.assertEqual(res_perimeter, 31.42)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+#### 2. rectangle_test.py:
+```python
+import unittest
+from rectangle import area, perimeter
+
+class RectangleTestCase(unittest.TestCase):
+    def test_zero_dimensions(self):
+        res_area = area(0, 0)
+        res_perimeter = perimeter(0, 0)
+        self.assertEqual(res_area, 0)
+        self.assertEqual(res_perimeter, 0)
+
+    def test_valid_dimensions(self):
+        res_area = area(4, 5)
+        res_perimeter = perimeter(4, 5)
+        self.assertEqual(res_area, 20)
+        self.assertEqual(res_perimeter, 18)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+#### 3. square_test.py:
+
+```python
+Copy code
+import unittest
+from geometric_lib.square import area, perimeter
+
+class SquareTestCase(unittest.TestCase):
+    def test_zero_side(self):
+        res_area = area(0)
+        res_perimeter = perimeter(0)
+        self.assertEqual(res_area, 0)
+        self.assertEqual(res_perimeter, 0)
+
+    def test_valid_side(self):
+        res_area = area(3)
+        res_perimeter = perimeter(3)
+        self.assertEqual(res_area, 9)
+        self.assertEqual(res_perimeter, 12)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+#### 4. triangle_test.py:
+
+```python
+import unittest
+from geometric_lib.triangle import area, perimeter
+
+class TriangleTestCase(unittest.TestCase):
+    def test_zero_sides(self):
+        res_area = area(0, 0, 0)
+        res_perimeter = perimeter(0, 0, 0)
+        self.assertEqual(res_area, 0)
+        self.assertEqual(res_perimeter, 0)
+
+    def test_valid_sides(self):
+        res_area = area(3, 4, 5)
+        res_perimeter = perimeter(3, 4, 5)
+        self.assertEqual(res_area, 6)
+        self.assertEqual(res_perimeter, 12)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+### Running Tests
+
+To run all tests, execute the following command in the project's root directory:
+
+```bash
+python -m unittest discover -s tests -p "*_test.py"
+```
+### Test results
+#### 1. circle_test.py:
+
+```bash
+Ran 2 tests in 0.001s
+OK
+```
+
+#### 2. rectangle_test.py:
+
+```bash
+Ran 2 tests in 0.001s
+OK
+```
+
+#### 3. square_test.py:
+
+```bash
+Ran 2 tests in 0.001s
+OK
+```
+
+#### 4. triangle_test.py:
+
+```bash
+Ran 2 tests in 0.001s
+OK
+```
+
+### Expected Results
+* All tests pass successfully without errors.
+* The functions for calculating area and perimeter return correct values.
+* In case of passing invalid input data, the functions handle errors correctly.
+
 
 
 
