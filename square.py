@@ -1,7 +1,7 @@
 
 def area(a):
 
-    ```
+    """
     This function calculates the area of a square based on the length of its side.
 
     Formula:
@@ -12,7 +12,7 @@ def area(a):
     
     Return value:
     - area (float): The area of the square.
-    ```
+    """
 
     return a * a
     
@@ -20,7 +20,7 @@ def area(a):
 
 def perimeter(a):
 
-    ```
+    """
     This function calculates the perimeter of a square based on the length of its side.
 
     Formula:
@@ -31,6 +31,6 @@ def perimeter(a):
     
     Return value:
     - perimeter (float): The perimeter of the square.
-    ```
+    """
     
     return 4 * a

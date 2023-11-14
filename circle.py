@@ -2,7 +2,7 @@ import math
 
 
 def area(r):
-    ```
+    """
     This function calculates the area of a circle based on the given radius.
 
     Formula:
@@ -13,12 +13,12 @@ def area(r):
     
     Return value:
     - area(float): The area of a circle.
-    ```
+    """
     return math.pi * r * r
 
 
 def perimeter(r):
-    ```
+    """
     This function calculates the perimeter of a circle based on the given radius.
     
     Formula:
@@ -29,6 +29,6 @@ def perimeter(r):
     
     Return value:
     - perimeter(float): The perimeter of the circle.
-    ```
+    """
     return 2 * math.pi * r
 
