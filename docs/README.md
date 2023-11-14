@@ -202,7 +202,32 @@ Geometric Lib is a powerful and convenient library for working with geometric da
 
 ### Commits hash:
 ```git
-commit ae1ad44300e543e8c5d79d62c379f87cd4b401a6 (HEAD -> main, origin/main, origin/HEAD)
+commit d63c6092f20da2eb5bad31a1d723b74be55658d9 (HEAD -> main, origin/main, orig
+in/HEAD)
+Author: k6zma <k6zma@yandex.ru>
+Date:   Tue Nov 14 23:06:29 2023 +0300
+
+    made big reffub in test script
+
+commit 0a6a6e36041061a35510e6d1f0bb504374258fed
+Author: k6zma <k6zma@yandex.ru>
+Date:   Tue Nov 14 21:57:37 2023 +0300
+
+    added verbose information in tests
+
+commit 16d9cb066335fb545426f32d39b6910b8c713e20
+Author: k6zma <k6zma@yandex.ru>
+Date:   Tue Nov 14 21:29:39 2023 +0300
+
+    added temp simple tests for project
+
+commit c432a600feda5b3115c4afb7344ae3d7f57bbb75
+Author: k6zma <k6zma@yandex.ru>
+Date:   Sun Oct 1 14:53:55 2023 +0300
+
+    added project description to README.md
+
+commit ae1ad44300e543e8c5d79d62c379f87cd4b401a6
 Author: k6zma <k6zma@yandex.ru>
 Date:   Sun Oct 1 14:48:09 2023 +0300
 
