@@ -1,6 +1,7 @@
 import unittest
 import math
 import circle
+import square
 
 class CircleTestCase(unittest.TestCase):
     def test_zero_area(self):
@@ -22,3 +23,26 @@ class CircleTestCase(unittest.TestCase):
         expectedResult = 1
         result = circle.perimeter(1 / (math.pi * 2))
         self.assertAlmostEqual(expectedResult, result)
+
+
+class SquareTestCase(unittest.TestCase):
+    def test_zero_area(self):
+        expectedResult = 0
+        result = square.area(0)
+        self.assertEqual(expectedResult, result)
+
+    def test_area(self):
+        expectedResult = 25
+        result = square.area(5)
+        self.assertEqual(expectedResult, result)
+
+    def test_zero_perimeter(self):
+        expectedResult = 0
+        result = square.perimeter(0)
+        self.assertEqual(expectedResult, result)
+
+    def test_perimeter(self):
+        expectedResult = 20
+        result = square.perimeter(5)
+        self.assertEqual(expectedResult, result)
+
