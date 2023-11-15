@@ -1,5 +1,7 @@
 import unittest
 import math
+import sys
+sys.path.append('C:/Users/Банан/geometric_lib/functions')
 from circle import area, perimeter
 class Testcircle(unittest.TestCase):
    def test_area_1(self):
