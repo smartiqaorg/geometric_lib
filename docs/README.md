@@ -85,3 +85,29 @@
 * **09bb1fa** new file rectangle.py created
 * **d078c8d** L-03: Docs added
 * **8ba9aeb** L-03: Circle and square added
+
+## Unit Tests
+Для проверки корректности работы функций были созданы unit тесты. В папке unit_tests были созданы файлы python с соответствующими для каждой фигуры тестами.
+
+В каждом файле содержатся тесты 4 типов:
+- тест при неправильном типе переданного аргумента
+- тест при недопустимом значении переданного аогумента
+- тест при нулевом значении переданного аргумента
+- тест на соответствие результату значения, посчитанному вручную
+
+- ### circle_test.py
+  Unit test success: 2/8 = 0.25 
+  - test_area &#10003; 
+  - test_perimeter &#10003;
+- ### rectangle_test.py
+  Unit test success: 2/8 = 0.25
+  - test_area &#10003;
+  - test_perimeter &#10003;
+- ### square_test.py
+  Unit test success: 1/8 = 0.125
+  - test_area &#10003;
+- ### triangle_test.py
+  Unit test success: 2/8 = 0.25
+  - test_area &#10003;
+  - test_perimeter &#10003;
+

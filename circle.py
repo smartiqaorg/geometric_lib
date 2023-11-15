@@ -16,3 +16,4 @@ def perimeter(r):
     '''
     return 2 * math.pi * r
 
+print(area(0))
