@@ -1,4 +1,4 @@
-
+from triangle import *
 import unittest
 class CircleTestCase(unittest.TestCase):
 
