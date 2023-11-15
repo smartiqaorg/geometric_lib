@@ -7,7 +7,7 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_rectangle_area_neNorm(self):
         res = area(4, -5)
-        self.assertEqual(res, 'стороны прямоугольника не могут быть отрицательными')
+        self.assertEqual(res, 'the sides of the rectangle cannot be negative')
 
     def test_rectangle_area_real(self):
         res = area(4.5, 5.5)
@@ -23,7 +23,7 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_rectangle_perimeter_neNorm(self):
         res = perimeter(4, -5)
-        self.assertEqual(res, 'стороны прямоугольника не могут быть отрицательными')
+        self.assertEqual(res, 'the sides of the rectangle cannot be negative')
 
     def test_rectangle_perimeter_real(self):
         res = perimeter(4.5, 5.5)
