@@ -1,7 +1,14 @@
-
 def area(a):
-    return a * a
-
+    '''Принимает значение стороны квадрата a и возвращает площадь квадрата.'''
+    if a > 0:
+        return a * a
+    else:
+        return 0
 
 def perimeter(a):
-    return 4 * a
+    '''Принимает значение стороны квадрата a и возвращает периметр квадрата.'''
+    if a > 0:
+        return 4 * a
+    else:
+        return 0
+
