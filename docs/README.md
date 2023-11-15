@@ -104,3 +104,34 @@ Date:   Sat Sep 30 21:01:59 2023 +0300
 ```
 docs: added comment for file triangle.py
 ```
+- commit 51a67d533f492a6ccad1d08f7b0edbab63218031 (HEAD -> tests_408338)
+Author: Bushkov Nikita <408338@niuitmo.ru>
+Date: Wed Nov 15 22:45:56 2023 +0300
+```
+test: added tests for triangle
+```
+- commit a4a1c3bbbb636a024af7bdfc5fe699cb028459e9
+Author: Bushkov Nikita <408338@niuitmo.ru>
+Date: Wed Nov 15 22:45:24 2023 +0300
+```
+test: added tests for square
+```
+- commit f739551abdcce365ce12352f7e38791537fe451d
+Author: Bushkov Nikita <408338@niuitmo.ru>
+Date: Wed Nov 15 22:44:40 2023 +0300
+```
+test: added tests for rectangle
+```
+- commit cb8579723c62b1a0db356f31dcd24aae7564237b
+Author: Bushkov Nikita <408338@niuitmo.ru>
+Date: Wed Nov 15 22:44:05 2023 +0300
+```
+test: added tests for circle
+```
+---
+## Automated testing results
+- Number of tests - 24
+- Number of successful tests - 8
+- Number of failed tests - 16
+
+
