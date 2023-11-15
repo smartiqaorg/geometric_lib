@@ -1,5 +1,6 @@
 import unittest
 import math
+from circle import area, perimeter
 class Testcircle(unittest.TestCase):
    def test_area_1(self):
        result = area(10)

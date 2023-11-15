@@ -1,4 +1,5 @@
 import unittest
+from triangle import area,perimeter
 class TestTriangle(unittest.TestCase):
    def test_area_1(self):
        result = area(10, 9)
