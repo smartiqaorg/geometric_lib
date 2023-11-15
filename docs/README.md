@@ -139,3 +139,10 @@ de6f714 added documentation to the file
 d078c8d L-03: Docs added
 8ba9aeb L-03: Circle and square added
 ```
+
+# Unit Tests
+Unit test for circle : [UnitTEST Circle](https://github.com/NizamutdinovEmir/geometric_lib/blob/main/testcircle.py)
+Unit test for rectangle : [UnitTEST Rectangle](https://github.com/NizamutdinovEmir/geometric_lib/blob/main/testrectangle.py)
+Unit test for square : [UnitTEST Square](https://github.com/NizamutdinovEmir/geometric_lib/blob/main/testsquare.py)
+Unit test for triangle : [UnitTEST Triangle](https://github.com/NizamutdinovEmir/geometric_lib/blob/main/testtriangle.py)
+
