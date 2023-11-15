@@ -1,5 +1,5 @@
 import unittest
-
+from square import *
 class SquareTestCase(unittest.TestCase):
 
     def test_zero_area(self):
