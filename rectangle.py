@@ -8,7 +8,8 @@ def area(a, b):
         area(3,4)
         >> 12
     '''
-    return a * b 
+    return a * b
+
 
 def perimeter(a, b):
     ''' Высчитывается периметр прямоугольника с сторонами a и b
@@ -20,4 +21,4 @@ def perimeter(a, b):
         perimeter(3,4)
         >> 14
    '''
-    return 2 * (a + b) 
+    return 2 * (a + b)
