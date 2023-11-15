@@ -1,4 +1,5 @@
 import unittest
+from circle import *
 class CircleTestCase(unittest.TestCase):
 
     def test_zero_area(self):
