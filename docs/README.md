@@ -20,6 +20,10 @@ Here you can easily find the information you need:
 
 ##### - _Story of changes in the project_ [-> click here](#commitANDhash)
 
+##### - _Story of tests in the project_ [-> click here](#commitANDhash2)
+
+##### - _Autotests success_ [-> click here](#autosuccess)
+
 ---
 
 ### Circle <a id = "circle"></a>
@@ -240,3 +244,50 @@ That's all. Now you know how to find the area and perimeter of such shapes as ci
 | dfadd34 | fix rectangle.py  |
 | 8fb0692 | docs rectangle.py |
 | ec8937e | docs triangle.py  |
+
+---
+
+### Story of tests in the project <a id = "commitANDhash2"></a>
+
+commit f1af168bf5df2e96db48440e6bdc9dcb6aad6394 (HEAD -> tests_408108)
+Author: aidashovv <aaidashov2006@mail.ru>
+Date: Wed Nov 15 20:45:47 2023 +0300
+
+    add test_circle.py
+
+---
+
+commit 917e63e9a6977c3b7313af50542ee7e3a436458e
+Author: aidashovv <aaidashov2006@mail.ru>
+Date: Wed Nov 15 20:36:19 2023 +0300
+
+    add test_square.py
+
+---
+
+commit f0a4f37ab6c1788ecaf3bf655acd87efa782f365
+Author: aidashovv <aaidashov2006@mail.ru>
+Date: Wed Nov 15 20:20:03 2023 +0300
+
+    add test_triangle.py
+
+---
+
+commit 930bc943e8f823c91d2b917682ecdd6993715cde
+Author: aidashovv <aaidashov2006@mail.ru>
+Date: Wed Nov 15 19:58:09 2023 +0300
+
+    add test_rectangle.py
+
+---
+
+### Autotests success <a id = "#autosuccess"></a>
+
+| tests        |  x  |
+| :----------- | :-: |
+| total tests  | 24  |
+| errors       | 12  |
+| success      | 12  |
+| success in % | 50% |
+
+---
