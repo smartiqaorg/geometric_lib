@@ -1,4 +1,6 @@
 def area ( a , b):
+    if (a <= 0 and b <= 0) or isinstance(a,str) or isinstance(b,str) or isinstance(str,a) or isinstance(str,b):
+        return "Invalid input"
     '''
     На вход поступает два числа:
             a (int): длина одной стороны
@@ -7,6 +9,8 @@ def area ( a , b):
     '''
     return a * b
 def perimeter (a,b):
+    if (a <= 0 and b <= 0) or isinstance(a,str) or isinstance(b,str) or isinstance(str,a) or isinstance(str,b):
+        return "Invalid input"
     '''
     На вход поступает два числа:
             a (int): длина одной стороны
