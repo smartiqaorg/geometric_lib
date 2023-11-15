@@ -1,6 +1,4 @@
 import unittest
-from square import square
-
 class TestSquare(unittest.TestCase):
    def test_area_1(self):
        result = area(10)
