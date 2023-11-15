@@ -10,3 +10,5 @@
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
 - Triangle: a + b + c
+
+#### Tests: !test.py
