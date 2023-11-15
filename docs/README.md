@@ -89,20 +89,26 @@ a = 10, b = 5, c = 3; P = 10 + 5 + 3 = 18
 Author: daniil3006 <daniil.stank@gmail.com>
 Date:   Wed Sep 13 15:08:12 2023 +0300
 
-    _Внесены изменения в файл rectangle.py_
+    Внесены изменения в файл rectangle.py
 
 **commit 0cb687184952ce556315401ba2d9957c805c7a14**
 Author: daniil3006 <daniil.stank@gmail.com>
 Date:   Wed Sep 13 15:02:01 2023 +0300
 
-    _Был добавлен новый файл_
+    Был добавлен новый файл
 
 **commit d078c8d9ee6155f3cb0e577d28d337b791de28e2 (upstream/main, upstream/HEAD)**
 Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:55:29 2021 +0300
 
-    _L-03: Docs added_
+    L-03: Docs added
 
-commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
+**commit 8ba9aeb3cea847b63a91ac378a2a6db758682460**
 Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:54:08 2021 +0300
+
+**ccommit e2377b12d96cdf82416cfbe8aae38e36864f595d (origin/main, origin/HEAD)**
+Author: daniil3006 <144243377+daniil3006@users.noreply.github.com>
+Date:   Wed Nov 15 12:27:41 2023 +0300
+
+    создан файл с unit тестами
