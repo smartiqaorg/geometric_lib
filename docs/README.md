@@ -129,6 +129,11 @@ Date: Wed Nov 15 22:44:05 2023 +0300
 test: added tests for circle
 ```
 ---
+## Names of automated testing
+- circle_test
+- rectangle test
+- square test
+- triangle test
 ## Automated testing results
 - Number of tests - 24
 - Number of successful tests - 8
