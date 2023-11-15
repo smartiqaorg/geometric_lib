@@ -21,5 +21,5 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 0)
 
     def test_self_per(self):
-        res = perimeter(10)
-        self.assertEqual(res, 40)
+        res = perimeter(15)
+        self.assertEqual(res, 60)

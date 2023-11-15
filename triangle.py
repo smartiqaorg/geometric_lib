@@ -22,5 +22,5 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 20)
 
     def test_triangle_per(self):
-        res = perimeter(10, 10, 10)
-        self.assertEqual(res, 30)
+        res = perimeter(15, 15, 15)
+        self.assertEqual(res, 45)

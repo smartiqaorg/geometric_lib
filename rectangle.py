@@ -20,5 +20,5 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 20)
 
     def test_rectangle_per(self):
-        res = perimeter(10, 10)
-        self.assertEqual(res, 40)
+        res = perimeter(15, 15)
+        self.assertEqual(res, 60)
