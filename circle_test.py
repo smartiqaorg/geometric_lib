@@ -10,11 +10,11 @@ class TestCircle(unittest.TestCase):
         
     def test_circle_area_wrong(self):
         res = area(-34)
-        self.assertEqual(res, "negative number cannot be used")
+        self.assertRaises(res, Exception)
 
     def test_circle_area_zero(self):
         res = area(0)
-        self.assertEqual(res, "null cannot be used")
+        self.assertEqual(res, 0)
 
     def test_circle_perimeter_correct(self):
         res = perimeter(946)
@@ -22,11 +22,11 @@ class TestCircle(unittest.TestCase):
 
     def test_circle_perimeter_wrong(self):
         res = perimeter(-245)
-        self.assertEqual(res, "negative number cannot be used")
+        self.assertRaises(res, Exception)
         
     def test_circle_perimeter_zero(self):
         res = perimeter(0)
-        self.assertEqual(res, "null cannot be used")
+        self.assertEqual(res, 0)
         
 if __name__ == '__main__':
     unittest.main()

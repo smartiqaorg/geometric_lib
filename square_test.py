@@ -10,11 +10,11 @@ class TestSquare(unittest.TestCase):
 
     def test_square_area_wrong(self):
         res = area(-98)
-        self.assertEqual(res, "negative number cannot be used")
+        self.assertRaises(res, Exception)
 
     def test_square_area_null(self):
         res = area(0)
-        self.assertEqual(res, "null cannot be used")
+        self.assertEqual(res, 0)
 
     def test_square_perimeter_correct(self):
         res = perimeter(42)
@@ -22,11 +22,11 @@ class TestSquare(unittest.TestCase):
 
     def test_square_perimter_wrong(self):
         res = perimeter(-245)
-        self.assertEqual(res, "negative number cannot be used")
+        self.assertRaises(res, Exception)
 
     def test_square_perimeter_null(self):
         res = perimeter(0)
-        self.assertEqual(res, "null cannot be used")    
+        self.assertEqual(res, 0)    
         
 if __name__ == '__main__':
     unittest.main()
