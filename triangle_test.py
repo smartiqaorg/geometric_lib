@@ -11,7 +11,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_float_area(self):
         
         res = area(228.228, 1337.1919)
-        self.assertAlmostEqual(res, 782.70995, delta=0.1)
+        self.assertAlmostEqual(res, 152592.3164766, delta=0.1)
 
     def test_zero_perim(self):
         
