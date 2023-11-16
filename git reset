@@ -1,0 +1,41 @@
+[33mcommit aa4d79153dfce61ebf97895be022ae4b36b4f77b[m[33m ([m[1;36mHEAD -> [m[1;32mtest_408649[m[33m, [m[1;32mdocumentation_408649[m[33m)[m
+Author: fizkultprivet322 <408649@niuitmo.ru>
+Date:   Thu Nov 16 08:31:19 2023 +0300
+
+    Added unittests
+
+[33mcommit abb4756e511ecb02f6bb5fd2ca488b59c5b31e64[m[33m ([m[1;31morigin/documentation_408649[m[33m)[m
+Author: fizkultprivet322 <408649@niuitmo.ru>
+Date:   Wed Oct 4 23:50:59 2023 +0300
+
+    Added documentaion in file README.md
+
+[33mcommit d959d0dec6e68e25c918722011b29b746a01cc1e[m
+Author: fizkultprivet322 <408649@niuitmo.ru>
+Date:   Wed Oct 4 23:11:12 2023 +0300
+
+    Comments for functions added
+
+[33mcommit d6b43827b866f68fd722d20df11288d21a8dfb20[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mnew_features_408649[m[33m, [m[1;32mmain[m[33m)[m
+Author: fizkultprivet322 <408649@niuitmo.ru>
+Date:   Wed Sep 20 12:14:20 2023 +0300
+
+    Был добавлен файл triangle.py и исправлена ошибка в файле rectangle.py
+
+[33mcommit eee414f2cb85b8f6276620265ac2a14331bb7c83[m
+Author: fizkultprivet322 <408649@niuitmo.ru>
+Date:   Wed Sep 20 12:11:00 2023 +0300
+
+    Был добавлен файл rectangle.py
+
+[33mcommit d078c8d9ee6155f3cb0e577d28d337b791de28e2[m
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:55:29 2021 +0300
+
+    L-03: Docs added
+
+[33mcommit 8ba9aeb3cea847b63a91ac378a2a6db758682460[m
+Author: smartiqa <info@smartiqa.ru>
+Date:   Thu Mar 4 14:54:08 2021 +0300
+
+    L-03: Circle and square added
