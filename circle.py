@@ -15,4 +15,3 @@ def perimeter(r):
     возвращает периметр данного круга.
     """
     return 2 * math.pi * r
-
