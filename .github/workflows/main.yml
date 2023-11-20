@@ -20,4 +20,4 @@ jobs:
           python-version: 3.x
 
       - name: Run tests
-        run: python3 -m unittest
+        run: python3 -m my_unittest
