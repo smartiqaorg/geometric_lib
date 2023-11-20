@@ -72,6 +72,8 @@
 
 ## The history of this project can be tracked by the following commits:
 
+- `update main.yml` *fa14ce8*
+- `created main.yml` *8e6dabc*
 - `unittests added, exeptions added` *9e89a27*
 - `declaration updated` *0b2dc6f*
 - `declaration for circle.py fixed, README.md updated` *f829ae1*
