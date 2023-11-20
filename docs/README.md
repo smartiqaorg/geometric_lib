@@ -60,3 +60,33 @@ That table not include of last commits with information about added documentatio
 | d078c8d9    | origin/main, origin/HEAD     | smartiqa          | Thu Mar 4 14:55:29 2021 +0300  | L-03: Docs added                                |
 | 8ba9aeb3    | origin/main, origin/HEAD     | smartiqa          | Thu Mar 4 14:54:08 2021 +0300  | L-03: Circle and square added                  |
 
+## Testing by UnitTest
+
+| Name of File | Function  | Sequencing     | Consisting | Facted Result | Expected Result  | Verdict  |
+|--------------|-----------|----------------|------------|---------------|------------------|----------|
+| rectangle.py | area      | Input data     | 13, 244    | 3172          | 3172             | correct  |
+| rectangle.py | area      | Input data     | 2355, 6    | 14130         | 14130            | correct  |
+| rectangle.py | area      | Input data     | 31, 23     | 713           | 713              | correct  |
+| rectangle.py | perimeter | Input data     | 13, 244    | 514           | 514              | correct  |
+| rectangle.py | perimeter | Input data     | 31, 23     | 108           | 108              | correct  |
+| rectangle.py | perimeter | Input data     | 2355, 6    | 4722          | 4722             | correct  |
+| square.py    | area      | Input data     | 13         | 169           | 169              | correct  |
+| square.py    | area      | Input data     | 100        | 10000         | 10000            | correct  |
+| square.py    | area      | Input data     | 31         | 961           | 961              | correct  |
+| square.py    | perimeter | Input data     | 13         | 52            | 52               | correct  |
+| square.py    | perimeter | Input data     | 31         | 124           | 124              | correct  |
+| square.py    | perimeter | Input data     | 100        | 400           | 400              | correct  |
+| triangle.py  | area      | Input data     | 100, 50    | 2500          | 2500             | correct  |
+| triangle.py  | area      | Input data     | 3, 14      | 21            | 21               | correct  |
+| triangle.py  | area      | Input data     | 45, 5      | 112.5         | 112.5            | correct  |
+| triangle.py  | perimeter | Input data     | 100, 100, 10 | 210           | 210              | correct  |
+| triangle.py  | perimeter | Input data     | 23, 24, 14 | 61            | 61               | correct  |
+| triangle.py  | perimeter | Input data     | 45, 45, 4   | 94            | 94               | correct  |
+| circle.py    | area      | Input data     | 50         | 7853.981      | 7853.981         | correct  |
+| circle.py    | area      | Input data     | 2          | 12.566        | 12.566           | correct  |
+| circle.py    | area      | Input data     | 44         | 6082.123      | 6082.123         | correct  |
+| circle.py    | perimeter | Input data     | 50         | 314.159       | 314.159          | correct  |
+| circle.py    | perimeter | Input data     | 2          | 12.566        | 12.566           | correct  |
+| circle.py    | perimeter | Input data     | 4          | 25.132        | 25.132           | correct  |
+
+
