@@ -6,7 +6,7 @@ class RectangleTestCase(unittest.TestCase):
     def test_zero_r(self):
         resarea = area(0)
         resperimetr = perimeter(0)
-        self.assertEqual(resarea, 0)
+        self.assertEqual(resarea, 5)
         self.assertEqual(resperimetr, 0)
     def test_single_к(self):
         resarea = area(1)
