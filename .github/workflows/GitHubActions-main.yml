@@ -1,0 +1,36 @@
+name: my CI/CD for tests
+
+on: [push]
+
+permissions:
+  contents: read
+
+jobs:
+  tests_on_ubuntu-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+      - name: run tests
+        run: python -m unittest test_circle.py
+        run: python -m unittest test_rectangle.py
+        run: python -m unittest test_square.py
+        run: python -m unittest test_triangle.py
+  tests_on_windows-latest:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+      - name: run tests
+        run: python -m unittest test_circle.py
+        run: python -m unittest test_rectangle.py
+        run: python -m unittest test_square.py
+        run: python -m unittest test_triangle.py
