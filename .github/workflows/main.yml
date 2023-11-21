@@ -1,0 +1,28 @@
+name: CI
+on:
+   # События, которые запускают jobs
+    push:
+      branches: [ "main" ]
+    pull_request:
+      branches: [ "main" ]
+
+# jobs запускаются параллельно, если не указана последовательность
+jobs:
+    # Название job вы можете назвать как угодно
+    my_build_job:
+      # Операционная система в виртуальной машине, в которой запускаются процессы
+      runs-on: ubuntu-latest
+        # Шаги
+      steps:
+          # Actions от github: проверяет репозиторий, гит и т.д.
+          - uses: actions/checkout@v3
+
+          # Пример однолинейного простого скрипта shell
+          - name: Run a one-line script
+            run: echo Hello, world!
+
+          # Пример многолинейного скрипта shell
+          - name: Run a multi-line script
+            run: |
+                echo Add other actions to build,
+                echo test, and deploy your project.
