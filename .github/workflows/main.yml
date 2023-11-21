@@ -27,6 +27,7 @@ jobs:
 
         
   tests_on_windows-latest:
+    needs: tests_on_ubuntu-latest
   
     runs-on: windows-latest
    
