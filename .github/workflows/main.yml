@@ -1,4 +1,4 @@
-name: CI/CD 
+name: run-tests-for-geometric-lib
 
 on: [push]
 
