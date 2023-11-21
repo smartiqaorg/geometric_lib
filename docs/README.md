@@ -68,74 +68,100 @@
 #История изменения проекта с хешами комитов:
 
 commit 84c0fec3b8e0286379325b7fa20e2e4609c3fbba (HEAD -> main)
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:47 2023 +0300
 
     the file has been declared
 
 commit 5ecf040797d2bfbc08e82f647fe1c5105ca667d3
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:37 2023 +0300
 
     the file has been declared
 
 commit 7d5dc5c282af524f9f9342994ce6d2aeebd112d1
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:05 2023 +0300
 
     the file has been declared
 
 commit 5626d947e437cba1ee93d80f454e3a7fc0b577f8
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:22:33 2023 +0300
 
     the file has been declared
 :...skipping...
 commit 84c0fec3b8e0286379325b7fa20e2e4609c3fbba (HEAD -> main)
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:47 2023 +0300
 
     the file has been declared
 
 commit 5ecf040797d2bfbc08e82f647fe1c5105ca667d3
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:37 2023 +0300
 
     the file has been declared
 
 commit 7d5dc5c282af524f9f9342994ce6d2aeebd112d1
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:05 2023 +0300
 
     the file has been declared
 
 commit 5626d947e437cba1ee93d80f454e3a7fc0b577f8
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:22:33 2023 +0300
 
     the file has been declared
 
 :...skipping...
 commit 84c0fec3b8e0286379325b7fa20e2e4609c3fbba (HEAD -> main)
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:47 2023 +0300
 
     the file has been declared
 
 commit 5ecf040797d2bfbc08e82f647fe1c5105ca667d3
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:37 2023 +0300
 
     the file has been declared
 
 commit 7d5dc5c282af524f9f9342994ce6d2aeebd112d1
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:05 2023 +0300
 
     the file has been declared
 
 commit 5626d947e437cba1ee93d80f454e3a7fc0b577f8
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
+Date:   Tue Sep 26 03:22:33 2023 +0300
+
+    the file has been declared
+
+commit 787f5ea34f1d39437340d0fa15f0025a2f2520b4 (origin/main, origin/HEAD)
+:...skipping...
+commit 84c0fec3b8e0286379325b7fa20e2e4609c3fbba (HEAD -> main)
+Author:  
+Date:   Tue Sep 26 03:23:47 2023 +0300
+
+    the file has been declared
+
+commit 5ecf040797d2bfbc08e82f647fe1c5105ca667d3
+Author:  
+Date:   Tue Sep 26 03:23:37 2023 +0300
+
+    the file has been declared
+
+commit 7d5dc5c282af524f9f9342994ce6d2aeebd112d1
+Author:  
+Date:   Tue Sep 26 03:23:05 2023 +0300
+
+    the file has been declared
+
+commit 5626d947e437cba1ee93d80f454e3a7fc0b577f8
+Author:  
 Date:   Tue Sep 26 03:22:33 2023 +0300
 
     the file has been declared
@@ -143,52 +169,25 @@ Date:   Tue Sep 26 03:22:33 2023 +0300
 commit 787f5ea34f1d39437340d0fa15f0025a2f2520b4 (origin/main, origin/HEAD)
 :...skipping...
 commit 84c0fec3b8e0286379325b7fa20e2e4609c3fbba (HEAD -> main)
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:47 2023 +0300
 
     the file has been declared
 
 commit 5ecf040797d2bfbc08e82f647fe1c5105ca667d3
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:37 2023 +0300
 
     the file has been declared
 
 commit 7d5dc5c282af524f9f9342994ce6d2aeebd112d1
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:23:05 2023 +0300
 
     the file has been declared
 
 commit 5626d947e437cba1ee93d80f454e3a7fc0b577f8
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
-Date:   Tue Sep 26 03:22:33 2023 +0300
-
-    the file has been declared
-
-commit 787f5ea34f1d39437340d0fa15f0025a2f2520b4 (origin/main, origin/HEAD)
-Author: Egor Polyanskiy <egorpolanskij@Egors-MacBook-Air.local>
-:...skipping...
-commit 84c0fec3b8e0286379325b7fa20e2e4609c3fbba (HEAD -> main)
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
-Date:   Tue Sep 26 03:23:47 2023 +0300
-
-    the file has been declared
-
-commit 5ecf040797d2bfbc08e82f647fe1c5105ca667d3
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
-Date:   Tue Sep 26 03:23:37 2023 +0300
-
-    the file has been declared
-
-commit 7d5dc5c282af524f9f9342994ce6d2aeebd112d1
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
-Date:   Tue Sep 26 03:23:05 2023 +0300
-
-    the file has been declared
-
-commit 5626d947e437cba1ee93d80f454e3a7fc0b577f8
-Author: Polyanskiy Egor Olegovich <308386@edu.itmo.ru>
+Author:  
 Date:   Tue Sep 26 03:22:33 2023 +0300
 
     the file has been declared
