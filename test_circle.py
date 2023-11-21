@@ -1,6 +1,7 @@
 import unittest
 from circle import area
 from circle import perimeter
+import unittest
 class RectangleTestCase(unittest.TestCase):
     def test_zero_r(self):
         resarea = area(0)
@@ -16,4 +17,4 @@ class RectangleTestCase(unittest.TestCase):
         resarea = area(4)
         resperimetr = perimeter(4)
         self.assertEqual(resarea, 50.26548245743669)
-        self.assertEqual(resperimetr, 25.132741228718345
+        self.assertEqual(resperimetr, 25.132741228718345)
