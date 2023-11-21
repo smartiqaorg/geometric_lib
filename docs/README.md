@@ -167,7 +167,6 @@ Date:   Tue Sep 26 03:22:33 2023 +0300
     the file has been declared
 
 commit 787f5ea34f1d39437340d0fa15f0025a2f2520b4 (origin/main, origin/HEAD)
-Author: Egor Polyanskiy <egorpolanskij@Egors-MacBook-Air.local>
 :...skipping...
 commit 84c0fec3b8e0286379325b7fa20e2e4609c3fbba (HEAD -> main)
 Author:  
