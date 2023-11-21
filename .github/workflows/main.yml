@@ -8,21 +8,13 @@ on:
 
 # jobs запускаются параллельно, если не указана последовательность
 jobs:
-    # Название job вы можете назвать как угодно
-    my_build_job:
-      # Операционная система в виртуальной машине, в которой запускаются процессы
-      runs-on: ubuntu-latest
-        # Шаги
-      steps:
-          # Actions от github: проверяет репозиторий, гит и т.д.
-          - uses: actions/checkout@v3
+  unit-tests:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
 
-          # Пример однолинейного простого скрипта shell
-          - name: Run a one-line script
-            run: echo Hello, world!
+    steps:
+      - name: Install dependencies
+        run: npm ci  # или используйте команду установки пакетов, применимую в вашем проекте
 
-          # Пример многолинейного скрипта shell
-          - name: Run a multi-line script
-            run: |
-                echo Add other actions to build,
-                echo test, and deploy your project.
+      - name: Run unit tests
+        run: python -m unittest test_triangle.py
