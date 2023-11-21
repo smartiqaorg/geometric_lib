@@ -186,5 +186,6 @@ class TriangleTestCase(unittest.TestCase):
 * **2c3a292** created rectangle.py
 * **d078c8d** L-03: Docs added
 * **8ba9aeb** L-03: Circle and square added
+* **f1b0709** add Unittest
 
 
