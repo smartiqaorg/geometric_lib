@@ -1,6 +1,6 @@
 # Math formulas
 Status of Last Deployment:<br>
-<img scr="https://github.com/upravlenets/geometric_lib/workflows/CI/CD/badge.svg?branch=master"><br>
+<img scr="https://github.com/upravlenets/geometric_lib/workflows/run-tests-for-geometric-lib/badge.svg?branch=master"><br>
 ## Area
 - Circle: S = πR²
 - Rectangle: S = ab
