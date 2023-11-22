@@ -9,7 +9,7 @@ def perimeter(a):
     return 4 * a
 
 
-class SquareTest(unittest.TestCase):
+class SquareTestCase(unittest.TestCase):
 
     def test_area1(self):
         res = area(7)
@@ -20,16 +20,16 @@ class SquareTest(unittest.TestCase):
         self.assertEqual(res, 289)
 
     def test_area3(self):
-        res = area(104)
-        self.assertEqual(res, 10_816)
+        res = area(-104)
+        self.assertEqual(res, "error")
 
     def test_perimeter1(self):
         res = perimeter(4)
         self.assertEqual(res, 16)
 
     def test_peimeter2(self):
-        res = perimeter(17)
-        self.assertEqual(res, 68)
+        res = perimeter(-17)
+        self.assertEqual(res, "error")
 
     def test_perimeter3(self):
         res = perimeter(10)

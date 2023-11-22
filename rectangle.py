@@ -17,23 +17,23 @@ class RectangleTest(unittest.TestCase):
 
     def test_perimeter1(self):
         res = perimeter(2, 5)
-        self.assertEqual(res, 2*(2 + 5))
+        self.assertEqual(res, 20)
 
     def test_area2(self):
-        res = area(17, 4)
-        self.assertEqual(res, 17 * 4)
+        res = area(17, 4.4)
+        self.assertEqual(res, 74,8)
 
     def test_perimeter2(self):
-        res = perimeter(16, 4)
-        self.assertEqual(res, 2 * (16 + 4))
+        res = perimeter(16.2, 4,7)
+        self.assertEqual(res, 41,8)
 
     def test_area3(self):
-        res = area(28, 41)
-        self.assertEqual(res, 28 * 41)
+        res = area(28, -41)
+        self.assertEqual(res, -1148)
 
     def test_perimeter3(self):
-        res = perimeter(16, 3)
-        self.assertEqual(res, 2 * (16 + 3))
+        res = perimeter(16, -3)
+        self.assertEqual(res, "error")
 
 
 if __name__ == "__main__":
