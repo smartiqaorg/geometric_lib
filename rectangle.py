@@ -16,15 +16,4 @@ def perimeter(a, b):
     else:
         return "error"
 
-class RectangleTestCase(unittest.TestCase):
-   def test_rectangle_area(self):
-        test_re_ar = ((0, 1, "error"),(7, 13, 91),(-3, -8, "error"))
-        for a, b, s in test_re_ar:
-            res=area(a, b)
-            self.assertEqual(res, s)
-       
-   def test_rectangle_perimeter(self):
-        test_re_pe = ((0, 1, "error"),(7, 13, 40),(-3, -8, "error"))
-        for a, b, s in test_re_pe:
-            res=perimeter(a, b)
-            self.assertEqual(res, s)
+

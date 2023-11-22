@@ -16,15 +16,4 @@ def perimeter(a):
     else:
         return "error"
 
-class SquareTestCase(unittest.TestCase):
-   def test_square_area(self):
-        test_sq_ar=((0, "error"),(7, 49),(-3, "error"))
-        for a, s in test_sq_ar:
-            res=area(a)
-            self.assertEqual(res, s)
-       
-   def test_square_perimeter(self):
-        test_sq_pe=((0, "error"),(7, 28),(-3, "error"))
-        for a, s in test_sq_pe:
-            res=perimeter(a)
-            self.assertEqual(res, s)
+

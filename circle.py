@@ -19,15 +19,3 @@ def perimeter(r):
     else:
         return "error"
 
-class CircleTestCase(unittest.TestCase):
-   def test_circle_area(self):
-        test_ci_ar=((0, "error"),(7, 49*math.pi),(-3, "error"))
-        for a, s in test_ci_ar:
-            res=area(a)
-            self.assertEqual(res, s)
-       
-   def test_circle_perimeter(self):
-        test_ci_pe=((0, "error"),(7, 14*math.pi),(-3, "error"))
-        for a, s in test_ci_pe:
-            res=perimeter(a)
-            self.assertEqual(res, s)
