@@ -120,5 +120,106 @@
 4)Добавление комментариев в circle.py
 
     d68901e0688deb6e9f2ad29d065a48ed6ccda9cd Style:add new comment in circle.py
+
+## Unit-tests
+1)Тесты для rectangle.py
     
-    
+    import unittest
+    from rectangle import area
+    from rectangle import perimeter
+    class SquareTestCase(unittest.TestCase):
+    def test_1_area(self):
+        res = area(5,2)
+        self.assertEqual(res, 10)
+
+    def test_2_area(self):
+        res = area(10,0)
+        self.assertEqual(res, 0)
+
+    def test_1_perimeter(self):
+        res = perimeter(3,4)
+        self.assertEqual(res, 14)
+
+    def test_2_perimeter(self):
+        res = perimeter(2, 0)
+        self.assertEqual(res, 4)
+
+    if __name__ == '__main__':
+        unittest.main()
+
+2)Тесты для square.py
+
+    import unittest
+    from square import area
+    from square import perimeter
+    class SquareTestCase(unittest.TestCase):
+    def test_1_area(self):
+        res = area(5)
+        self.assertEqual(res, 25)
+
+    def test_2_area(self):
+        res = area(2)
+        self.assertEqual(res, 4)
+
+    def test_1_perimeter(self):
+        res = perimeter(5)
+        self.assertEqual(res, 20)
+
+    def test_2_perimeter(self):
+        res = perimeter(2)
+        self.assertEqual(res, 8)
+
+    if __name__ == '__main__':
+        unittest.main()
+
+3)Тесты для triangle.py
+
+    import unittest
+    from triangle import area
+    from triangle import perimeter
+    class SquareTestCase(unittest.TestCase):
+    def test_1_area(self):
+        res = area(5,2)
+        self.assertEqual(res, 5)
+
+    def test_2_area(self):
+        res = area(13,4)
+        self.assertEqual(res, 26)
+
+    def test_1_perimeter(self):
+        res = perimeter(3,4,1)
+        self.assertEqual(res, 8)
+
+    def test_2_perimeter(self):
+        res = perimeter(2, 3, 4)
+        self.assertEqual(res, 9)
+
+    if __name__ == '__main__':
+        unittest.main()
+
+4)Тесты для circle.py
+
+    import unittest
+    import math
+    from circle import area
+    from circle import perimeter
+    class SquareTestCase(unittest.TestCase):
+    def test_1_area(self):
+        res = area(5)
+        self.assertEqual(res, math.pi * 25)
+
+    def test_2_area(self):
+        res = area(13)
+        self.assertEqual(res, math.pi * 169)
+
+    def test_1_perimeter(self):
+        res = perimeter(3)
+        self.assertEqual(res, math.pi * 6)
+
+    def test_2_perimeter(self):
+        res = perimeter(30)
+        self.assertEqual(res, math.pi * 60)
+
+    if __name__ == '__main__':
+        unittest.main()
+
