@@ -7,7 +7,7 @@ class RectangleTestCase(unittest.TestCase):
        self.assertEqual(res, 0)
        
     def test_square_mul(self):
-       res = area(10, 10)
+       res = area(10, 100)
        self.assertEqual(res, 100)
 
     def test_nefative_number_area_mul(self):
