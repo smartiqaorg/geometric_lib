@@ -13,7 +13,7 @@ class circleTestCase(unittest.TestCase):
         
     def test_minus_area(self):
         res = area(-4)
-        self.assertEquale(res, "r > 0")
+        self.assertEqual(res, -1, "r > 0")
 
     def test_zero_perimeter(self):
         res = perimeter(0)
@@ -25,4 +25,4 @@ class circleTestCase(unittest.TestCase):
         
     def test_minus_perimeter(self):
         res = perimeter(-5)
-        self.assertEqual(res, "r > 0")
+        self.assertEqual(res, -1, "r > 0")
