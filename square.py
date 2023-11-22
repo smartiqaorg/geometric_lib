@@ -1,15 +1,30 @@
+import unittest
 
 def area(a):
-"""
-Принимает число a, возвращает a² - площадь квадрата
-При вызове функции print(area(1)) выведет 1 - площадь квадрата со стороной a=1
-"""
-    return a * a
-
+    '''Принимает число a, возвращает a² - площадь квадрата
+    При вызове функции print(area(1)) выведет 1 - площадь квадрата со стороной a=1'''
+    if a>0:
+        return a * a
+    else:
+        return "error"
 
 def perimeter(a):
-"""
-Принимает число a, возвращает 4a - периметр квадрата
-При вызове функции print(perimeter(1)) выведет 4 - периметр квадрата со стороной a=1
-"""
-    return 4 * a
+    '''Принимает число a, возвращает 4a - периметр квадрата
+    При вызове функции print(perimeter(1)) выведет 4 - периметр квадрата со стороной a=1'''
+    if a>0:
+        return 4 * a
+    else:
+        return "error"
+
+class SquareTestCase(unittest.TestCase):
+   def test_square_area(self):
+        test_sq_ar=((0, "error"),(7, 49),(-3, "error"))
+        for a, s in test_sq_ar:
+            res=area(a)
+            self.assertEqual(res, s)
+       
+   def test_square_perimeter(self):
+        test_sq_pe=((0, "error"),(7, 28),(-3, "error"))
+        for a, s in test_sq_pe:
+            res=perimeter(a)
+            self.assertEqual(res, s)
