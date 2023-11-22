@@ -1,0 +1,50 @@
+name: run-tests-for-geometric-lib
+
+on: [push]
+
+jobs:
+  tests_on_ubuntu-latest:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+          
+      - name: run test_circle.py
+        run: python -m unittest test_circle.py
+      - name: run test_rectangle.py
+        run: python -m unittest test_rectangle.py
+      - name: run test_square.py
+        run: python -m unittest test_square.py
+      - name: run test_triangle.py
+        run: python -m unittest test_triangle.py
+
+        
+  tests_on_windows-latest:
+    needs: tests_on_ubuntu-latest
+  
+    runs-on: windows-latest
+   
+    steps:
+    
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+          
+      - name: run test_circle.py
+        run: python -m unittest test_circle.py
+      - name: run test_rectangle.py
+        run: python -m unittest test_rectangle.py
+      - name: run test_square.py
+        run: python -m unittest test_square.py
+      - name: run test_triangle.py
+        run: python -m unittest test_triangle.py
