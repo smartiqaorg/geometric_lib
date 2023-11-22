@@ -23,6 +23,9 @@ jobs:
     - name: Run unittest
       run: |
         python -m unittest test_triangle.py
+        python -m unittest test_square.py
+        python -m unittest test_rectangle.py
+        python -m unittest test_circle.py
 
   windows-latest:
 
@@ -37,3 +40,6 @@ jobs:
     - name: Run unittest
       run: |
         python -m unittest test_triangle.py
+        python -m unittest test_square.py
+        python -m unittest test_rectangle.py
+        python -m unittest test_circle.py
