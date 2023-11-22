@@ -50,6 +50,7 @@ TEST_SQUARE_PERIMETER_DATA = [
     [6, 24]
 ]
 
+"""ТЕСТИРОВАНИЕ TRIANGLE"""
 TEST_TRIANGLE_AREA_DATA = [
     (3, 4, 6),
     (5, 8, 20),
