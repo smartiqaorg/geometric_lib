@@ -1,3 +1,4 @@
+
 import unittest
 import circle, rectangle, square, triangle
 
@@ -9,12 +10,15 @@ class RectangleTestCase(unittest.TestCase):
     '''
 
     def test_rectangle_area_1(self):
-        res = rectangle.area(13, 244)
-        self.assertEqual(res, 3172)
+        res = rectangle.area(0, 244)
+        self.assertEqual(res, 0)
 
     def test_rectangle_area_2(self):
-        res = rectangle.area(6, 2355)
-        self.assertEqual(res, 14130)
+        with self.assertRaises(ValueError) as context:
+            rectangle.area(-6, 2355)
+
+        expected_error_message = 'ERROR: Wrong format in input data.'
+        self.assertIn(expected_error_message, str(context.exception))
 
     def test_rectangle_area_3(self):
         res = rectangle.area(31, 23)
@@ -45,16 +49,18 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 169)
 
     def test_squares_area_2(self):
-        res = square.area(100)
-        self.assertEqual(res, 10000)
+        res = square.area(100.5)
+        self.assertEqual(res, 10100.25)
 
     def test_squares_area_3(self):
         res = square.area(31)
         self.assertEqual(res, 961)
 
     def test_squares_perimeter_1(self):
-        res = square.perimeter(13)
-        self.assertEqual(res, 52)
+        with self.assertRaises(ValueError) as context:
+            square.perimeter(-13)
+        expected_error_message = 'ERROR: Wrong format in input data.'
+        self.assertIn(expected_error_message, str(context.exception))
 
     def test_squares_perimeter_2(self):
         res = square.perimeter(31)
@@ -72,8 +78,11 @@ class TriangleTestCase(unittest.TestCase):
     '''
 
     def test_triangles_area_1(self):
-        res = triangle.area(100, 50)
-        self.assertEqual(res, 2500)
+        with self.assertRaises(ValueError) as context:
+            triangle.area(-100, -50)
+        expected_error_message = 'ERROR: Wrong format in input data.'
+        self.assertIn(expected_error_message, str(context.exception))
+
 
     def test_triangles_area_2(self):
         res = triangle.area(3, 14)
@@ -84,8 +93,10 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 112.5)
 
     def test_triangles_perimeter_1(self):
-        res = triangle.perimeter(100, 100, 10)
-        self.assertEqual(res, 210)
+        with self.assertRaises(ValueError) as context:
+            triangle.perimeter(100, 1, 1)
+        expected_error_message = 'ERROR: Wrong format in input data.'
+        self.assertIn(expected_error_message, str(context.exception))
 
     def test_triangles_perimeter_2(self):
         res = triangle.perimeter(23, 24, 14)
@@ -107,8 +118,10 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(res, 7853.981633974483)
 
     def test_circles_area_2(self):
-        res = circle.area(2)
-        self.assertEqual(res, 12.566370614359172)
+        with self.assertRaises(ValueError) as context:
+            circle.area(-2)
+        expected_error_message = 'ERROR: Wrong format in input data.'
+        self.assertIn(expected_error_message, str(context.exception))
 
     def test_circles_area_3(self):
         res = circle.area(44)
@@ -125,3 +138,4 @@ class CircleTestCase(unittest.TestCase):
     def test_circles_perimeter_3(self):
         res = circle.perimeter(4)
         self.assertEqual(res, 25.132741228718345)
+
