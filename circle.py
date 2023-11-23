@@ -20,8 +20,8 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 314.1592653589793)
 
     def test_float_area(self):
-        res = area(8.7)
-        self.assertAlmostEqual(res, 86.2251306, delta=0.1)
+        res = area(4.2)
+        self.assertAlmostEqual(res, 55.37, delta=0.1)
 
     def test_zero_perimetr(self):
         res = perimeter(0)
@@ -32,5 +32,5 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 62.83185307179586)
 
     def test_float_perimetr(self):
-        res = perimeter(5.239)
-        self.assertAlmostEqual(res, 32.916637, delta=0.1)
+        res = perimeter(4.2)
+        self.assertAlmostEqual(res, 26.376, delta=0.1)
