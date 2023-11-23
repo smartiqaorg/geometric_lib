@@ -60,3 +60,11 @@ def area(a, h):
 def perimeter(a, b, c): 
     return a + b + c 
 ```
+
+## tests results
+| Файл         | Число пройденных тестов | Процент успешности |
+|--------------|-------------------------|--------------------|
+| rectangle.py | 4                       | 67%                |
+| circle.py    | 0                       | 0%                 |
+| square.py    | 4                       | 67%                |
+| triangle.py  | 4                       | 67%                |
