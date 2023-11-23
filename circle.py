@@ -17,6 +17,10 @@ def area(r):
             Выходные данные:
                 area = 28.274333882308138
     '''
+    if type(r) != int:
+        return TypeError
+    if r < 0:
+        return ValueError
     return math.pi * r * r
 
 
@@ -36,5 +40,9 @@ def perimeter(r):
             Выходные данные:
                 perimeter = 18.84955592153876
     '''
+    if type(r) != int:
+        return TypeError
+    if r < 0:
+        return ValueError
     return 2 * math.pi * r
 

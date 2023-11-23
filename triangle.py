@@ -16,6 +16,10 @@ def area(a, h):
             Выходные данные:
                 area = 6.0
     '''
+    if type(a) != int or type(h) != int:
+        return TypeError
+    if a < 0 or h < 0:
+        return ValueError
     return a * h / 2
 
 def perimeter(a, b, c):
@@ -38,4 +42,8 @@ def perimeter(a, b, c):
             Выходные данные:
                 perimeter = 12
     '''
+    if type(a) != int or type(b) != int or type(c) != int:
+        return TypeError
+    if a < 0 or b < 0 or c < 0:
+        return ValueError
     return a + b + c
