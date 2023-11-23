@@ -1,29 +1,43 @@
-'''В данном файле мы получаем данные - длину и ширину прямоугольника.
-    На их основе вычисляем площадь прямоугольника с заданными сторонами
-    и периметр прямоугольника с заданными сторонами.'''
+import unittest
 
 
 def area(a, b):
-    '''Функция возращает площадь прямоугольника.
-
-            Параметры:
-                        a (int) : длина заданного прямоугольника
-                        b (int) : ширина заданного прямоугольника
-
-            Возвращаемое значение:
-                        Результат выражения (int) : целое число, получившееся в результате произведения
-                             длины a и ширина b'''
     return a * b
 
 
 def perimeter(a, b):
-    '''Функция возращает периметр прямоугольника.
-
-                Параметры:
-                            a (int) : длина заданного прямоугольника
-                            b (int) : ширина заданного прямоугольника
-
-                Возвращаемое значение:
-                            Результат выражения (int) : целое число, получившееся в результате удвоенная
-                                 сумма длины a и ширина b'''
     return 2 * (a + b)
+
+
+class RectangleTestCase(unittest.TestCase):
+
+    def test_zero(self):
+        res_p = perimeter(0, 0)
+        res_a = area(0, 0)
+
+        self.assertEqual(res_p, 0)
+        self.assertEqual(res_a, 0)
+
+    def test_work_perimeter(self):
+        res = perimeter(120, 15)
+        self.assertEqual(res, 270)
+
+    def test_work_square(self):
+        res = area(120, 15)
+        self.assertEqual(res, 1800)
+
+    def test_with_zero_perimeter(self):
+        res = perimeter(0, 15)
+        self.assertEqual(res, -1)
+
+    def test_with_zero_square(self):
+        res = area(0, 15)
+        self.assertEqual(res, -1)
+
+    def test_negative_perimeter(self):
+        res = perimeter(-10, -15)
+        self.assertEqual(res, -1)
+
+    def test_negative_square(self):
+        res = area(-10, -15)
+        self.assertEqual(res, -1)

@@ -1,32 +1,35 @@
-'''В данном файле мы получаем данные - радиус.
-    На их основе вычисляем площадь круга с заданным радиусом
-    и периметр круга с заданным радиусом.'''
-
 import math
-
-'''Вызываем библиотеку math, чтобы использовать значение константы Пи при вычислении площади и перимтера.'''
+import unittest
 
 
 def area(r):
-    '''Функция возращает площадь круга.
-
-            Параметры:
-                        r (int) : радиус заданного круга
-
-            Возвращаемое значение:
-                        Результат выражения (float) : дробное число, получившееся в результате
-                                произведения числа Пи на r в квадрате'''
-
     return math.pi * r * r
 
 
 def perimeter(r):
-    '''Функция возращает периметр круга.
-
-            Параметры:
-                        r (int) : радиус заданного круга
-
-            Возвращаемое значение:
-                        Результат выражения (float) : дробное число, получившееся в результате
-                                удвоенного произведения числа Пи на r'''
     return 2 * math.pi * r
+
+class CircleTestCase(unittest.TestCase):
+
+    def test_zero(self):
+        res_p = perimeter(0)
+        res_a = area(0)
+
+        self.assertEqual(res_p, 0)
+        self.assertEqual(res_a, 0)
+
+    def test_work_perimeter(self):
+        res = perimeter(10)
+        self.assertEqual(res, 62)
+
+    def test_work_square(self):
+        res = area(10)
+        self.assertEqual(res, 314)
+
+    def test_negative_perimeter(self):
+        res = perimeter(-15)
+        self.assertEqual(res, -1)
+
+    def test_negative_square(self):
+        res = area(-15)
+        self.assertEqual(res, -1)
