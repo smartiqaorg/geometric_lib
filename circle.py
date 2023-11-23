@@ -19,6 +19,11 @@ def perimeter(r):
 
 class CircleTestCase(unittest.TestCase):
 
+    def test_area(self):
+        with self.assertRaises(ValueError) as context:
+            res = area(-10)
+        self.assertRaises(TypeError, res)
+
     def test_area1(self):
         res = area(10)
         self.assertEqual(res, 314.15927)

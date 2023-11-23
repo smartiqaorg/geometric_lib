@@ -19,6 +19,11 @@ def perimeter(a, b):
 
 class RectangleTestCase(unittest.TestCase):
 
+    def test_area(self):
+        with self.assertRaises(ValueError) as context:
+            res = area(-3, -34)
+        self.assertRaises(TypeError, res)
+
     def test_area1(self):
         res1 = area(10, 0)
         self.assertEqual(res1, 0)

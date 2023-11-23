@@ -21,6 +21,10 @@ def perimeter(a, b, c):
 class TriangleTestCase(unittest.TestCase):
 
     def test_area1(self):
+        with self.assertRaises(ValueError) as context:
+            res = area(-4, -2)
+        self.assertRaises(ValueError, res)
+    def test_area1(self):
         res = area(87534, 1)
         self.assertEqual(res, 43767)
 
