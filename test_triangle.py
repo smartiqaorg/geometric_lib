@@ -10,6 +10,13 @@ class SquareTestCase(unittest.TestCase):
         res = area(13,4)
         self.assertEqual(res, 26)
 
+    def test_3_area(self):
+        with self.assertRaises(ValueError) as context:
+            area(-3, 4)
+    
+        self.assertEqual(str(context.exception), "Invalid value")
+
+
     def test_1_perimeter(self):
         res = perimeter(3,4,1)
         self.assertEqual(res, 8)
