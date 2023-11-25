@@ -1,0 +1,47 @@
+name: My CI/CD 
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  test_linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+      - name: run test1
+        run: python -m unittest rectangleTest.py
+      - name: run test2
+        run: python -m unittest triangleTest.py
+      - name: run test3
+        run: python -m unittest squareTest.py
+      - name: run test4
+        run: python -m unittest circleTest.py
+
+  test_windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+      - name: run test1
+        run: python -m unittest rectangleTest.py
+      - name: run test2
+        run: python -m unittest triangleTest.py
+      - name: run test3
+        run: python -m unittest squareTest.py
+      - name: run test4
+        run: python -m unittest circleTest.py
