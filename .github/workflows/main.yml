@@ -1,4 +1,4 @@
-name: "Test CI"
+name: "Tests"
 on:
   push:
     branches: ["main"]
@@ -6,7 +6,7 @@ on:
     branches: ["main"]
 
 jobs:
-  test1:
+  test_one:
      runs-on: ubuntu-latest
      steps:
        - name: Checkout code
@@ -14,17 +14,17 @@ jobs:
        - name: setup Python
          uses: actions/setup-python@v4
          with:
-           python-version: "3.10"
+           python-version: "3.11"
        - name: Run test rectangle.py
-         run: python3 -m unittest TestRectangle.py
+         run: python3 -m unittest rectangle_test.py
        - name: Run test triangle.py
-         run: python3 -m unittest TestTriangle.py
+         run: python3 -m unittest triangle_test.py
        - name: Run test circle.py
-         run: python3 -m unittest TestCircle.py
+         run: python3 -m unittest circle_test.py
        - name: Run test square.py
-         run: python3 -m unittest TestSquare.py
+         run: python3 -m unittest square_test.py
 
-  test2:
+  test_two:
      runs-on: windows-latest
      steps:
        - name: Checkout code
@@ -32,12 +32,12 @@ jobs:
        - name: setup Python
          uses: actions/setup-python@v4
          with:
-           python-version: "3.10"
+           python-version: "3.11"
        - name: Run test rectangle.py
-         run: python3 -m unittest TestRectangle.py
+         run: python3 -m unittest rectangle_test.py
        - name: Run test triangle.py
-         run: python3 -m unittest TestTriangle.py
+         run: python3 -m unittest triangle_test.py
        - name: Run test circle.py
-         run: python3 -m unittest TestCircle.py
+         run: python3 -m unittest circle_test.py
        - name: Run test square.py
-         run: python3 -m unittest TestSquare.py
+         run: python3 -m unittest square_test.py
