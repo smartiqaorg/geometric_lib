@@ -1,0 +1,30 @@
+name: Lib test
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Run tests for circle
+        run: python tests/CircleTests.py
+      - name: Run tests for Square
+        run: python tests/SquareTests.py
+      - name: Run tests for rectangle
+        run: python tests/RectangleTests.py
+      - name: Run tests for Triangle
+        run: python tests/TriangleTests.py
