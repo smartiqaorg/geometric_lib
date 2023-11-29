@@ -27,4 +27,3 @@ class RectangleTestCase(unittest.TestCase):
     def test_third_per(self):
         PerimeterRes = perimeter(100, 1)
         self.assertEqual(PerimeterRes, 202)
-
