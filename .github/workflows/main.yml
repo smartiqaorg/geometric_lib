@@ -1,0 +1,45 @@
+name: Test Functions
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test_linux:
+    runs-on: linux-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Testing Files
+        run: |
+          python3 -m unittest test_rectangle.py
+          python3 -m unittest test_circle.py
+          python3 -m unittest test_square.py
+          python3 -m unittest test_triangle.py
+
+  test_windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Testing Files
+        run: |
+          python3 -m unittest test_rectangle.py
+          python3 -m unittest test_circle.py
+          python3 -m unittest test_square.py
+          python3 -m unittest test_triangle.py
+
