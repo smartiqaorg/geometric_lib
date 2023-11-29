@@ -11,5 +11,3 @@ def perimeter(a, b):
     if a < 0 or b < 0:
         raise ValueError('Values can not be negative')
     return (a + b) * 2
-
-print(area(-3,1))

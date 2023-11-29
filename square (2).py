@@ -12,5 +12,3 @@ def perimeter(a):
     if a < 0:
         raise ValueError('Values can not be negative')
     return 4 * a
-
-print(area(-5))

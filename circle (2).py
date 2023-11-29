@@ -13,5 +13,3 @@ def perimeter(r):
     if r < 0:
         raise ValueError('Radius can not be negative')
     return 2 * math.pi * r
-
-print(area(-5))
