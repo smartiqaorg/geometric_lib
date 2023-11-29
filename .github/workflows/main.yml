@@ -1,1 +1,46 @@
+name: test
 
+on:
+  push:
+    branches:
+      - ["main"]
+  pull_request:
+    branches:
+      - ["main"]
+
+jobs:
+  test_win:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Test circle.py
+        run: python.exe -m unittest circle_test.py
+      - name: Test rectangle.py
+        run: python.exe -m unittest rectangle_test.py
+      - name: Test square.py
+        run: python.exe -m unittest square_test.py
+      - name: Test triangle.py
+        run: python.exe -m unittest triangle_test.py
+
+  test_linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Test circle.py
+        run: python3 -m unittest circle_test.py
+      - name: Test rectangle.py
+        run: python3 -m unittest rectangle_test.py
+      - name: Test square.py
+        run: python3 -m unittest square_test.py
+      - name: Test triangle.py
+        run: python3 -m unittest triangle_test.py
