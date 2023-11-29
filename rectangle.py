@@ -8,7 +8,7 @@ def area(a, b):
             Принимает: a = 3, b = 4
             Возвращает: 12
     '''
-    
+    //
 def perimeter(a, b):
     return 2*(a + b)
     '''
