@@ -5,7 +5,7 @@ import unittest
 class CircleTestCase(unittest.TestCase):
     def test_zero_a(self):
         res = area(0)
-        self.assertEqual(res, 79)
+        self.assertEqual(res, 0)
 
     def test_mul_a(self):
         res = area(10)
