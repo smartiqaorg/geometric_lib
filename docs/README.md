@@ -1,10 +1,78 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
+### __Данный проект содержит функции для вычисления площади и периметра следующих фигур:__
+- __circle.py__
+```python
+import math
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+
+def area(r):
+    '''
+    Принимает радиус r окружности, возвращает площать окружность радиуса r
+    Пример вызова: area(5)
+    '''
+    return math.pi * r * r
+
+
+def perimeter(r):
+    '''
+    Принимает радиус r окружности, возвращает длину окружности радиса r
+    Пример вызова: perimeter(2)
+    '''
+    return 2 * math.pi * r
+```
+- __rectangle.py__
+```python
+def area(a, b):
+    '''
+    Принимает две стороны a и b прямоугольника, возвращает площадь прямоугольника со сторанами a и b
+    Пример вызова: area(3,2)    
+    '''
+    return a * b
+
+def perimeter(a, b):
+    '''
+    Принимает две стороны а и b прямоугольника, возвращает периметр прямоугольника со сторанами a и b
+    Пример вызова: perimeter(6,5)    
+    '''
+    return (a + b) * 2
+```
+- __square.py__
+```python
+def area(a):
+    '''
+    Принимает сторону квадрата a, возвращает площадь квадрата со стороной a
+    Пример вызова: area(30)
+    '''
+    return a * a
+
+
+def perimeter(a):
+    '''
+    Принимает сторону квадрата a, возвращает периметр квадрата со стороной a
+    Пример вызова: perimeter(50)
+    '''
+    return 4 * a
+```
+- __triangle.py__
+```python
+def area(a, h):
+    '''
+    Принимает сторону треугольника a и высоту этого треугольника h, возвращает площадь треугольника со стороной а и высотой h
+    Пример вызова: area(4, 1)
+    '''
+    return a * h / 2
+
+def perimeter(a, b, c):
+    '''
+    Принимает три стороны треугольника a, b и c, возвращает периметр треугольника со сторанами a, b и c
+    Пример вызова: perimeter(3,7,10)
+    '''
+    return a + b + c
+```
+### __История изменения проекта с хэшами комитов:__
+```
+* f27a4f7 (HEAD -> main) File rectangle.py was fixed
+* 637ba61 File rectangle.py was added
+* d078c8d (origin/main, origin/HEAD, new_features_409063) L-03: Docs added
+* 8ba9aeb L-03: Circle and square added
+```
+
