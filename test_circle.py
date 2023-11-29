@@ -9,6 +9,8 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(resarea, 0)
         self.assertEqual(resperimetr, 0)
         //
+        self.assertEqual(resperimetr, 0)
+        
     def test_single_к(self):
         resarea = area(1)
         resperimetr = perimeter(1)
