@@ -1,13 +1,13 @@
 def area(a, h):
-    '''
-    Принимает сторону треугольника a и высоту этого треугольника h, возвращает площадь треугольника со стороной а и высотой h
-    Пример вызова: area(4, 1)
-    '''
+    if type(a) not in [int, float] or type(h) not in [int, float]:
+        raise TypeError('Values must be a numbers only')
+    if a < 0 or h < 0:
+        raise ValueError('Values can not be negative')
     return a * h / 2
 
 def perimeter(a, b, c):
-    '''
-    Принимает три стороны треугольника a, b и c, возвращает периметр треугольника со сторанами a, b и c
-    Пример вызова: perimeter(3,7,10)
-    '''
+    if type(a) not in [int, float] or type(b) not in [int, float] or type(c) not in [int, float]:
+        raise TypeError('Values must be a numbers only')
+    if a < 0 or b < 0 or c < 0:
+        raise ValueError('Values can not be negative')
     return a + b + c

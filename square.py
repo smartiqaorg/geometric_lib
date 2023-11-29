@@ -1,14 +1,14 @@
 def area(a):
-    '''
-    Принимает сторону квадрата a, возвращает площадь квадрата со стороной a
-    Пример вызова: area(30)
-    '''
+    if type(a) not in [int, float]:
+        raise TypeError('Values must be a numbers only')
+    if a < 0:
+        raise ValueError('Values can not be negative')
     return a * a
 
 
 def perimeter(a):
-    '''
-    Принимает сторону квадрата a, возвращает периметр квадрата со стороной a
-    Пример вызова: perimeter(50)
-    '''
+    if type(a) not in [int, float]:
+        raise TypeError('Values must be a numbers only')
+    if a < 0:
+        raise ValueError('Values can not be negative')
     return 4 * a
