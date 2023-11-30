@@ -16,7 +16,7 @@ class SquareTestCase(unittest.TestCase):
     def test_negative_area(self):
         
         res = area(-10)
-        self.assertRaises(res, ExpectedException)
+        self.assertRaises(res, Exception)
 
     def test_zero_perim(self):
         
@@ -26,7 +26,7 @@ class SquareTestCase(unittest.TestCase):
     def test_negative_perimeter(self):
         
         res = perimeter(-10)
-        self.assertRaises(res, ExpectedException)
+        self.assertRaises(res, Exception)
 
     def test_float_perim(self):
         
