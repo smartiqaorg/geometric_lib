@@ -13,10 +13,20 @@ class SquareTestCase(unittest.TestCase):
         res = area(228.1337)
         self.assertAlmostEqual(res, 52044.98507569, delta=0.1)
 
+    def test_negative_area(self):
+        
+        res = area(-10)
+        self.assertRaises(res, Exception)
+
     def test_zero_perim(self):
         
         res = perimeter(0)
         self.assertEqual(res, 0)
+
+    def test_negative_perimeter(self):
+        
+        res = perimeter(-10)
+        self.assertRaises(res, Exception)
 
     def test_float_perim(self):
         
