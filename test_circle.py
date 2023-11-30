@@ -10,7 +10,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_negative_area(self):
 
-        self.assertRaises(ValueError, area, -10)
+        self.assertEqual(ValueError, area, -10)
         
     def test_float_area(self):
         
