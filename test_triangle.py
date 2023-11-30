@@ -25,7 +25,7 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_negative_perimeter(self):
         
-        res = area(-10, -20, -30)
+        res = perimeter(-10, -20, -30)
         self.assertRaises(res, Exception)
 
     def test_float_perim(self):
