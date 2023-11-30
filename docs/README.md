@@ -123,6 +123,8 @@ def perimeter(a):
             perimeter(int): сумма a, b и c
     
     return a + b + c
+# Unittests
+- 18/26 unitetsts have been completed
 # Commits
 - kimurtim19 | Thu Sep 21 22:38:50 2023 +0300 | 885b5e12421b4ae483e223d1517e047930f9e7e3 | corrected spelling errors
 - kimurtim19 | Thu Sep 21 22:36:37 2023 +0300 | e581c81d4f1995cda14f58246a05eadd33a58a1d | documentation for triangle.py
