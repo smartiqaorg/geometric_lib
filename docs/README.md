@@ -83,43 +83,8 @@ print(perimeter(a, b, c))
 # 18
 ```
 
-# **Tests**
-
-## 1. Goals and objectives of testing
-The main goal of testing is to verify that the behavior of the written code corresponds to the expected behavior. It is required that the code successfully passes all tests.
-
-## 2. Description of the product being tested
-The behaviour of functions for calculating areas and perimeters of geometric figures should be tested. The functions should return a correct value or an error in case the input parameters are invalid.
-
-## 3. Testing area
-- ### Circle.py
-    - **area(r)** - function for calculating the area of a circle with *radius* *r*
-    - **perimeter(r)** - function for calculating the circumference of a circle with *radius* **r**
-
-- ### Square.py
-    - **area(a)** - function for calculating the area of a square with a given *side* length **a**
-    - **perimeter(a)** - function for calculating the perimeter of a square with a given *side* length **a**
-    
-- ### Rectangle.py
-    - **area(a, b)** - function for calculating the area of a rectangle with *sides* **a** and **b**
-    - **perimeter(r)** - function for calculating the peremeter of a rectangle with *sides* **a** and **b**
-
-- ### Triangle.py
-    - **area(s, h)** - function for calculating the area of a triangle with a *side* length of **s** and a *height* length of **h** dropped onto it.
-    - **perimeter(a, b, c)** - function for calculating the perimeter of a trinagle with a given *sides* lengths **a**, **b**, **c**
-
-## 4. Testing strategy
-Testing is performed using Unit tests in the form of functional testing.
-
-It will be verified whether the values returned by the functions correspond to the expected ones and if exceptions are thrown if values given to the function are invalid (<= 0). 
-
-A total of 3 tests are provided for each function with different input data. (Except for triangle perimeter function which has additional testing whether triangle with this sides is possible)
-
-## 5. Acceptance criteria
-All tests must be completed without errors
-
-## 6. Expected results
-Major part of tests would end with error, because not all features are currently implemented in functions
+# Tests
+25 tests written using Python Unittest, only 19 of them finished successfully
 
 ## **Commit history**
 ---
