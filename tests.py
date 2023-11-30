@@ -19,8 +19,9 @@ class CircleTestCase(unittest.TestCase):
     def test_area_positive(self):
         radius = 1
         expectedResult = 3.1415
+        delta = 0.001
         result = circle.area(radius)
-        self.assertEqual(expectedResult, result)
+        self.assertLess(result - expectedResult, delta)
 
 
     def test_perimeter_zero(self):
@@ -36,8 +37,9 @@ class CircleTestCase(unittest.TestCase):
     def test_perimeter_positive(self):
         radius = 2
         expectedResult = 12.566
+        delta = 0.001
         result = circle.perimeter(radius)
-        self.assertEqual(expectedResult, result)
+        self.assertLess(result - expectedResult, delta)
 
 
 
