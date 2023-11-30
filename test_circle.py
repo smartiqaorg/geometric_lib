@@ -8,6 +8,11 @@ class CircleTestCase(unittest.TestCase):
         res = area(0)
         self.assertEqual(res, 0)
 
+    def test_negative_area(self):
+        
+        res = area(-10)
+        self.assertRaises(res, Exception)
+        
     def test_float_area(self):
         
         res = area(1337.420)
@@ -18,6 +23,10 @@ class CircleTestCase(unittest.TestCase):
         res = perimeter(0)
         self.assertEqual(res, 0)
 
+    def test_negative_perimeter(self):
+        
+        res = perimeter(-10)
+        self.assertRaises(res, Exception)
 
     def test_float_perim(self):
         
