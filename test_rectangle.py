@@ -18,7 +18,7 @@ class RectangleTestCase(unittest.TestCase):
     def test_negative_area(self):
         
         res = area(-10, -10)
-        self.assertRaises(res, ExpectedException)
+        self.assertRaises(res, Exception)
 
     def test_zero_perim(self):
         res = perimeter(0, 0)
@@ -31,7 +31,7 @@ class RectangleTestCase(unittest.TestCase):
     def test_negative_perimeter(self):
         
         res = perimeter(-10, -10)
-        self.assertRaises(res, ExpectedException)
+        self.assertRaises(res, Exception)
 
     def test_float_perim(self):
         res = perimeter(420.024, 1337.22869)
