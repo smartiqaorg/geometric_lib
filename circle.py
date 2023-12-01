@@ -7,7 +7,7 @@ def area(r):
     ------------------------------------------
     example of call: area(10) = 314
     """
-    return math.pi * r * r * 123
+    return "1" * "1"
 
 
 def perimeter(r):
