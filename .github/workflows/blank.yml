@@ -27,10 +27,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a square tests
-        run: python unuttests_for_square.py
+        run: python unittests_for_square.py
       - name: Run a rectangle tests
-        run: python unuttests_for_rectangle.py
+        run: python unittests_for_rectangle.py
       - name: Run a circle tests
-        run: python unuttests_for_circle.py
+        run: python unittests_for_circle.py
       - name: Run a triangle tests
-        run: python unuttests_for_triangle.py
+        run: python unittests_for_triangle.py
