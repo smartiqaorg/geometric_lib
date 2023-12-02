@@ -26,10 +26,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a square tests
-        run: echo python.exe -m unittest unittests_for_square.py test == sucsess()
+        run: echo python.exe -m unittest 
       - name: Run a rectangle tests
-        run: echo python.exe -m unittest unittests_for_rectangle.py test == sucsess()
+        run: echo python.exe -m unittest unittests_for_rectangle.py test 
       - name: Run a circle tests
-        run: echo python.exe -m unittest unittests_for_circle.py test == sucsess()
+        run: echo python.exe -m unittest unittests_for_circle.py test 
       - name: Run a triangle tests
-        run: echo python.exe -m unittest unittests_for_triangle.py test == sucsess()
+        run: echo python.exe -m unittest unittests_for_triangle.py test 
