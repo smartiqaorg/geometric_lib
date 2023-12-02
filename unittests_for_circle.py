@@ -2,7 +2,7 @@ import unittest
 from math import pi
 from circle import area, perimeter
 
-
+print('*' * '*')
 class CircleTestCase(unittest.TestCase):
     def test_zero_square(self):
         res = area(0)
