@@ -1,39 +1,41 @@
 import circle
-import math
 
 
 def test_circle_area():
     for i in range(len(test_input)):
-        if circle.area(test_input[i]) == test_answers_area[i]:
-            print(f"AREA TEST №{i + 1}")
-            print(f"INPUT:  {test_input[i]}")
-            print(f"TRUE: {circle.area(test_input[i])} = {test_answers_area[i]}\n")
-        else:
-            print(f"AREA TEST №{i + 1}")
-            print(f"INPUT: {test_input[i]}")
-            print(f"FALSE: {circle.area(test_input[i])} != {test_answers_area[i]}\n")
+        if test_input[i] < 0:
+            print(f"AREA TEST №{i + 1}: invalid value entered\n")
+
+        if circle.area(test_input[i]) == test_answers_area[i] and test_input[i] >= 0:
+            print(f"AREA TEST №{i + 1}: correct\n")
+
+        elif circle.area(test_input[i]) != test_answers_area[i] and test_input[i] >= 0:
+            print(f"AREA TEST №{i + 1}: calculation error\n")
+
 
 
 def test_circle_perimeter():
     for i in range(len(test_input)):
-        if circle.perimeter(test_input[i]) == test_answers_perimeter[i]:
-            print(f"PERIMETER TEST №{i + 1}")
-            print(f"INPUT:  {test_input[i]}")
-            print(f"TRUE: {circle.perimeter(test_input[i])} = {test_answers_perimeter[i]}\n")
-        else:
-            print(f"PRIMETER TEST №{i + 1}")
-            print(f"INPUT: {test_input[i]}")
-            print(f"FALSE: {circle.perimeter(test_input[i])} != {test_answers_perimeter[i]}\n")
+
+        if test_input[i] < 0:
+            print(f"PERIMETER TEST №{i + 1}: invalid value entered\n")
+
+        elif circle.perimeter(test_input[i]) == test_answers_perimeter[i] and test_input[i] >= 0:
+            print(f"PERIMETER TEST №{i + 1}: correct\n")
+
+        elif circle.perimeter(test_input[i]) != test_answers_perimeter[i] and test_input[i] >= 0:
+            print(f"PRIMETER TEST №{i + 1}: calculation error\n")
+
 
 
 '''
-    Данные для проверки площади и периметра [r]:
+    Данные для проверки площади и периметра test_input = [r]:
         r - радиус окружности
                                                 '''
 
-test_input = [4, 8, 15, 34]
-test_answers_area = [50.26548245743669, 201.06192982974676, 706.8583470577034, 3631.6811075498013]
-test_answers_perimeter = [25.132741228718345, 50.26548245743669, 94.24777960769379, 213.62830044410595]
+test_input = [8, 9.31, -15, 0]
+test_answers_area = [201.06192982974676, 272.30099900181426, "error", 0.0]
+test_answers_perimeter = [50.26548245743669, 58.49645520984195, "error", 0.0]
 
 test_circle_area()
 test_circle_perimeter()
