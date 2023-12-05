@@ -4,14 +4,16 @@ from rectangle import area, perimeter
 
 class RectangleTest(unittest.TestCase):
     def test_area(self):
-        self.assertAlmostEqual(area(8, 9), 72)
-        self.assertAlmostEqual(area(3, 7), 21)
-        self.assertAlmostEqual(area(2, 89), 178)
+        self.assertAlmostEqual(area(5, -7), -35)
+        self.assertAlmostEqual(area(8, 13.5), 108)
+        self.assertAlmostEqual(area(1, 3), 3)
+        self.assertAlmostEqual(area(0, 89), 0)
 
     def test_perimeter(self):
-        self.assertAlmostEqual(perimeter(9.4, 8), 34.8)
-        self.assertAlmostEqual(perimeter(10, 12), 44)
-        self.assertAlmostEqual(perimeter(6, 84), 180)
+        self.assertAlmostEqual(perimeter(5, -7), -4)
+        self.assertAlmostEqual(perimeter(8, 13.5), 43)
+        self.assertAlmostEqual(perimeter(1, 3), 8)
+        self.assertAlmostEqual(perimeter(0, 89), 178)
 
 
 if __name__ == '__main__':
