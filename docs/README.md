@@ -73,3 +73,38 @@ def perimeter(a, b, c):
 + 571e280f967ce428219fa31762574bf62b9b87ab docs: added documentation for triangle.py
 + ce04e014a0a4adecf578660a466270f004f4e3be docs: added documentation for circle.py
 + 4973d225376eccaaa2b537be9fc59ef57a46bc50 docs: added documentation for circle.py
+
+
+## Tests
+
+| Тест  | Название модуля  | Название функции  | Входные данные       | Результат            | Ожидаемый результат  | Вердикт    |
+| 1     | circle           | area              | radius=0             | 0                    | 0                    | Passed     |
+| 2     | circle           | area              | radius=4             | 50.26548245743669    | 50.26548245743669    | Passed     |
+| 3     | circle           | area              | radius=34            | 3631.6811075498013   | 3631.6811075498013   | Passed     |
+| 4     | circle           | perimeter         | radius=0             | 0                    | 0                    | Passed     |
+| 5     | circle           | perimeter         | radius=8             | 50.26548245743669    | 50.26548245743669    | Passed     |
+| 6     | circle           | perimeter         | radius=15            | 94.24777960769379    | 94.24777960769379    | Passed     |
+
+| Тест  | Название модуля  | Название функции  | Входные данные       | Результат            | Ожидаемый результат  | Вердикт    |
+| 1     | rectangle        | area              | a=10, b=0            | 0                    | 0                    | Passed     |
+| 2     | rectangle        | perimeter         | a=0, b=0             | 0                    | 0                    | Passed     |
+| 3     | rectangle        | area              | a=20, b=20           | 400                  | 400                  | Passed     |
+| 4     | rectangle        | perimeter         | a=10, b=10           | 40                   | 40                   | Passed     |
+| 5     | rectangle        | area              | a=2.0, b=3.5         | 7.0                  | 7.0                  | Passed     |
+| 6     | rectangle        | perimeter         | a=2.5, b=3.5         | 12.0                 | 12.0                 | Passed     |
+
+| Тест  | Название модуля  | Название функции  | Входные данные       | Результат            | Ожидаемый результат  | Вердикт    |
+| 1     | triangle         | area              | a=0, h=0             | 0                    | 0                    | Passed     |
+| 2     | triangle         | area              | a=5, h=8             | 20                   | 20                   | Passed     |
+| 3     | triangle         | perimeter         | a=0, b=0, c=0        | 0                    | 0                    | Passed     |
+| 4     | triangle         | perimeter         | a=7, b=4, c=10       | 21                   | 21                   | Passed     |
+| 5     | triangle         | area              | a=3.5, h=2.5         | 4.375                | 4.375                | Passed     |
+| 6     | triangle         | perimeter         | a=2.5, b=2.5, c=3.2  | 8.2                  | 8.2                  | Passed     |
+
+| Тест  | Название модуля  | Название функции  | Входные данные       | Результат            | Ожидаемый результат  | Вердикт    |
+| 1     | square           | area              | a=0                  | 0                    | 0                    | Passed     |
+| 2     | square           | perimeter         | a=0                  | 0                    | 0                    | Passed     |
+| 3     | square           | area              | a=5                  | 25                   | 25                   | Passed     |
+| 4     | square           | perimeter         | a=5                  | 20                   | 20                   | Passed     |
+| 5     | square           | area              | a=5.5                | 30.25                | 30.25                | Passed     |
+| 6     | square           | perimeter         | a=1.5                | 6.0                  | 6.0                  | Passed     |
