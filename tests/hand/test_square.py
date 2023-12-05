@@ -1,40 +1,43 @@
 import square
 
 def test_square_area():
-    for i in range(len(test_input_area)):
-        if square.area(test_input_area[i]) == test_answers_area[i]:
-            print(f"AREA TEST №{i + 1}")
-            print(f"INPUT:  {test_input_area[i]}")
-            print(f"TRUE: {test_answers_area[i]} = {test_answers_area[i]}\n")
+    for i in range(len(test_input)):
+
+        if test_input[i] < 0:
+            print(f"AREA TEST №{i + 1}: invalid value entered\n")
+
+        elif square.area(test_input[i]) == test_answers_area[i] and test_input[i] >= 0:
+            print(f"AREA TEST №{i + 1}: correct\n")
+
         else:
-            print(f"AREA TEST №{i + 1}")
-            print(f"INPUT: {test_input_area[i]}")
-            print(f"FALSE: {square.area(test_input_area[i])} != {test_answers_area[i]}\n")
+            print(f"AREA TEST №{i + 1}: calculation error\n")
+
 
 
 def test_square_perimeter():
-    for i in range(len(test_input_perimeter)):
-        if square.perimeter(test_input_perimeter[i]) == test_answers_perimeter[i]:
-            print(f"PERIMETER TEST №{i + 1}")
-            print(f"INPUT:  {test_input_perimeter[i]}")
-            print(f"TRUE: {test_answers_perimeter[i]} = {test_answers_perimeter[i]}\n")
+    for i in range(len(test_input)):
+
+        if test_input[i] < 0:
+            print(f"PERIMETER TEST №{i + 1}: invalid value entered\n")
+
+        elif square.perimeter(test_input[i]) == test_answers_perimeter[i] and test_input[i] >= 0:
+            print(f"PERIMETER TEST №{i + 1}: correct\n")
+
         else:
-            print(f"PERIMETER TEST №{i + 1}")
-            print(f"INPUT: {test_input_perimeter[i]}")
-            print(f"FALSE: {square.perimeter(test_input_perimeter[i])} != {test_answers_perimeter[i]}\n")
+            print(f"PERIMETER TEST №{i + 1}: calculation error\n")
+
 
 
 
 '''
-    Данные для проверки площади и периметра [a]:
+    Данные для проверки площади и периметра test_input[a]:
         a - длина стороны квадрата
 '''
 
-test_input_area = [3, 99, 16, 79.5]
-test_answers_area = [9, 9801, 256, 6320.25]
+test_input = [3, -99, 16.77, 0]
 
-test_input_perimeter = [4, 6, 8.8, 90]
-test_answers_perimeter = [16, 24, 35.2, 361]
+test_answers_area = [9, "error", 281.2329, 0]
+test_answers_perimeter = [12, "error", 67.08, 0]
 
 test_square_area()
 test_square_perimeter()
