@@ -127,17 +127,24 @@
     import unittest
     from rectangle import area
     from rectangle import perimeter
+
     class SquareTestCase(unittest.TestCase):
     def test_1_area(self):
-        res = area(5,2)
+        res = area(5, 2)
         self.assertEqual(res, 10)
 
     def test_2_area(self):
-        res = area(10,0)
+        res = area(10, 0)
         self.assertEqual(res, 0)
 
+    def test_3_area(self):
+        with self.assertRaises(ValueError) as context:
+            area(-5, 2)
+    
+        self.assertEqual(str(context.exception), "Invalid value")
+
     def test_1_perimeter(self):
-        res = perimeter(3,4)
+        res = perimeter(3, 4)
         self.assertEqual(res, 14)
 
     def test_2_perimeter(self):
@@ -146,6 +153,7 @@
 
     if __name__ == '__main__':
         unittest.main()
+
 
 2)Тесты для square.py
 
@@ -160,6 +168,20 @@
     def test_2_area(self):
         res = area(2)
         self.assertEqual(res, 4)
+    def test_3_area(self):
+        with self.assertRaises(ValueError) as context:
+            area(-5)
+
+        self.assertEqual(str(context.exception), "Invalid value")
+    
+    
+    def test_4_area(self):
+        with self.assertRaises(ValueError) as context:
+            area(-5.5)
+
+        self.assertEqual(str(context.exception), "Invalid value")
+
+
 
     def test_1_perimeter(self):
         res = perimeter(5)
@@ -185,6 +207,12 @@
     def test_2_area(self):
         res = area(13,4)
         self.assertEqual(res, 26)
+    
+    def test_3_area(self):
+        with self.assertRaises(ValueError) as context:
+            area(-3, 4)
+    
+        self.assertEqual(str(context.exception), "Invalid value")
 
     def test_1_perimeter(self):
         res = perimeter(3,4,1)
@@ -211,6 +239,12 @@
     def test_2_area(self):
         res = area(13)
         self.assertEqual(res, math.pi * 169)
+    
+    def test_3_area(self):
+        with self.assertRaises(ValueError) as context:
+            area(-13)
+    
+        self.assertEqual(str(context.exception), "Invalid value")
 
     def test_1_perimeter(self):
         res = perimeter(3)
