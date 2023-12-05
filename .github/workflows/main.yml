@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
           architecture: x64
       - name: tests run
-        run: python -m unittest discover "*_test.py"
+        run: python -m unittest discover -p "*_test.py"
   windows:
     runs-on: windows-latest
     steps:
@@ -32,4 +32,4 @@ jobs:
           python-version: "3.12"
           architecture: x64
       - name: tests run
-        run: python -m unittest discover "*_test.py"
+        run: python -m unittest discover -p "*_test.py"
