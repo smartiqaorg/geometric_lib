@@ -4,6 +4,8 @@ on:
   push:
     branches: [ cicd_227004 ]
 
+  workflow_dispatch:
+
 jobs:
   Run-Tests:
     runs-on: ubuntu-latest
