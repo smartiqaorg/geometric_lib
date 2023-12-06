@@ -23,8 +23,8 @@ class TriangleTestCase(unittest.TestCase):
         res4 = area(100, 100)
         self.assertEqual(res4, 5000)
 
-        res5 = area(26, 25)
-        self.assertEqual(res5, 325)
+        res5 = area(26, 25.25)
+        self.assertEqual(res5, 328.25)
 
     def test_perimeter_mul(self):
         res1 = perimeter(0, 0, 0)
@@ -39,5 +39,5 @@ class TriangleTestCase(unittest.TestCase):
         res4 = perimeter(100, 100, 200)
         self.assertEqual(res4, 400)
 
-        res5 = perimeter(25, 25, -30)
-        self.assertEqual(res5, 20)
+        res5 = perimeter(25, 25, 5.25)
+        self.assertEqual(res5, 55.25)
