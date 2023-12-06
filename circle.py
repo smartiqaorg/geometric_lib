@@ -10,7 +10,7 @@ def area(r):
             Возвращаемое значение:
                     area (double): площадь круга
     '''
-    return math.pi * r * r
+    return math.pi * r ** 2
 
 
 def perimeter(r):
