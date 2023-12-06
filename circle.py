@@ -16,8 +16,8 @@ class CircleTestCase(unittest.TestCase):
         res2 = area(1)
         self.assertEqual(res2, 3.141592653589793)
 
-        res3 = area(5)
-        self.assertEqual(res3, 78.53981633974483)
+        res3 = area(-5)
+        self.assertEqual(res3, "error")
 
         res4 = area(100)
         self.assertEqual(res4, 31415.926535897932)
@@ -35,8 +35,8 @@ class CircleTestCase(unittest.TestCase):
         res3 = perimeter(5)
         self.assertEqual(res3, 31.41592653589793)
 
-        res4 = perimeter(100)
-        self.assertEqual(res4, 628.3185307179587)
+        res4 = perimeter(-100)
+        self.assertEqual(res4, "error")
 
         res5 = perimeter(25)
         self.assertEqual(res5, 157.07963267948966)
