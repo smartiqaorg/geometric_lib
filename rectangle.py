@@ -13,19 +13,19 @@ class RectangleTest(unittest.TestCase):
 
     def test_area1(self):
         res = area(4, 5)
-        self.assertEqual(res, 4 * 5)
+        self.assertEqual(res, 20)
 
     def test_perimeter1(self):
         res = perimeter(2, 5)
-        self.assertEqual(res, 20)
+        self.assertEqual(res, 14)
 
     def test_area2(self):
         res = area(17, 4.4)
-        self.assertEqual(res, 74,8)
+        self.assertEqual(res, 74.80000000000001)
 
     def test_perimeter2(self):
-        res = perimeter(16.2, 4,7)
-        self.assertEqual(res, 41,8)
+        res = perimeter(16.2, 4.7)
+        self.assertEqual(res, 41.8)
 
     def test_area3(self):
         res = area(28, -41)
