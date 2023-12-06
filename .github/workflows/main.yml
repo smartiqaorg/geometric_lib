@@ -1,0 +1,36 @@
+name: testiki
+
+on:
+  push:
+
+jobs:
+  runtime-process-on-Windows:
+      name:  unittestiki on Windows
+      runs-on: windows-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: unittestiki circe.py
+          run: python -m unittest test_circle.py
+        - name: unittestiki rectangle.py 
+          run: python -m unittest test_rectangle.py
+        - name: unittestiki square.py 
+          run: python -m unittest test_square.py
+        - name: unittestiki triangle.py 
+          run: python -m unittest test_triangle.py
+          
+  runtime-process-on-Ubuntu:
+    name: unittestiki on Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v4
+        - name: unittestiki circe.py
+          run: python -m unittest test_circle.py
+        - name: unittestiki rectangle.py 
+          run: python -m unittest test_rectangle.py
+        - name: unittestiki square.py 
+          run: python -m unittest test_square.py
+        - name: unittestiki triangle.py 
+          run: python -m unittest test_triangle.py
+
+
+  
