@@ -14,8 +14,8 @@ class SquareTestCase(unittest.TestCase):
         res2 = area(1)
         self.assertEqual(res2, 1)
 
-        res3 = area(5)
-        self.assertEqual(res3, 25)
+        res3 = area(-5)
+        self.assertEqual(res3, "error")
 
         res4 = area(100)
         self.assertEqual(res4, 10000)
@@ -33,8 +33,8 @@ class SquareTestCase(unittest.TestCase):
         res3 = perimeter(5)
         self.assertEqual(res3, 20)
 
-        res4 = perimeter(100)
-        self.assertEqual(res4, 400)
+        res4 = perimeter(-1100)
+        self.assertEqual(res4, "error")
 
         res5 = perimeter(25)
         self.assertEqual(res5, 100)
