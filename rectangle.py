@@ -14,8 +14,8 @@ class RectangleTestCase(unittest.TestCase):
         res2 = area(10, -11)
         self.assertEqual(res2, "error")
 
-        res3 = area(5, 5)
-        self.assertEqual(res3, 25)
+        res3 = area(5, 55.55)
+        self.assertEqual(res3, 277.75)
 
         res4 = area(100, 100)
         self.assertEqual(res4, 10000)
@@ -36,5 +36,5 @@ class RectangleTestCase(unittest.TestCase):
         res4 = perimeter(100, 100)
         self.assertEqual(res4, 400)
 
-        res5 = perimeter(25, 25)
-        self.assertEqual(res5, 100)
+        res5 = perimeter(25, 25.25)
+        self.assertEqual(res5, 100.5    )
