@@ -9,7 +9,7 @@ def perimeter(a, b, c):
     return a + b + c
 
 
-class RectangleTestCase(unittest.TestCase):
+class TriangleTestCase(unittest.TestCase):
     def test_square_mul(self):
         res1 = area(10, 0)
         self.assertEqual(res1, 0)
@@ -17,8 +17,8 @@ class RectangleTestCase(unittest.TestCase):
         res2 = area(10, 1)
         self.assertEqual(res2, 5)
 
-        res3 = area(5, 6)
-        self.assertEqual(res3, 15)
+        res3 = area(-5, 6)
+        self.assertEqual(res3, "error")
 
         res4 = area(100, 100)
         self.assertEqual(res4, 5000)
@@ -33,8 +33,8 @@ class RectangleTestCase(unittest.TestCase):
         res2 = perimeter(10, 1, 5)
         self.assertEqual(res2, 16)
 
-        res3 = perimeter(5, 5, 5)
-        self.assertEqual(res3, 15)
+        res3 = perimeter(-5, 5, 5)
+        self.assertEqual(res3, "error")
 
         res4 = perimeter(100, 100, 200)
         self.assertEqual(res4, 400)
