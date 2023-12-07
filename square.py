@@ -19,20 +19,20 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 20)
 
     def test_area_zero(self):
-        res = area(0)
-        self.assertEqual(res, 'error')
+        with self.assertRaises(Exception):
+            area(0)
 
     def test_perimeter_zero(self):
-        res = perimeter(0)
-        self.assertEqual(res, 'error')
+        with self.assertRaises(Exception):
+            perimeter(0)
 
     def test_area_negative(self):
-        res = area(-8)
-        self.assertEqual(res, 'error')
+        with self.assertRaises(Exception):
+            area(-8)
 
     def test_perimeter_negative(self):
-        res = perimeter(-8)
-        self.assertEqual(res, 'error')
+        with self.assertRaises(Exception):
+            perimeter(-8)
 
     def test_area_float(self):
         res = area(3.6)
