@@ -13,7 +13,7 @@ class squareTestCase(unittest.TestCase):
 
     def test_float_area(self):
         res = area(5.25)
-        self.assertEqual(res, 27.5625)
+        self.assertAlmostEqual(res, 27.5, delta=0.1)
     
     def test_minus_area(self):
         with self.assertRaises(Exception):

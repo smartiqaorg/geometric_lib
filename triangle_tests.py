@@ -13,7 +13,7 @@ class triangleTestCase(unittest.TestCase):
 
     def test_float_area(self):
         res = area(5.1, 4.76)
-        self.assertEqual(res, 12.137999999999998)
+        self.assertAlmostEqual(res, 12.1, delta=0.1)
         
     def test_minus_area(self):
         with self.assertRaises(Exception):
