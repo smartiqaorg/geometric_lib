@@ -33,8 +33,8 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(res, 2463)
 
     def test_perimeter3(self):
-        res = perimeter(-71)
-        self.assertEqual(res, "error")
+        with self.assertRaises(Exception):
+            perimeter(-71)
 
 if __name__ == "__main__":
     unittest.ma

@@ -127,3 +127,5 @@ square.perimetr(4) -> 16
 square.perimetr(5) -> 20
 ```
 
+### Правильных тестов: 12/24.
+
