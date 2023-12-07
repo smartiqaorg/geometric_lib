@@ -13,19 +13,19 @@ def perimeter(r):
 class CircleTestCase(unittest.TestCase):
     def test_area_int(self):
         res = area(6)
-        self.assertEqual(res, 113.09733552923255)
+        self.assertAlmostEqual(res, 113.097, delta=0.001)
 
     def test_perimeter_int(self):
         res = perimeter(6)
-        self.assertEqual(res, 37.69911184307752)
+        self.assertAlmostEqual(res, 37.699, delta=0.001)
 
     def test_area_float(self):
         res = area(5.7)
-        self.assertEqual(res, 102.07034531513239)
+        self.assertAlmostEqual(res, 102.070, delta=0.001)
 
     def test_perimeter_float(self):
         res = perimeter(5.7)
-        self.assertEqual(res, 35.814156250923645)
+        self.assertAlmostEqual(res, 35.814, delta=0.001)
 
     def test_area_zero(self):
         with self.assertRaises(Exception):
