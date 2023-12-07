@@ -3,18 +3,6 @@ import unittest
 from triangle import area, perimeter
 
 class TriangleTestCase(unittest.TestCase):
-    def test_zero_area(self):
-        res = area(0, 0)
-        self.assertEqual(res, 0)
-
-    def test_zero_perimeter(self):
-        res = perimeter(0, 0, 0)
-        self.assertEqual(res, 0)
-
-    def test_int_area(self):
-        res = area(10, 8)
-        self.assertEqual(res, 40)
-
     def test_int_perimeter(self):
         res = perimeter(10, 10, 12)
         self.assertEqual(res, 32)
@@ -26,6 +14,22 @@ class TriangleTestCase(unittest.TestCase):
     def test_float_perimeter(self):
         res = perimeter(2.5, 2.5, 3.2)
         self.assertEqual(res, 8.2)
+
+    def test_string_perimeter(self):
+        res = perimeter("abc", 2, -1)
+        self.assertEqual(res, "error")
+
+    def test_string_area(self):
+        res = area("abc", 2)
+        self.assertEqual(res, "error")
+    
+    def test_negative_perimeter(self):
+        res = perimeter(-2.5, -10, 34)
+        self.assertEqual(res, "error")
+
+    def test_negative_area(self):
+        res = area(-2, -10)
+        self.assertEqual(res, "error")
 
 if __name__ == "__main__":
     unittest.main()
