@@ -4,7 +4,7 @@ from rectangle import *
 
 class rectangleTestCase(unittest.TestCase):
     def test_zero_area(self):
-        res = area(5, 0)
+        res = area(0, 0)
         self.assertEqual(res, 0)
 
     def test_int_area(self):
@@ -14,6 +14,10 @@ class rectangleTestCase(unittest.TestCase):
     def test_float_area(self):
         res = area(5.5, 5.42)
         self.assertEqual(res, 29.81)
+
+    def test_negativ_area(self):
+        with self.assertRaises(Exception):
+            area(-5, 5)
 
     def test_zero_perimeter(self):
         res = perimeter(0, 0)
@@ -26,3 +30,7 @@ class rectangleTestCase(unittest.TestCase):
     def test_float_perimeter(self):
         res = perimeter(5.9, 2.23)
         self.assertEqual(res, 16.26)
+
+    def test_neg_perimeter(self):
+        with self.assertRaises(Exception):
+            area(-3, 5)
