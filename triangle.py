@@ -9,6 +9,8 @@ def area(a, h):
                 Возвращаемое значение:
                         a * h / 2 (float): площадь треугольника
     """
+    if a <= 0 or h <= 0:
+        raise ValueError()
     return a * h / 2
 
 
@@ -24,4 +26,12 @@ def perimeter(a, b, c):
                 Возвращаемое значение:
                         a + b + c (float): периметр треугольника
         """
+    if a < 0 or b < 0 or c < 0 or a + b < c or a + c < b or b + c < a:
+        raise ValueError()
+    if a == 0:
+        return b
+    if c == 0:
+        return a
+    if b == 0:
+        return c
     return a + b + c

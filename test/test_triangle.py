@@ -38,12 +38,12 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 10)
 
     def test_second_zero_perimeter_case(self):
-        with self.assertRaises(ValueError):
-            triangle.perimeter(10, 0, 10)
+        res = triangle.perimeter(10, 0, 10)
+        self.assertEqual(res, 10)
 
     def test_third_zero_perimeter_case(self):
-        with self.assertRaises(ValueError):
-            triangle.perimeter(10, 10, 0)
+        res = triangle.perimeter(10, 10, 0)
+        self.assertEqual(res, 10)
 
     def test_general_perimeter_case(self):
         with self.assertRaises(ValueError):

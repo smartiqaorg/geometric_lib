@@ -9,6 +9,8 @@ def area(a, b):
                 Возвращаемое значение:
                         a * b (float): площадь прямоугольника
     """
+    if a <= 0 or b <= 0:
+        raise ValueError()
     return a * b
 
 
@@ -23,4 +25,6 @@ def perimeter(a, b):
                     Возвращаемое значение:
                             2 * (a + b) (float): периметр прямоугольника
         """
+    if a <= 0 or b <= 0:
+        raise ValueError()
     return 2 * (a + b)
