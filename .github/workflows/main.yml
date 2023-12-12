@@ -1,0 +1,24 @@
+name: Run Unit Tests
+
+on: [push]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x' # Or the version required by your project
+    - name: Install dependencies
+      run: npm install 
+    - name: Run squareTests
+      run: python squareTest.py
+    - name: Run circleTest
+      run: python circleTest.py
