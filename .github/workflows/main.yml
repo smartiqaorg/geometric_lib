@@ -19,14 +19,13 @@ jobs:
         with:
           python-version: "3.12"
           architecture: x64
-      - name: Run test square
-        run: python square_tests.py
-      - name: Run test rectangle
-        run: python rectangle_tests.py
-      - name: Run test circle
-        run: python circle_tests.py
-      - name: Run test triangle
-        run: python triangle_tests.py
+      - name: Run test
+        run: |
+          python -m square_tests
+          python -m triangle_tests
+          python -m circle_tests
+          python -m rectangle_tests
+
   test-on-windows:
     runs-on: windows-latest
     steps:
@@ -37,11 +36,9 @@ jobs:
         with:
           python-version: "3.12"
           architecture: x64
-      - name: Run test square
-        run: python square_tests.py
-      - name: Run test rectangle
-        run: python rectangle_tests.py
-      - name: Run test circle
-        run: python circle_tests.py
-      - name: Run test triangle
-        run: python triangle_tests.py
+      - name: Run test
+        run: |
+          python -m square_tests
+          python -m triangle_tests
+          python -m circle_tests
+          python -m rectangle_tests
