@@ -2,10 +2,10 @@ name: Ci
 on:
   push:
     branches:
-      - cicd_337004
+      - cicd_413024
   pull_request:
     branches:
-      - cicd_337004
+      - cicd_413024
 permissions:
   contents: read
 jobs:
