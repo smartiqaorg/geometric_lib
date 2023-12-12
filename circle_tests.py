@@ -12,6 +12,7 @@ class TestCircleFunctions(unittest.TestCase):
         result = area(radius)
         self.assertEqual(result, expected_area, f"Ожидаемая площадь: {expected_area}, Фактическая площадь: {result}")
 
+    
     def test_perimeter(self):
         # Проверка правильности вычисления периметра круга
         radius = 5
