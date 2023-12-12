@@ -38,4 +38,4 @@ jobs:
         pip install build
     
     - name: Run test
-      run: python.exe -m unittest ${{ matrix.files }}
+      run: python -m unittest ${{ matrix.files }}
