@@ -20,11 +20,12 @@ permissions:
 jobs:
   deploy:
 
-    runs-on: windows-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         files: [circle_tests.py, rectangle_tests.py, square_tests.py, triangle_tests.py]
-    
+        os: [windows-latest, ubuntu-latest]
+  
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
