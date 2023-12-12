@@ -5,7 +5,7 @@ from circle import perimeter, area
 class TestCircle(unittest.TestCase):
 
     def testcircleperimeter(self):
-        radius = 2
+        radius = 10
         expectedperimeter = 2 * math.pi * radius
         self.assertAlmostEqual(perimeter(radius), expectedperimeter, places=2)
 
