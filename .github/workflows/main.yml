@@ -24,6 +24,5 @@ jobs:
 
       - name: Run unit tests
         run: |
-          cd C:\Users\Банан\geometric_lib\tests
+          cd C:/Users/Банан/geometric_lib/tests
           python -m unittest discover -s . -p '*_test.py'
-
