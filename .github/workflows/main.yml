@@ -1,29 +1,26 @@
 name: Run Unit Tests
-on:
-  push:
-    branches:
-      - main
+
+on: [push]
 
 jobs:
   build:
+  
     name: Unit Tests
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
+        python-version: ["pypy3.9", "pypy3.10", "3.9", "3.10", "3.11", "3.12"]
         os: [ubuntu-latest, windows-latest]
   
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up py ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
-          python-version: 3.12
+          python-version: ${{ matrix.python-version }}
 
       - name: Run unit tests
-        run: |
-          cd C:\Users\Банан\geometric_lib\tests
-          python -m unittest discover -s . -p '*_test.py'
-
+        run: python -m unittest discover C:/Users/Банан/geometric_lib/tests -p '*_test.py'
