@@ -25,10 +25,13 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
-        run: python -m pip install --upgrade pip
-        working-directory: ./geometric_lib
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r geometric_lib/requirements.txt
 
       - name: Run unit tests
-        run: python -m unittest discover tests
-        working-directory: ./geometric_lib
+        run: |
+          cd geometric_lib
+          python -m unittest discover tests
+
 
