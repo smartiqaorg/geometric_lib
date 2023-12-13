@@ -15,7 +15,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x' # Or the version required by your project
+        python-version: '3.x'
     - name: Run squareTests
       run: python squareTest.py
     - name: Run circleTest
