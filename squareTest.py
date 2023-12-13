@@ -4,7 +4,7 @@ from square import perimeter, area
 class TestSquare(unittest.TestCase):
 
     def test_square_perimeter(self):
-        side_length = 4
+        side_length = 7
         expected_perimeter = 4 * side_length
         self.assertEqual(perimeter(side_length), expected_perimeter)
 
