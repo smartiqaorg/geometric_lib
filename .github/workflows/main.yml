@@ -1,22 +1,39 @@
-name: Run Unit Tests
-
-on: [push]
+name: Test Functions
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  test:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-
-    runs-on: ${{ matrix.os }}
+  test_linux:
+    runs-on: linux-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-    - name: Run squareTests
-      run: python squareTest.py
-    - name: Run circleTest
-      run: python circleTest.py
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Testing Files
+        run: |
+          python3 -m unittest circleTest.py
+          python3 -m unittest squareTest.py
+  test_windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Testing Files
+        run: |
+          python3 -m unittest circleTest.py
+          python3 -m unittest squareTest.py
