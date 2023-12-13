@@ -23,4 +23,4 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Run unit tests
-        run: python -m unittest discover C:/Users/Банан/geometric_lib/tests -p '*_test.py'
+        run: python Running-tests.py
