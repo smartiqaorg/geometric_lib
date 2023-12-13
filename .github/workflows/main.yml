@@ -1,38 +1,25 @@
-name: "Unt_Tests"
-on:
-  push:
-    branches: ["cicd_409340"]
-  pull_request:
-    branches: ["cicd_409340"]
+name: Run Unit Tests
+
+on: [push]
 
 jobs:
-  ubuntu_unt_test:
-    runs-on: ubuntu-latest
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
     steps:
-      - name: checkout
-        uses: actions/checkout@v3
-      - name: install py
-        uses: actions/setup-python@v3
-        with:
-          python-version: 3.9
-      - name: run unt test 
-        run: |
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Run tests
+      run: |
           python -m unittest "circleTest.py"
           python -m unittest "squareTest.py"
           python -m unittest "triangleTest.py"
           python -m unittest "rectangleTest.py"
-  windows_unt_test:
-    runs-on: windows-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3
-      - name: install py 
-        uses: actions/setup-python@v3
-        with:
-          python-version: 3.9
-      - name: run unt test
-        run: |
-          python -m unittest "circleTest.py"
-          python -m unittest "squareTest.py"
-          python -m unittest "triangleTest.py"
-          python -m unittest "rectangleTest.py"
+
