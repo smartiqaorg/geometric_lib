@@ -1,32 +1,22 @@
-name: Run Unit Tests
+name: maintest
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
-  test:
-    name: Run Unit Tests
+  build:
+
     runs-on: ${{ matrix.os }}
-    
     strategy:
       matrix:
         python-version: ["pypy3.9", "pypy3.10", "3.9", "3.10", "3.11", "3.12"]
-        os: [ubuntu-latest, windows-latest]
+        os: [ ubuntu-latest, windows-latest ]
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
+      - name: Set up py ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-
-      - name: Run unit tests
-        run: |
-          python -m unittest discover tests
-        working-directory: ./geometric_lib
-
+      - name: run tests
+        run: python tests.py
 
