@@ -1,5 +1,5 @@
 import unittest
-form rectangle import *
+from rectangle import *
 class RectangleTestCase(unittest.TestCase):
 
     def test_zero_area(self):
