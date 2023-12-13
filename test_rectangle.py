@@ -1,6 +1,5 @@
 import unittest
-import sys
-sys.path.append('C:/Users/Банан/geometric_lib/functions')
+
 from rectangle import area, perimeter
 class TestRectangle(unittest.TestCase):
    def test_area_1(self):

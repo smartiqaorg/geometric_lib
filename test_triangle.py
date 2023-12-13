@@ -1,6 +1,5 @@
 import unittest
-import sys
-sys.path.append('C:/Users/Банан/geometric_lib/functions')
+
 from triangle import area,perimeter
 class TestTriangle(unittest.TestCase):
    def test_area_1(self):

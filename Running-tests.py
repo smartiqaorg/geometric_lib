@@ -1,6 +1,4 @@
 from unittest import main
-import sys
-sys.path.append('C:/Users/Банан/geometric_lib/tests')
 
 from test_circle import Testcircle
 from test_rectangle import TestRectangle
