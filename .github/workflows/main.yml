@@ -1,9 +1,9 @@
 name: "unit testing"
 on:
   push:
-    branches: [ "cicd_408172" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "cicd_408172" ]
+    branches: [ "main" ]
 
 jobs:
   ubuntu_latest_testing:
