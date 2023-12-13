@@ -17,7 +17,7 @@ jobs:
           python-version: 3.11
 
       - name: Unittest_run
-        run: python -m unittest !git_test.py
+        run: python -m unittest git_test.py
 
   Windows_Tests:
     runs-on: windows-latest
@@ -31,4 +31,4 @@ jobs:
           python-version: 3.11
 
       - name: Unittest_run
-        run: python -m unittest !git_test.py
+        run: python -m unittest git_test.py
