@@ -15,7 +15,7 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 100)
     def testp_zero_nul(self):
         res = rectangle.perimeter(0, 10)
-        self.assertEqual(res, 0)
+        self.assertEqual(res, 20)
 
 class CircleTestCase (unittest.TestCase):
     def testa_zero_mul(self):
