@@ -9,7 +9,7 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(perimeter(side_length), expected_perimeter)
 
     def test_square_area(self):
-        side_length = 4
+        side_length = 6
         expected_area = side_length ** 2
         self.assertEqual(area(side_length), expected_area)
 
