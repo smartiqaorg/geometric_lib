@@ -1,39 +1,38 @@
-name: Test Functions
+name: "Unt_Tests"
 on:
   push:
-    branches:
-      - main
+    branches: ["cicd_409340"]
+  pull_request:
+    branches: ["cicd_409340"]
 
 jobs:
-  test_linux:
-    runs-on: linux-latest
-
+  ubuntu_unt_test:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: checkout
         uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: install py
+        uses: actions/setup-python@v3
         with:
-          python-version: 3.11
-
-      - name: Testing Files
+          python-version: 3.9
+      - name: run unt test 
         run: |
-          python3 -m unittest circleTest.py
-          python3 -m unittest squareTest.py
-  test_windows:
+          python -m unittest "circleTest.py"
+          python -m unittest "squareTest.py"
+          python -m unittest "triangleTest.py"
+          python -m unittest "rectangleTest.py"
+  windows_unt_test:
     runs-on: windows-latest
-
     steps:
-      - name: Checkout code
+      - name: checkout
         uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: install py 
+        uses: actions/setup-python@v3
         with:
-          python-version: 3.11
-
-      - name: Testing Files
+          python-version: 3.9
+      - name: run unt test
         run: |
-          python3 -m unittest circleTest.py
-          python3 -m unittest squareTest.py
+          python -m unittest "circleTest.py"
+          python -m unittest "squareTest.py"
+          python -m unittest "triangleTest.py"
+          python -m unittest "rectangleTest.py"
