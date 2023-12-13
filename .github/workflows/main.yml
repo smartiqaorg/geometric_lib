@@ -5,10 +5,8 @@ on:
       - "main"
 
 jobs:
-  test_win_ubu:
-    runs-on:
-    - "ubuntu-latest"
-    - "windows-latest"
+  test_ubuntu:
+    runs-on: "ubuntu-latest"
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -19,5 +17,18 @@ jobs:
           python-version: 3.11
 
       - name: Testing files
-        run:
-          python -m unittest !test.py
+        run: python -m unittest !test.py
+
+  test_windows:
+    runs-on: "windows-latest"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup_python@v3
+        with:
+          python-version: 3.11
+
+      - name: Testing files
+        run: python -m unittest !test.py
