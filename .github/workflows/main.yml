@@ -1,0 +1,34 @@
+name: Test CI/CD
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  Ubuntu_Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code_checkout
+        uses: actions/checkout@v3
+
+      - name: Python_set_up
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+
+      - name: Unittest_run
+        run: python -m unittest !git_test.py
+
+  Windows_Tests:
+    runs-on: windows-latest
+    steps:
+      - name: Code_checkout
+        uses: actions/checkout@v3
+
+      - name: Python_set_up
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11
+
+      - name: Unittest_run
+        run: python -m unittest !git_test.py
