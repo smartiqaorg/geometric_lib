@@ -17,18 +17,16 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install dependencies
-        run: python -m pip install --upgrade pip
+      - name: Run unit tests
+        run: |
+          python -m unittest discover tests
         working-directory: ./geometric_lib
 
-      - name: Run unit tests
-        run: python -m unittest discover tests
-        working-directory: ./geometric_lib
 
