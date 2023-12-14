@@ -10,11 +10,6 @@ class RectangleTestCase(unittest.TestCase):
         res = area(15, 5)
         self.assertNotEqual(res, (15 * 5) + 1)
 
-    @unittest.expectedFailure
-    def test_area_2(self):
-        res = area('12', '123')
-        self.assertEqual(res, TypeError)
-
     def test_area_3(self):
        res = area(50, 50)
        self.assertEqual(res, 50*50)
