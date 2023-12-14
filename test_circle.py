@@ -11,7 +11,7 @@ class CircleTestCase(t.TestCase):
 
     def test_negativeR(self):
         res = area(-3)
-        self.assertEqual(res, 28.274333882308138)
+        self.assertEqual(res, 28.27)
 
     def test_negativeR_error(self):
         with self.assertEqual(ValueError):
@@ -24,7 +24,7 @@ class CircleTestCase(t.TestCase):
 
     def test_negative(self):
         res = perimeter(-pi)
-        self.assertEqual(res, -19.739208802178716)
+        self.assertEqual(res, -19.74)
 
     def test_negative_error(self):
         with self.assertEqual(ValueError):
