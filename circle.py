@@ -2,9 +2,9 @@ import math
 
 
 def area(r):
-    return round( math.pi * r * r, 3)
+    return math.pi * r * r
 
 
 def perimeter(r):
-    return round(2 * math.pi * r, 3)
+    return 2 * math.pi * r
 
