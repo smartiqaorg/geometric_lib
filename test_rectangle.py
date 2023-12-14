@@ -6,7 +6,7 @@ from rectangle import perimeter
 class RectangleTestCase(t.TestCase):
     def test_negative_mul_positive(self):
         res = area(-3, 3)
-        self.assertEqual(res, -9)
+        self.assertEqual(res, ValueError)
 
     def test_negative_mul_positive_error(self):
         with self.assertRaises(ValueError):
@@ -22,7 +22,7 @@ class RectangleTestCase(t.TestCase):
 
     def test_negative_and_positive(self):
         res = perimeter(-13, 12)
-        self.assertEqual(res, -2)
+        self.assertEqual(res, ValueError)
 
     def test_negative_and_positive_error(self):
         with self.assertRaises(ValueError):
