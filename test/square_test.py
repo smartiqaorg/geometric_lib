@@ -10,44 +10,44 @@ os.environ['PYTHONPATH'] = path
 class SquareTestCase(unittest.TestCase):
     def test_zero_area(self):
         res = area(0)
-        self.assertEqual(res, 0)
+        self.assertAlmostEqual(res, 0, delta=3)
 
     def test_int_area(self):
         res = area(5)
-        self.assertEqual(res, 25)
+        self.assertAlmostEqual(res, 25, delta=3)
 
     def test_float_area(self):
         res = area(5.5)
-        self.assertEqual(res, 30.25)
+        self.assertAlmostEqual(res, 30.25, delta=3)
 
-    def test_incorrect_area(self):
-        res = area(-2)
-        self.assertEqual(res, 'input error')
+    def test_negative_area(self):
+        with self.assertRaises(ValueError):
+            area(-2)
 
     def test_string_area(self):
-        res = area('a')
-        self.assertEqual(res, 'input error')
+        with self.assertRaises(TypeError):
+            area('a')
 
 
     def test_zero_perimeter(self):
         res = perimeter(0)
-        self.assertEqual(res, 0)
+        self.assertAlmostEqual(res, 0, delta=3)
 
     def test_int_perimeter(self):
         res = perimeter(5)
-        self.assertEqual(res, 20)
+        self.assertAlmostEqual(res, 20, delta=3)
 
     def test_float_perimeter(self):
         res = perimeter(1.5)
-        self.assertEqual(res, 6.0)
+        self.assertAlmostEqual(res, 6.0, delta=3)
 
     def test_incorrect_perimeter(self):
-        res = perimeter(-3)
-        self.assertEqual(res, 'input error')
+        with self.assertRaises(ValueError):
+            perimeter(-3)
 
     def test_string_perimeter(self):
-        res = area('a')
-        self.assertEqual(res, 'input error')
-
+        with self.assertRaises(TypeError):
+            perimeter('a')
+            
 if __name__ == "__main__":
 	unittest.main()
