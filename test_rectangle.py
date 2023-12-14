@@ -9,7 +9,7 @@ class RectangleTestCase(t.TestCase):
         self.assertEqual(res, -9)
 
     def test_negative_mul_positive_error(self):
-        with self.assertEqual(ValueError):
+        with self.assertRaises(ValueError):
             area(-3, 3)
 
     def test_zero_mul_x(self):
@@ -25,7 +25,7 @@ class RectangleTestCase(t.TestCase):
         self.assertEqual(res, -2)
 
     def test_negative_and_positive_error(self):
-        with self.assertEqual(ValueError):
+        with self.assertRaises(ValueError):
             area(-13, 12)
 
     def test_zero_and_zero(self):
