@@ -8,7 +8,7 @@ class SquareTestCase(unittest.TestCase):
 
     def test_square_area_neNorm(self):
         with self.assertEqual(ValueError):
-            area(-4)
+            area(-5)
 
     def test_square_area_real(self):
         res = area(4.5)
