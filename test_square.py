@@ -5,10 +5,6 @@ from math import pi
 
 
 class SquareTestCase(t.TestCase):
-    def test_negative(self):
-        res = area(-25)
-        self.assertEqual(res, ValueError)
-
     def test_negative_error(self):
         with self.assertRaises(ValueError):
             area(-25)
@@ -25,13 +21,9 @@ class SquareTestCase(t.TestCase):
         res = perimeter(0.25)
         self.assertEqual(res, 0.625)
 
-    def test_negative_perimeter(self):
-        res = perimeter(-1)
-        self.assertEqual(res, ValueError)
-
     def test_negative_perimeter_error(self):
         with self.assertRaises(ValueError):
-            area(-1)
+            perimeter(-1)
 
     def test_pi(self):
         res = perimeter(pi)
