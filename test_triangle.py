@@ -1,33 +1,38 @@
 import unittest
+from triangle import area, perimeter
+class TriangleTestCase(unittest.TestCase):
+    def test_triangle_area_norm(self):
+        res = area(4, 5)
+        self.assertEqual(res, 10.0)
 
-def area(a, h):
-    return a * h / 2
+    def test_triangle_area_neNorm(self):
+        with self.assertEqual(ValueError):
+            area(4, -5)
 
-def perimeter(a, b, c):
-    return a + b + c
+    def test_triangle_area_real(self):
+        res = area(4.5, 5.5)
+        self.assertEqual(res, 12.375)
 
-def test_area():
-    assert area(2, 3) == 3
-    assert area(4.5, 5.5) == 12.375
-    assert area(-3, -4) == Exception
+    def test_triangle_area_zero(self):
+        res = area(4, 0)
+        self.assertEqual(res, 0)
 
-def test_perimeter():
-    assert perimeter(2, 3, 4) == 11
-    assert perimeter(4.5, 5.5, 6.5) == 16.5
-    assert perimeter(-4, 5, 6) == Exception
+    def test_triangle_perimeter_norm(self):
+        res = perimeter(4, 5, 6)
+        self.assertEqual(res, 15)
 
-class TestTriangle(unittest.TestCase):
+    def test_triangle_perimeter_neNorm(self):
+        with self.assertEqual(ValueError):
+            perimeter(4, 5, -6)
 
-    def test_area(self):
-        self.assertEqual(area(2, 3), 3)
-        self.assertEqual(area(4.5, 5.5), 12.375)
-        self.assertRaises(area(-3, -4), Exception)
+    def test_triangle_perimeter_real(self):
+        res = perimeter(4.5, 5.5, 6.5)
+        self.assertEqual(res, 16.5)
 
-    def test_perimeter(self):
-        self.assertEqual(perimeter(2, 3, 4), 11)
-        self.assertEqual(perimeter(4.5, 5.5, 6.5), 16.5)
-        self.assertRaises(perimeter(-4, 5 ,6), Exception)
+    def test_triangle_perimeter_zero(self):
+        res = perimeter(4, 0, 4.5)
+        self.assertEqual(res, 8.5)
 
-if __name__ == '__main__':
+
+if name == '__main__':
     unittest.main()
-
