@@ -8,7 +8,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_circle_area_neNorm(self):
         with self.assertEqual(ValueError):
-            area(-5)
+            area(-6)
         
     def test_circle_area_real(self):
         res = area(5.5)
