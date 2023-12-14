@@ -7,10 +7,10 @@ on:
 
 jobs:
   test:
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest,windows-latest]
-    runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: 3.9
       - name: Run unit tests
-        run: 
+        run: |
           python -m unittest TestCircle.py
           python -m unittest TestRectangle.py
           python -m unittest TestTriangle.py
