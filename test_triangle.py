@@ -10,7 +10,8 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_negative_area(self):
         
-        self.assertRaises(ValueError, area, -10, -20)
+        res = area(-10, -20)
+        self.assertRaises(res, Exception)
 
     def test_float_area(self):
         
@@ -24,7 +25,8 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_negative_perimeter(self):
         
-        self.assertRaises(ValueError, perimeter, -10, -20, -30)
+        res = perimeter(-10, -20, -30)
+        self.assertRaises(res, Exception)
 
     def test_float_perim(self):
         
