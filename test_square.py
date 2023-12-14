@@ -10,7 +10,7 @@ class SquareTestCase(t.TestCase):
         self.assertEqual(res, 225)
 
     def test_negative_error(self):
-        with self.assertEqual(ValueError):
+        with self.assertRaises(ValueError):
             area(-25)
 
     def test_zero(self):
@@ -30,7 +30,7 @@ class SquareTestCase(t.TestCase):
         self.assertEqual(res, -4)
 
     def test_negative_perimeter_error(self):
-        with self.assertEqual(ValueError):
+        with self.assertRaises(ValueError):
             area(-1)
 
     def test_pi(self):
