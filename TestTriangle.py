@@ -26,3 +26,6 @@ class TriangleTestCase(unittest.TestCase):
     def test_1_perimeter(self):
         res = perimeter(100, 100, 99)
         self.assertEqual(res, 100 + 100 + 99)
+
+if __name__ == '__main__':
+    unittest.main()

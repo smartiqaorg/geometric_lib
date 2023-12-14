@@ -26,3 +26,6 @@ class RectangleTestCase(unittest.TestCase):
     def test_1_perimeter(self):
         res = perimeter(1000, 500)
         self.assertEqual(res, (1000+500) * 2)
+
+if __name__ == '__main__':
+    unittest.main()

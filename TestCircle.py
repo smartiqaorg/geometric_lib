@@ -27,3 +27,7 @@ class CircleTestCase(unittest.TestCase):
     def test_1_perimeter(self):
         res = perimeter(10000)
         self.assertEqual(res, 2*math.pi*10000)
+
+if __name__ == '__main__':
+    unittest.main()
+    
