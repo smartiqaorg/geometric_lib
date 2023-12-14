@@ -28,4 +28,4 @@ class TestPerimeter(unittest.TestCase):
           self.assertEqual(TypeError,area, -1)
 
         def test_circle_area_string(self):
-            self.assertEqual(TypeError,area, 'abc')
+            self.assertEqual(TypeError,area, 'abssc')
