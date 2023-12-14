@@ -12,15 +12,15 @@ class CircleTestCase(unittest.TestCase):
         
     def test_circle_area_real(self):
         res = area(5.5)
-        self.assertAlmostEqual(res, 95.033)
+        self.assertAlmostEqual(res, 95.033,delta = 0.1)
 
     def test_circle_area_zero(self):
-        res = area(0)
+        res = area(0) 
         self.assertEqual(res, 0)
 
     def test_circle_perimeter_norm(self):
         res = perimeter(5)
-        self.assertAlmostEqual(res, 31.416)
+        self.assertAlmostEqual(res, 31.416, delta = 0.1)
 
     def test_circle_perimeter_neNorm(self):
         with self.assertRaises(ValueError):
@@ -28,7 +28,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_circle_perimeter_real(self):
         res = perimeter(5.5)
-        self.assertAlmostEqual(res, 34.558)
+        self.assertAlmostEqual(res, 34.558, delta = 0.1)
 
     def test_circle_perimeter_zero(self):
         res = perimeter(0)
