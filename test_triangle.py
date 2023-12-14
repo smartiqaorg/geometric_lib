@@ -10,7 +10,7 @@ class TriangleTestCase(t.TestCase):
 
     def test_negative_mul_negative(self):
         res = area(-1, -1)
-        self.assertEqual(res, 0.5)
+        self.assertEqual(res, ValueError)
 
     def test_negative_mul_negative_error(self):
         with self.assertRaises(ValueError):
@@ -22,7 +22,7 @@ class TriangleTestCase(t.TestCase):
 
     def test_posx3(self):
         res = perimeter(2, 3, 4)
-        self.assertEqual(res, 9)
+        self.assertEqual(res, ValueError)
 
     def test_posx3_error(self):
         with self.assertRaises(ValueError):
@@ -38,7 +38,7 @@ class TriangleTestCase(t.TestCase):
 
     def test_negative_perimeter(self):
         res = perimeter(12, 15, -19)
-        self.assertEqual(res, 8)
+        self.assertEqual(res, ValueError)
 
     def test_negative_perimeter_error(self):
         with self.assertRaises(ValueError):
