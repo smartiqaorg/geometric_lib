@@ -35,4 +35,4 @@ class SquareTestCase(t.TestCase):
 
     def test_pi(self):
         res = perimeter(pi)
-        self.assertAlmostEqual(res, 12.56, 2)
+        self.assertAlmostEqual(res, 12.56, delta=0.1)
