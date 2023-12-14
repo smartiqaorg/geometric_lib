@@ -14,15 +14,15 @@
 
 | Номер теста | Название модуля  | Название функции  | Входные данные для функции   | Полученный результат | Ожидаемый результат | Вердикт    |
 |-------------|------------------|-------------------|----------------------------- |----------------------|---------------------|------------|
-| 1           | circle           | area              | radius=8                     | 201.06192982974676   | 201.06192982974676  | Passed     |
-| 2           | circle           | area              | radius=4                     | 50.26548245743669    | 50.26548245743669   | Passed     |
-| 3           | circle           | area              | radius=34                    | 3631.6811075498013   | 3631.6811075498013  | Passed     |
-| 4           | circle           | perimeter         | radius=4                     | 25.132741228718345   | 25.132741228718345  | Passed     |
-| 5           | circle           | perimeter         | radius=8                     | 50.26548245743669    | 50.26548245743669   | Passed     |
-| 6           | circle           | perimeter         | radius=15                    | 94.24777960769379    | 94.24777960769379   | Passed     |
+| 1           | circle           | area              | radius=8                     | 201.06192982974676   | 201.062			 | Passed, delta=0.001     |
+| 2           | circle           | area              | radius=4                     | 50.26548245743669    | 50.266				 | Passed, delta=0.001     |
+| 3           | circle           | area              | radius=-34                   | 3631.6811075498013   | 3631.681			 | Passed, delta=0.001     |
+| 4           | circle           | perimeter         | radius=4                     | 25.132741228718345   | 25.133				 | Passed, delta=0.001     |
+| 5           | circle           | perimeter         | radius=8                     | 50.26548245743669    | 50.266				 | Passed, delta=0.001     |
+| 6           | circle           | perimeter         | radius=-15                   | -94.24777960769379   | 94.248				 | Passed, delta=0.001     |
 | 7           | rectangle        | area              | length=8, width=9            | 72                   | 72                  | Passed     |
 | 8           | rectangle        | area              | length=3, width=7            | 21                   | 21                  | Passed     |
-| 9           | rectangle        | area              | length=2, width=89           | 178                  | 178                 | Passed     |
+| 9           | rectangle        | area              | length=-2, width=89          | -178                 | 178                 | Failed     |
 | 10          | rectangle        | perimeter         | length=9.4, width=8          | 34.8                 | 34.8                | Passed     |
 | 11          | rectangle        | perimeter         | length=10, width=12          | 44                   | 44                  | Passed     |
 | 12          | rectangle        | perimeter         | length=6, width=84           | 180                  | 180                 | Passed     |
