@@ -1,0 +1,34 @@
+name: Tests for unit
+
+on:
+  push:
+    branches:
+      - cicd_409473
+  pull_request:
+    branches:
+      - cicd_409473
+
+jobs:
+  tests-for-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: repository copy
+        uses: actions/checkout@v2
+      - name: Install python for check
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      - name: Run tests for module
+        run: python -m unittest "circle.py"
+
+  tests-for-windows:
+    runs-on: windows-latest
+    steps:
+      - name: repository cope
+        uses: actions/checkout@v2
+      - name: Install python for check
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      - name: Run tests for module
+        run: python -m unittest "circle.py"
