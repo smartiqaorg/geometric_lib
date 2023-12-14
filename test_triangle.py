@@ -1,38 +1,33 @@
 import unittest
-from triangle import area, perimeter
-class TriangleTestCase(unittest.TestCase):
-    def test_triangle_area_dobri(self):
-        res = area(5, 7)
-        self.assertEqual(res, 17.5)
 
-    def test_triangle_area_zloy(self):
-        res = area(5, -7)
-        self.assertEqual(res, 'The base and height cannot be negative')
+def area(a, h):
+    return a * h / 2
 
-    def test_triangle_area_real(self):
-        res = area(5.5, 7.7)
-        self.assertEqual(res, 21.175)
+def perimeter(a, b, c):
+    return a + b + c
 
-    def test_triangle_area_zero(self):
-        res = area(5, 0)
-        self.assertEqual(res, 0)
+def test_area():
+    assert area(2, 3) == 3
+    assert area(4.5, 5.5) == 12.375
+    assert area(-3, -4) == Exception
 
-    def test_triangle_perimeter_dobri(self):
-        res = perimeter(5, 6, 7)
-        self.assertEqual(res, 18)
+def test_perimeter():
+    assert perimeter(2, 3, 4) == 11
+    assert perimeter(4.5, 5.5, 6.5) == 16.5
+    assert perimeter(-4, 5, 6) == Exception
 
-    def test_triangle_perimeter_zloy(self):
-        res = perimeter(5, -6, 7)
-        self.assertEqual(res, 'The base and height cannot be negative')
+class TestTriangle(unittest.TestCase):
 
-    def test_triangle_perimeter_real(self):
-        res = perimeter(5.5, 6.6, 7)
-        self.assertEqual(res, 19.1)
+    def test_area(self):
+        self.assertEqual(area(2, 3), 3)
+        self.assertEqual(area(4.5, 5.5), 12.375)
+        self.assertRaises(area(-3, -4), Exception)
 
-    def test_triangle_perimeter_zero(self):
-        res = perimeter(5, 0, 5.5)
-        self.assertEqual(res, 10.5)
-
+    def test_perimeter(self):
+        self.assertEqual(perimeter(2, 3, 4), 11)
+        self.assertEqual(perimeter(4.5, 5.5, 6.5), 16.5)
+        self.assertRaises(perimeter(-4, 5 ,6), Exception)
 
 if __name__ == '__main__':
     unittest.main()
+
