@@ -7,13 +7,16 @@ on:
 
 jobs:
   test:
-    runs-on: [ubuntu-latest, windows-latest]
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Run unit tests
-        run: 
-          python -m unittest TestCircle.py
-          python -m unittest TestRectangle.py
-          python -m unittest TestTriangle.py
-          python -m unittest TestSquare.py
+      strategy:
+        matrix:
+          os: [ubuntu-latest,windows-latest]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v3
+        - name: Run unit tests
+          run: 
+            python -m unittest TestCircle.py
+            python -m unittest TestRectangle.py
+            python -m unittest TestTriangle.py
+            python -m unittest TestSquare.py
