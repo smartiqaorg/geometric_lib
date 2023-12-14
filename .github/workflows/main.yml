@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run unit tests
         run: 
-          python -m unittest testRectangle.py
-          python -m unittest testSquare.py
-          python -m unittest testTriangle.py
-          python -m unittest testCircle.py
+          python -m unittest TestCircle.py
+          python -m unittest TestRectangle.py
+          python -m unittest TestTriangle.py
+          python -m unittest TestSquare.py
