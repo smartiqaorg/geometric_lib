@@ -11,12 +11,12 @@ import unittest
 
 class TestArea(unittest.TestCase):
         def test_circle_area(self):
-            self.assertEqual(area(2), 12.566)
+            self.assertEqual(area(2), 12.566 )
             self.assertEqual(area(0), 0)
             self.assertEqual(area(5), 78.359)
 
         def test_circle_area_negative(self):
-            self.assertEqual(TypeError,perimeter, -1)
+            self.assertEqual(TypeError,perimeter, -1 )
 
 class TestPerimeter(unittest.TestCase):
         def test_cicrle_perimeter(self):
@@ -28,4 +28,4 @@ class TestPerimeter(unittest.TestCase):
           self.assertEqual(TypeError,area, -1)
 
         def test_circle_area_string(self):
-            self.assertEqual(TypeError,area, 'abssc')
+            self.assertEqual(TypeError,area, 'ac')
