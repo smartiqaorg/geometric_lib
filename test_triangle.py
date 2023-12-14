@@ -13,7 +13,7 @@ class TriangleTestCase(t.TestCase):
         self.assertEqual(res, 0.5)
 
     def test_negative_mul_negative_error(self):
-        with self.assertEqual(ValueError):
+        with self.assertRaises(ValueError):
             area(-1, -1)
 
     def test_float_mul_x(self):
@@ -25,11 +25,11 @@ class TriangleTestCase(t.TestCase):
         self.assertEqual(res, 9)
 
     def test_posx3_error(self):
-        with self.assertEqual(ValueError):
+        with self.assertRaises(ValueError):
             area(2, 3, 4)
 
     def test_negative_mul_negative_error(self):
-        with self.assertEqual(ValueError):
+        with self.assertRaises(ValueError):
             area(-1, -1)
 
     def test_triple_one(self):
@@ -41,6 +41,6 @@ class TriangleTestCase(t.TestCase):
         self.assertEqual(res, 8)
 
     def test_negative_perimeter_error(self):
-        with self.assertEqual(ValueError):
+        with self.assertRaises(ValueError):
             area(12, 15, -19)
 
