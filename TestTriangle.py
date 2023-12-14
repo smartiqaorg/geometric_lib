@@ -10,6 +10,11 @@ class TriangleTestCase(unittest.TestCase):
         res = area(100, 5)
         self.assertNotEqual(res, ((100*5) / 2) + 1)
 
+    @unittest.expectedFailure
+    def test_area_2(self):
+        res = area('23', "12")
+        self.assertEqual(res, TypeError)
+
     def test_area_3(self):
        res = area(1000, 100)
        self.assertEqual(res, (1000 * 100) / 2)

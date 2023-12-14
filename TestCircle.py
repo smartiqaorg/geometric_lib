@@ -11,6 +11,11 @@ class CircleTestCase(unittest.TestCase):
         res = area(100)
         self.assertNotEqual(res, 100*100*3,14)
 
+    @unittest.expectedFailure
+    def test_area_2(self):
+        res = area('1')
+        self.assertEqual(res, TypeError)
+
     def test_area_3(self):
        res = area(50)
        self.assertEqual(res, 50*50*math.pi)
@@ -25,3 +30,4 @@ class CircleTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    
