@@ -1,37 +1,32 @@
 import unittest
-from square import area, perimeter
 
-class SquareTestCase(unittest.TestCase):
-    def test_square_area_dobri(self):
-        res = area(3)
-        self.assertEqual(res, 9)
+def area(a):
+    return a * a
 
-    def test_square_area_zloy(self):
-        res = area(-3)
-        self.assertEqual(res, 'The side of the square cannot be negative')
+def perimeter(a):
+    return 4 * a
 
-    def test_square_area_real(self):
-        res = area(3.5)
-        self.assertEqual(res, 12.25)
+def test_area():
+    assert area(2) == 4
+    assert area(3.3) == 10.889999999999999
+    assert area(-2) == Exception
 
-    def test_square_area_zero(self):
-        res = area(0)
-        self.assertEqual(res, 0)
+def test_perimeter():
+    assert perimeter(2) == 8
+    assert perimeter(3.3) == 13.2
+    assert perimeter(-2) == Exception
 
-    def test_square_perimeter_dobri(self):
-        res = perimeter(3)
-        self.assertEqual(res, 12)
+class TestRectangle(unittest.TestCase):
 
-    def test_square_perimeter_zloy(self):
-        res = perimeter(-3)
-        self.assertEqual(res,'The side of the square cannot be negative')
+    def test_area(self):
+        self.assertEqual(area(2), 4)
+        self.assertEqual(area(3.3), 10.889999999999999)
+        self.assertRaises(area(-2), Exception)
 
-    def test_square_perimeter_real(self):
-        res = perimeter(3.5)
-        self.assertEqual(res, 14)
+    def test_perimeter(self):
+        self.assertEqual(perimeter(2), 8)
+        self.assertEqual(perimeter(3.3), 13.2)
+        self.assertRaises(perimeter(-2), Exception)
 
-    def test_square_perimeter_zero(self):
-        res = perimeter(0)
-        self.assertEqual(res, 0)
 if __name__ == '__main__':
     unittest.main()
