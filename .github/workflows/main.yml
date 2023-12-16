@@ -1,0 +1,44 @@
+name: CI/CD
+on:
+  push:
+    branches:
+      - cicd_408507
+  pull_request:
+    branches:
+      - cicd_408507
+permissions:
+  contents: read
+jobs:
+  test-on-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: x64
+      - name: Run test
+        run: |
+          python -m unittest "square_tests"
+          python -m unittest "triangle_tests"
+          python -m unittest "circle_tests"
+          python -m unittest "rectangle_tests"
+
+  test-on-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: x64
+      - name: Run test
+        run: |
+          python -m unittest "square_tests"
+          python -m unittest "triangle_tests"
+          python -m unittest "circle_tests"
+          python -m unittest "rectangle_tests"
