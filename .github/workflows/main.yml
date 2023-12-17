@@ -1,6 +1,9 @@
 name: Run unit tests
 
-on: [push]    
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   test:
@@ -8,16 +11,19 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Install python
+
+      - name: Set up Python
         uses: actions/setup-python@v3
         with:
           python-version: 3.9
+
       - name: Run tests
         run: |
-          python -m unittest testrectangle.py
-          python -m unittest testsquare.py
-          python -m unittest testtriangle.py
-          python -m unittest testcircle.py
+          python -m unittest testRectangle.py
+          python -m unittest testSquare.py
+          python -m unittest testTriangle.py
+          python -m unittest testCircle.py
