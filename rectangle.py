@@ -6,6 +6,10 @@ def area(a, b):
 	print(area(5 , 7))
 	35
     '''
+    if (a < 0 or b < 0):
+        raise TypeError("Incorrcet input : negative")
+    elif type(a) == str or type(b) == str:
+        raise TypeError("Incorrcet input : string")
     return a * b 
 
 def perimeter(a, b):
@@ -16,4 +20,8 @@ def perimeter(a, b):
 	print(perimeter(10 , 15))
 	50
     '''
+    if (a < 0 or b < 0):
+        raise TypeError("Incorrcet input : negative")
+    elif type(a) == str or type(b) == str:
+        raise TypeError("Incorrcet input : string")
     return 2 * (a + b)
