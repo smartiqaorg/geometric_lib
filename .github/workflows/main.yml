@@ -1,36 +1,23 @@
-# This is a basic workflow to help you get started with Actions
+name: Run unit tests
 
-name: CI
+on: [push]    
 
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  linux-build:
-    runs-on: ubuntu-latest 
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
     steps:
-
-      # Runs a set of commands using the runners shell
-      - name: Run a figures tests
-        run: echo python.exe -m unittest
-  win-build:
-      runs-on: windows-latest 
-  
-      # Steps represent a sequence of tasks that will be executed as part of the job
-      steps:
-  
-        # Runs a set of commands using the runners shell
-        - name: Run a figures tests
-          run: echo python.exe -m unittest
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+      - name: Run tests
+        run: |
+          python -m unittest testrectangle.py
+          python -m unittest testsquare.py
+          python -m unittest testtriangle.py
+          python -m unittest testcircle.py
