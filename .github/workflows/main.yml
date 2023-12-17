@@ -16,20 +16,11 @@ jobs:
         with:
           python-version: '3.8'
           
-      - name: tests_circle
+      - name: tests
         run: |
           python -m unittest tests/tests_circle.py
-          
-      - name: tests_rectangle
-        run: |
           python -m unittest tests/tests_rectangle.py
-
-      - name: tests_square
-        run: |
           python -m unittest tests/tests_square.py
-        
-      - name: tests_triangle
-        run: |
           python -m unittest tests/tests_triangle.py
 
   windows:
@@ -41,20 +32,11 @@ jobs:
         with:
           python-version: '3.8'
           
-      - name: tests_circle
+      - name: tests
         run: |
           python -m unittest tests/tests_circle.py
-          
-      - name: tests_rectangle
-        run: |
           python -m unittest tests/tests_rectangle.py
-
-      - name: tests_square
-        run: |
           python -m unittest tests/tests_square.py
-        
-      - name: tests_triangle
-        run: |
           python -m unittest tests/tests_triangle.py
 
   
