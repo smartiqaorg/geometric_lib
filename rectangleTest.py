@@ -50,4 +50,3 @@ class RectangleTests(unittest.TestCase):
         self.assertEqual(TypeError, ans)
         ans = perimeter(-0, 0)
         self.assertEqual(0, ans)
-
