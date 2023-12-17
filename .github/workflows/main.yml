@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build_ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a multi-line script
+        run:
+          python -m circleTest.py
+          python -m rectangleTest.py
+          python -m squareTest.py
+          python -m triangleTest.py
+  build_windows:
+    runs-on: windows-latest
+    steps: 
+      - uses: actions/checkout@v3
+      - name: Run a multi-line script
+        run:
+          python -m circleTest.py
+          python -m rectangleTest.py
+          python -m squareTest.py
+          python -m triangleTest.py
+          
