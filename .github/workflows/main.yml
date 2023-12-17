@@ -3,22 +3,40 @@ name: CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
   workflow_dispatch:
 
 jobs:
-  build:
+  ubuntu:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@main
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.8'
+          
+      - name: tests
+        run:
+          python -m unittest tests_circle.py
+          python -m unittest tests_rectangle.py
+          python -m unittest tests_square.py
+          python -m unittest tests_triangle.py
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+  windows:
+    runs-on: windows-latest
 
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.8'
+          
+      - name: tests
+        run:
+          python -m unittest tests_circle.py
+          python -m unittest tests_rectangle.py
+          python -m unittest tests_square.py
+          python -m unittest tests_triangle.py
+
+  
