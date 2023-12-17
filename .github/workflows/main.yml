@@ -1,0 +1,20 @@
+name: Run Unit Tests
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      
+      - uses: actions/checkout@v3
+
+      - name: Run a one-line script
+        run: python -m unittest test_circle.py, python -m unittest test_triangle.py, python -m unittest test_square.py, python -m unittest test_rectangle.py
