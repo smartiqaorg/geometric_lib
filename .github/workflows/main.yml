@@ -23,7 +23,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m unittest testRectangle.py
-          python -m unittest testSquare.py
-          python -m unittest testTriangle.py
-          python -m unittest testCircle.py
+          python -m unittest testrectangle.py
+          python -m unittest testsquare.py
+          python -m unittest testtriangle.py
+          python -m unittest testcircle.py
