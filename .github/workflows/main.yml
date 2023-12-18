@@ -1,0 +1,43 @@
+name: "AutoTests"
+on:
+  push:
+    branches:
+      - cicd_408222
+  pull_request:
+    branches:
+      - cicd_408222
+permissions:
+  contents: read
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          architecture: x64
+      - name: Test_Run
+        run: |
+          python -m unittest "square.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "circle.py"
+          python -m unittest "triangle.py"
+  windows-tests:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          architecture: x64
+      - name: tests run
+        run: |
+          python -m unittest "square.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "circle.py"
+          python -m unittest "triangle.py"
