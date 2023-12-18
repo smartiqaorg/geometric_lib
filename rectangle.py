@@ -36,17 +36,17 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 12.0)
 
     def test_string_perimeter(self):
-        res = perimeter("abc", 2)
-        self.assertEqual(res, "error")
+        with self.assertRaises(TypeError):
+            perimeter("abc", 2)
 
     def test_string_area(self):
-        res = area("abc", 2)
-        self.assertEqual(res, "error")
+        with self.assertRaises(TypeError):
+            area("abc", 2)
     
     def test_negative_perimeter(self):
-        res = perimeter(-2.5, -10)
-        self.assertEqual(res, "error")
+        with self.assertRaises(ValueError):
+            perimeter(-2.5, -10)
 
     def test_negative_area(self):
-        res = area(-2, -10)
-        self.assertEqual(res, "error")
+        with self.assertRaises(ValueError):
+            area(-2.5, -10)

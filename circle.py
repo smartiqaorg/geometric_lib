@@ -35,17 +35,17 @@ class CircleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 15.708, 3)
 
     def test_string_perimeter(self):
-        res = perimeter("abc")
-        self.assertAlmostEqual(res, "error", 3)
+        with self.assertRaises(TypeError):
+            perimeter("abc")
 
     def test_string_area(self):
-        res = area("abc")
-        self.assertAlmostEqual(res, "error", 3)
+        with self.assertRaises(TypeError):
+            area("abc")
     
     def test_negative_perimeter(self):
-        res = perimeter(-2.5)
-        self.assertAlmostEqual(res, "error", 3)
+        with self.assertRaises(ValueError):
+            perimeter(-2.5)
 
     def test_negative_area(self):
-        res = area(-2)
-        self.assertAlmostEqual(res, "error", 3)
+        with self.assertRaises(ValueError):
+            area(-2)
