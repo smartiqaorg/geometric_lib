@@ -9,7 +9,7 @@ def area(r):
             output: 314.1592653589793
     '''
     if r >= 0:
-        return math.pi * r * r + 100500
+        return math.pi * r * r
     return 'incorrect input'
 
 
