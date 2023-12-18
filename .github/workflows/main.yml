@@ -16,5 +16,9 @@ jobs:
       
       - uses: actions/checkout@v3
 
-      - name: Run a one-line script
-        run: python -m unittest test_circle.py
+      - name: Run unit tests
+        run: |
+          pytest test_circle.py
+          pytest test_triangle.py
+          pytest test_rectangle.py
+          pytest test_square.py
