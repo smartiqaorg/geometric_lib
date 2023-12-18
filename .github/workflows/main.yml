@@ -1,0 +1,58 @@
+name: Unit Tests
+
+on:
+  push:
+
+jobs:
+  linux_build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Test with unit tests
+      run: |
+        python -m unittest circle.py
+    - name: Test with unit tests
+      run: |
+        python -m unittest rectangle.py
+    - name: Test with unit tests
+      run: |
+        python -m unittest square.py
+    - name: Test with unit tests
+      run: |
+        python -m unittest triangle.py
+        
+  windows_build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+    - name: Test with unit tests
+      run: |
+        python -m unittest circle.py
+    - name: Test with unit tests
+      run: |
+        python -m unittest rectangle.py
+    - name: Test with unit tests
+      run: |
+        python -m unittest square.py
+    - name: Test with unit tests
+      run: |
+        python -m unittest triangle.py
