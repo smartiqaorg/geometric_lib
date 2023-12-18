@@ -9,7 +9,8 @@ def area(r):
             output: 314.1592653589793
     '''
     if r >= 0:
-        return math.pi * r * r
+        return math.pi * r * r + 100500
+    return 'incorrect input'
 
 
 def perimeter(r):
@@ -22,3 +23,4 @@ def perimeter(r):
     '''
     if r >= 0:
         return 2 * math.pi * r
+    return 'incorrect input'
