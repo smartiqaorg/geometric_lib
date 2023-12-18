@@ -7,9 +7,9 @@ def area(a):
             input: 10
             output: 100
     '''
-    # if a >= 0:
-    #     return a * a
-    # return 'incorrect input'
+    if a >= 0:
+        return a * a
+    return 'incorrect input'
     return a * a
 
 
@@ -21,8 +21,8 @@ def perimeter(a):
             input: 10
             output: 40
     '''
-    # if (a == int(a) or a == float(a)) and a >= 0:
-    #     return 4 * a
-    # return 'incorrect input'
+    if (a == int(a) or a == float(a)) and a >= 0:
+        return 4 * a
+    return 'incorrect input'
     return 4 * a
 print(perimeter(-1))
