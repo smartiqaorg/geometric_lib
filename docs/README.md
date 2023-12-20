@@ -124,8 +124,7 @@ commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
 L-03: Circle and square added
 ```
 
-# UnitTest:
-```
+# UnitTest
 - Добавлены unittest для circle.py
 - Добавлены unittest для rectangle.py
 - Добавлены unittest для square.py
