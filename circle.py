@@ -8,6 +8,6 @@ def area(r):
 
 def perimeter(r):
     '''Принимает число r-радиус окуржности, возвращает численное значение периметра круга'''
-    return 2 * math.pi * r
+    return 4 * math.pi * r
 
 
