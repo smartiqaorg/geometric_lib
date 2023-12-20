@@ -5,6 +5,11 @@ def area(a):
 	Ввод: 2
 	Вывод: 4
 	'''
+    if (a < 0):
+        raise TypeError("Incorrect input: negative value")
+    elif type(a) == str:
+        raise TypeError("Incorrect input: string value")
+	    
     return a * a
 
 
@@ -15,4 +20,9 @@ def perimeter(a):
 	Ввод: 101
 	Вывод: 404
 	'''
+    if (a < 0):
+        raise TypeError("Incorrect input: negative value")
+    elif type(a) == str:
+        raise TypeError("Incorrect input: string value")
+	    
     return 4 * a
