@@ -16,7 +16,7 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(value, 40400)
 
     def test_standart_input_rectangle_perimeter(self):
-        value = area(404, 100)
+        value = perimeter(404, 100)
         self.assertEqual(value, 1008)
 
 
@@ -38,7 +38,7 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_negative_input_rectangle_perimeter(self):
         try:
-            value = area(-404, 404)
+            value = perimeter(-404, 404)
         except Exception as e:
             value = e.__class__
         self.assertEqual(value, TypeError, "Incorrect input: negative value")
