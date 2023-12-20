@@ -106,7 +106,7 @@
 ### Пример работы функции:
 - input -> 10 4
 - area(10, 4)
-- return a * h / 2
+- return a * h/ 2
 - output -> 20.0
 
 ### 2) Описание работы функции perimeter(a, b, c)
