@@ -1,0 +1,45 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+      - name: Test with unittests
+        run: python -m unittest RectangleTest.py
+        run: python -m unittest CircleTest.py
+        run: python -m unittest squareTest.py
+        run: python -m unittest triangleTest.py
+    build:
+      runs-on: windows-latest
+      steps:
+        - uses: actions/checkout@v3
+        - name: Run a one-line script
+          run: echo Hello, world!
+        - name: Run a multi-line script
+          run: |
+            echo Add other actions to build,
+            echo test, and deploy your project.
+        - name: Test with unittests
+          run: python -m unittest RectangleTest.py
+          run: python -m unittest CircleTest.py
+          run: python -m unittest squareTest.py
+          run: python -m unittest triangleTest.py
+        
