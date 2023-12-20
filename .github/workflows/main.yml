@@ -23,4 +23,4 @@ jobs:
         python-version: 3.x
 
     - name: Run tests
-      run: python -m unittest discover
+      run: python -m unittests_rectangle rectangle.py
