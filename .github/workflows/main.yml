@@ -17,14 +17,12 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.8
-      - name: Run unit tests
-        run: |
-          - name: Rectangle
-            run: python -m unittest RectangleTest.py
-          - name: Circle  
-            run: python -m unittest CircleTest.py
-          - name: Square
-            run: python -m unittest squareTest.py
-          - name: Triangle
-            run: python -m unittest triangleTest.py
+      - name: Rectangle
+        run: python -m unittest RectangleTest.py
+      - name: Circle  
+        run: python -m unittest CircleTest.py
+      - name: Square
+        run: python -m unittest squareTest.py
+      - name: Triangle
+        run: python -m unittest triangleTest.py
 
