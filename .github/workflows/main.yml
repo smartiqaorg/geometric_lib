@@ -24,7 +24,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a figures tests
-        run: echo python.exe -m unittest
+        run: echo python.exe -m unittests_for_circle.py
   win-build:
       runs-on: windows-latest 
   
