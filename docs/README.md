@@ -25,7 +25,7 @@
 ### Пример работы функции:
 - input -> 10
 - area(10)
-- return math.pi * r * r
+- return math.pi * r *r
 - output -> 314.1592653589793
 
 ### 2) Описание работы функции perimeter(r)
