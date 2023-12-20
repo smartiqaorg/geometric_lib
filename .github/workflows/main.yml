@@ -23,4 +23,8 @@ jobs:
         python-version: 3.x
 
     - name: Run tests
-      run: python -m unittests_rectangle rectangle.py
+      run: |
+          python -m unittests_rectangle rectangle.py
+          python -m unittests_square square.py
+          python -m unittests_circle circle.py
+          python -m unittests_triangle triangle.py
