@@ -102,11 +102,12 @@ print(f"Triangle Perimeter: {triangle_perimeter}")
 ```
 # Commit History
 
-| Hash      | Commit comment                |
-|-----------|-------------------------------|
-| 8ba9aeb3c | L-03: Circle and square added |
-| d078c8d9e | L-03: Docs added              |
-| b9831c8ba |  Added file rectangle.py      |
-| e731ca9fe | Fixed mistake rectangle.py    |
-| 598605be6 | Added comments to functions   |
-| 6b376c8d4 | Edited comments in functions  |
+| Hash      | Commit comment                                   |
+|-----------|--------------------------------------------------|
+| 8ba9aeb3c | L-03: Circle and square added                    |
+| d078c8d9e | L-03: Docs added                                 |
+| b9831c8ba | Added file rectangle.py                          |
+| e731ca9fe | Fixed mistake rectangle.py                       |
+| 598605be6 | Added comments to functions                      |
+| 6b376c8d4 | Edited comments in functions                     |
+| 69fbaf9b4 | Added manual testing and Unittests for each file |
