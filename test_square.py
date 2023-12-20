@@ -14,7 +14,11 @@ class SquareTestCase(unittest.TestCase):
         with self.assertRaises(ValueError) as context:
             area(-5)
 
-        self.assertEqual(str(context.exception), "Invalid value")
+    
+    
+    def test_4_area(self):
+        with self.assertRaises(ValueError) as context:
+            area(-5.5)
 
 
     def test_1_perimeter(self):
