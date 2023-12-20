@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: "cicd_409174"
+  pull_request:
+    branches: "cicd_409174"
+
+jobs:
+  
+  Ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: copy of repository
+      - uses: actions/checkout@v3
+      
+      - name: Python installation
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+          architecture: x64
+      
+      - name: Ubuntu tests
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"
+
+  Windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: copy of repository
+      - uses: actions/checkout@v3
+      
+      - name: Python installation
+      - uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+          architecture: x64
+      
+      - name: Ubuntu tests
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"
+          
