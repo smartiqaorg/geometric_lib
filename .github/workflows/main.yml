@@ -27,4 +27,4 @@ jobs:
           python -m unittests_rectangle rectangle.py
           python -m unittests_square square.py
           python -m unittests_circle circle.py
-          python -m unittests_triangle triangle.py
+          python -m unittests_trialgle triangle.py
