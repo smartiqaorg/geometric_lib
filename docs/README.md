@@ -1,6 +1,7 @@
 # Geometric Shapes Library
 
-This Python project is a simple geometric shapes library that provides functions to calculate the area and perimeter of four common shapes: Rectangle, Square, Circle, and Triangle.
+This Python project is a simple geometric shapes library that provides functions to calculate the area and perimeter 
+of four common shapes: Rectangle, Square, Circle, and Triangle.
 
 ## Rectangle
 
