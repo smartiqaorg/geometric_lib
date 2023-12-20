@@ -17,7 +17,7 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(value, 404 * 404 * math.pi)
 
     def test_standart_input_circle_perimeter(self):
-        value = area(404)
+        value = perimeter(404)
         self.assertEqual(value, 808 * math.pi)
 
 
@@ -39,7 +39,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_negative_input_circle_perimeter(self):
         try:
-            value = area(-404)
+            value = perimeter(-404)
         except Exception as e:
             value = e.__class__
         self.assertEqual(value, TypeError, "Incorrect input: negative value")
