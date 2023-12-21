@@ -20,13 +20,13 @@ jobs:
           python-version: "3.12"
           architecture: "x64"
       - name: run tests
-        run: python -m unittest rectangle.py
+        run: python -m unittest unittests_rectangle.py
       - name: run tests
-        run: python -m unittest square.py
+        run: python -m unittest unittests_square.py
       - name: run tests
-        run: python -m unittest circle.py
+        run: python -m unittest unittests_circle.py
       - name: run tests
-        run: python -m unittest triangle.py
+        run: python -m unittest unittests_trialgle.py
 
   windows_os_test:
     runs-on: windows-latest
@@ -38,10 +38,10 @@ jobs:
           python-version: "3.12"
           architecture: "x64"
       - name: run tests
-        run: python -m unittest rectangle.py
+        run: python -m unittest unittests_rectangle.py
       - name: run tests
-        run: python -m unittest square.py
+        run: python -m unittest unittests_square.py
       - name: run tests
-        run: python -m unittest circle.py
+        run: python -m unittest unittests_circle.py
       - name: run tests
-        run: python -m unittest triangle.py
+        run: python -m unittest unittests_trialgle.py
