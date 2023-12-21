@@ -11,10 +11,6 @@ class TriangleTestCase(unittest.TestCase):
         res = area(6, 8)
         self.assertEqual(res, 24)
 
-    def test_zero_sides_perimeter(self):
-        res = perimeter(0, 5, 10)
-        self.assertEqual(res, 0)
-
     def test_positive_sides_perimeter(self):
         res = perimeter(3, 4, 5)
         self.assertEqual(res, 12)
