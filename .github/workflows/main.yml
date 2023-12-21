@@ -1,0 +1,44 @@
+
+name: "Laba 5"
+
+on:
+  push:
+    branches:
+      - cicd_408761
+  pull_request:
+    branches:
+      - cicd_408761
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+          architecture: x64
+      - name: Tests
+        run: |
+          python -m unittest circle.py
+          python -m unittest rectangle.py
+          python -m unittest square.py
+          python -m unittest triangle.py
+  windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+          architecture: x64
+      - name: Tests
+        run: |
+          python.exe -m unittest circle.py
+          python.exe -m unittest rectangle.py
+          python.exe -m unittest square.py
+          python.exe -m unittest triangle.py
