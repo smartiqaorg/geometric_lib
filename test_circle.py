@@ -31,4 +31,4 @@ class TestPerimeter(unittest.TestCase):
     def test_circle_perimeter_negative(self):
         self.assertRaises(TypeError,perimeter, -1)
     def test_circle_perimeter_string(self):
-        self.assertRaises(TypeError, perimeter, 'abcыы')
+        self.assertRaises(TypeError, perimeter, 'abcыы ')
