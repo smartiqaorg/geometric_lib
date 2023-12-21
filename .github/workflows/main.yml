@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - cicd_408761
+  pull_request:
+    branches:
+      - cicd_408761
 
 jobs:
   ubuntu:
