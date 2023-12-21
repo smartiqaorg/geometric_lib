@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - tests_408594
+      - cicd_408594
   pull_request:
     branches:
       - main
