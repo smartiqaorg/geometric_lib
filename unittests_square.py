@@ -1,4 +1,6 @@
 import unittest
+from square import area
+from square import perimeter
 class SquareTestCase(unittest.TestCase):
 
     def test_zero_side_length_area(self):
