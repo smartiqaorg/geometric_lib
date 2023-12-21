@@ -1,0 +1,46 @@
+
+name: Autotests for functions
+on:
+  push:
+    branches:
+      - main
+      - "cicd_408594"
+  pull_request:
+    branches:
+      - main
+      - "cicd_408594"
+jobs:
+  ubuntu_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.11"
+          architecture: x64
+      - name: Run tests
+        run: | 
+          python -m unittest "square_test.py"
+          python -m unittest "rectangle_test.py"
+          python -m unittest "circle_test.py"
+          python -m unittest "triangle_test.py"
+  
+ 
+  windows_test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.11"
+          architecture: x64
+      - name: Run tests
+        run: | 
+          python -m unittest "square_test.py"
+          python -m unittest "rectangle_test.py"
+          python -m unittest "circle_test.py"
+          python -m unittest "triangle_test.py"
