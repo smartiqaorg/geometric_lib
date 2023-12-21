@@ -1,4 +1,6 @@
 import unittest
+from triangle import area
+from triangle import perimeter
 class TriangleTestCase(unittest.TestCase):
 
     def test_zero_base_height_area(self):
