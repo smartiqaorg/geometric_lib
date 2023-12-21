@@ -1,0 +1,42 @@
+
+name: "Tests of geometric modules"
+
+on:
+  push:
+    branches:
+      - cicd_408761
+  pull_request:
+    branches:
+      - cicd_408761
+
+jobs:
+  tests-for-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+      - name: Install python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      - name: Run tests
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"
+  tests-for-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+      - name: Install python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+      - name: Tests
+        run: |
+          python -m unittest "circle.py"
+          python -m unittest "rectangle.py"
+          python -m unittest "square.py"
+          python -m unittest "triangle.py"
