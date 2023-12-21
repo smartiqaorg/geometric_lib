@@ -19,7 +19,7 @@ class TestArea(unittest.TestCase):
     def test_square_area_negative(self):
         self.assertEqual(TypeError,area, -1)
     def test_square_area_string(self):
-        self.assertEqual(TypeError,area, 'abcыы')
+        self.assertRaises(TypeError, area, 'abcыы')
 
 class TestPerimeter(unittest.TestCase):
     def test_perimeter_1(self):
@@ -31,4 +31,4 @@ class TestPerimeter(unittest.TestCase):
     def test_perimeter_negative(self):
         self.assertEqual(TypeError,perimeter, -1)
     def test_square_perimeter_string(self):
-        self.assertEqual(TypeError,perimeter, 'abcыы')
+        self.assertRaises(TypeError, perimeter, 'abcыы')
