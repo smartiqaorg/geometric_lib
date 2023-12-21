@@ -21,7 +21,7 @@ jobs:
           python-version: "3.11"
           architecture: x64
       - name: Run tests
-        run: 
+        run: | 
           python -m unittest "square_test.py"
           python -m unittest "rectangle_test.py"
           python -m unittest "circle_test.py"
@@ -39,7 +39,7 @@ jobs:
           python-version: "3.11"
           architecture: x64
       - name: Run tests
-        run: 
+        run: | 
           python -m unittest "square_test.py"
           python -m unittest "rectangle_test.py"
           python -m unittest "circle_test.py"
