@@ -20,7 +20,7 @@ jobs:
           python-version: "3.12"
           architecture: "x64"
       - name: run tests
-        run: python -m unittests_rectangle rectangle.py
+        run: python -m unittests_rectangle
 
   windows_os_test:
     runs-on: windows-latest
