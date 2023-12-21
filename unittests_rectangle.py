@@ -1,3 +1,5 @@
+from rectangle import area
+
 import unittest
 class RectangleTestCase(unittest.TestCase):
    def test_zero_mul(self):
