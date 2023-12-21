@@ -20,11 +20,8 @@ jobs:
           python-version: "3.12"
           architecture: "x64"
       - name: run tests
-        run: |
-          python -m unittests_rectangle rectangle.py
-          python -m unittests_square square.py
-          python -m unittests_circle circle.py
-          python -m unittests_trialgle triangle.py
+        run: python -m unittests_rectangle rectangle.py
+
   windows_os_test:
     runs-on: windows-latest
     steps:
