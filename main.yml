@@ -1,0 +1,44 @@
+name: test functions
+
+on:
+  push:
+    branches: [ "cicd_408876" ]
+
+jobs:
+  ubuntu_test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: ubuntu check
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Run python unit tests
+        run: |
+          python3 -m unittest test_circle
+          python3 -m unittest test_rectangle
+          python3 -m unittest test_square
+          python3 -m unittest test_triangle
+
+  windows_test:
+    runs-on: windows-latest
+
+    steps:
+      - name: windows check
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Run python unit tests
+        run: |
+          python3 -m unittest test_circle
+          python3 -m unittest test_test
+          python3 -m unittest test_square
+          python3 -m unittest test_triangle
