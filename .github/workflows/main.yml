@@ -6,7 +6,7 @@ on:
 	    - cicd_408876
 
 jobs:
-  ubuntu_test:
+  test_ubuntu:
     runs-on: ubuntu-latest
     
     steps:
@@ -25,7 +25,7 @@ jobs:
           python3 -m unittest test_square
           python3 -m unittest test_triangle
 
-  windows_test:
+  test_windows:
     runs-on: windows-latest
 
     steps:
