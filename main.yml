@@ -2,7 +2,8 @@ name: test functions
 
 on:
   push:
-    branches: [ "cicd_408876" ]
+    branches: 
+	- cicd_408876
 
 jobs:
   ubuntu_test:
