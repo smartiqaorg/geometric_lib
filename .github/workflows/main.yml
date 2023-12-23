@@ -2,11 +2,10 @@ name: test functions
 
 on:
   push:
-    branches: 
-	    - cicd_408876
+    branches: ["cicd_408876"]
 
 jobs:
-  test_ubuntu:
+  ubuntu_test:
     runs-on: ubuntu-latest
     
     steps:
@@ -25,7 +24,7 @@ jobs:
           python3 -m unittest test_square
           python3 -m unittest test_triangle
 
-  test_windows:
+  windows_test:
     runs-on: windows-latest
 
     steps:
