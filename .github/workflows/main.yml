@@ -1,0 +1,44 @@
+
+name: "5laba CI/CD"
+
+on:
+  push:
+    branches:
+      - cicd_409277
+  pull_request:
+    branches:
+      - cicd_409277
+
+jobs:
+  ubuntu-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Install python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+          architecture: x64
+      - name: laba test
+        run: |
+          python -m unittest rectangle.py
+          python -m unittest circle.py
+          python -m unittest triangle.py
+          python -m unittest square.py
+  windows-test:
+    runs-on: windows-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Install python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.12
+          architecture: x64
+      - name: laba test
+        run: |
+          python -m unittest rectangle.py
+          python -m unittest circle.py
+          python -m unittest triangle.py
+          python -m unittest square.py
