@@ -1,0 +1,40 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ cicd_408429 ]
+
+jobs:
+  test-on-windows:
+    runs-on: windows-latest
+    steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+        - name: Setup python
+          uses: actions/setup-python@v3
+          with:
+            python-version: 3.12
+            architecture: x64
+        - name: Unittests
+          run: |
+            python -m unittest circle.py
+            python -m unittest rectangle.py
+            python -m unittest square.py
+            python -m unittest triangle.py
+
+  test-on-linux:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+        - name: Setup python
+          uses: actions/setup-python@v3
+          with:
+            python-version: 3.12
+            architecture: x64
+        - name: Unittests
+          run: |
+            python -m unittest circle.py
+            python -m unittest rectangle.py
+            python -m unittest square.py
+            python -m unittest triangle.py
