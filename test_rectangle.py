@@ -33,5 +33,5 @@ class RectangleTestCase(unittest.TestCase):
         res =  perimeter(4, 0)
         self.assertEqual(res, 8)
 
-if name == '__main__':
+if __name__ == '__main__':
     unittest.main()
