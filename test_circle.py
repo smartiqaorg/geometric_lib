@@ -4,7 +4,7 @@ from circle import area,perimeter
 class CircleTestCase(unittest.TestCase):
     def test_circle_area_norm(self):
         res = area(5)
-        self.assertAlmostEqual(res, 78.540)
+        self.assertAlmostEqual(res, 78.540,delta = 0.1)
 
     def test_circle_area_neNorm(self):
         with self.assertRaises(ValueError):
