@@ -34,5 +34,5 @@ class TriangleTestCase(unittest.TestCase):
         self.assertAlmostEqual(res, 8.5)
 
 
-if name == '__main__':
+if __name__ == '__main__':
     unittest.main()
