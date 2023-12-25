@@ -57,11 +57,11 @@ def perimeter(a,b):
 
  **returns perimeter of rectangle (2*a+2*b)**
 
-##Changelog:
+# Changelog:
 
 
 ```
-        - **[fcc824eeadfa2097cf9c806f17dc2052206ea85e]** Create main.c
-        - **[07e8a2c7376fcc929c5f5debb5b06ec8bacf74bd]** Update main.c
-	- **[98dce6bdb77c4976b12c0d6d47c008702925842f]** Fix
+        - **[f57288befc7d3a383e1cab6933e4ea96a2efa990]** Update README.md
+        - **[3b5633cd7c1f9146b1e026215f9a2849c480d48a]** Updated py files
+	- **[3f1beca721286c2e71dad01ababaca5244215a04]** fixed README
 ```
