@@ -34,5 +34,5 @@ class CircleTestCase(unittest.TestCase):
         res = perimeter(0)
         self.assertEqual(res, 0)
 
-if name == '__main__':
+if __name__ == '__main__':
     unittest.main()
