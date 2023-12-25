@@ -1,22 +1,20 @@
-# SQUARE C
+# TRIANGLE PY
 
 ```
-int main() {
-}
+def area(a,b)
 ```
 
- ** main function **
+**returns area of triangle ((1/2*a)*b)**
 
 
 ```
-int square(int a, int b) {
-}
+def perimeter(a,b,c)
 ```
 
- ** return result of a*b **
+ ** return perimeter of triangle (a+b+c) **
 
 
-# CIRCLE
+# CIRCLE PY
 
 ```
 def area(r):
@@ -45,6 +43,19 @@ def perimiter(a):
 
 ** returns perimeter of square a **
 
+# RECTANGLE PY
+
+```
+def area(a,b):
+```
+
+** returns area of rectangle(a*b)  **
+
+```
+def perimeter(a,b):
+```
+
+** returns perimeter of rectangle (2*a+2*b) **
 
 ##Changelog:
 
