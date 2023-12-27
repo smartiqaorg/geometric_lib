@@ -7,7 +7,7 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_triangle_area_neNorm(self):
         with self.assertRaises(ValueError):
-            area(4, -5)
+            area(4, -6)
 
     def test_triangle_area_real(self):
         res = area(4.5, 5.5)
