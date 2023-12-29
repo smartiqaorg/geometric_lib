@@ -1,5 +1,7 @@
 def area(a,b):
-    return a*b
+    # receive triangle side(a) and height(b) and returns it's area
+    return (1/2)*a*b
 
-def perimeter(a,b):
-    return 2*a+2*b
+def perimeter(a,b,c):
+    # receive triangle sides and returns perimeter
+    return a+b+c;
