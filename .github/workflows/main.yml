@@ -1,4 +1,4 @@
-name: Python CI/CD
+name: CI/CD
 
 on:
   push:
@@ -27,5 +27,5 @@ jobs:
           python-version: ${{ matrix.python-version }}
           architecture: "x64"
 
-      - name: Run tests
+      - name: tests
         run: python -m unittest
