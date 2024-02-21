@@ -1,0 +1,31 @@
+name: Python CI/CD
+
+on:
+  push:
+    branches: [ "tests_408379" ]
+  pull_request:
+    branches: [ "tests_408379" ]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.12", "3.11"]
+    continue-on-error: true
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: "x64"
+
+      - name: Run tests
+        run: python -m unittest
