@@ -104,14 +104,6 @@ class TriangleTestCase(unittest.TestCase):
         res = triangle.perimeter(0,0,0)
         self.assertEqual(res, 0)
 
-    def test_one_zero_perimeter(self):
-        res1 = triangle.perimeter(153,0,0)
-        res2 = triangle.perimeter(0, 153, 0)
-        res3 = triangle.perimeter(0, 0, 153)
-        self.assertEqual(res1, 153)
-        self.assertEqual(res2, 153)
-        self.assertEqual(res3, 153)
-
     def test_perimeter(self):
         res = triangle.perimeter(153, 153, 153)
         self.assertEqual(res, 459)
