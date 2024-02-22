@@ -1,0 +1,32 @@
+name: My CI/CD # CI/CD это процесс непрерывной разработки
+
+on: # все что ниже напишем будет работать когда делается пуш или пул реквест
+  - push
+  - pull_request
+
+permissions: # открывает код только для чтения
+  contents: read
+
+jobs: # здесь все работы которые нужно выполнить
+  test1: # детали выполнения
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+      - name: run tests
+        run: python -m unittest test.py
+  test2: 
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.12"
+          architecture: "x64"
+      - name: run tests
+        run: python -m unittest test.py
