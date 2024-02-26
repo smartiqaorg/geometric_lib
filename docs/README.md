@@ -1,6 +1,6 @@
-# Math formulas
+d# Math formulas
 ## Area
-- Circle: S = πR²
+- Circle: S = 2πR²
 - Rectangle: S = ab
 - Square: S = a²
 
