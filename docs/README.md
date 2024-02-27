@@ -6,5 +6,5 @@
 
 ## Perimeter
 - Circle: P = 2πR
-- Rectangle: P = 2a + 2b
+- Rectangle: P = 2(a + b)
 - Square: P = 4a
