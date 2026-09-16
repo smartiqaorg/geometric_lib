@@ -6,4 +6,4 @@ def area(a,b):
 
 def perimeter(a,b):
     '''Принимает числа a и b, возвращает периметр прямоугольника со сторонами a и b'''
-    return 4 * a
+    return 2*(a+b)
