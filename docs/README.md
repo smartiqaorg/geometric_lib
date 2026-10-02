@@ -14,7 +14,7 @@
 **Geometric Lib** is a Python library for calculating
 the area and perimeter of basic geometric shapes: circle and square.
 
-Each shape is placed in a separate module (`circle.py `, `square.py `) and contains two functions:
+Each shape is placed in a separate module (`circle.py `, `square.py `, `rectangle.py`, `triangle.py`) and contains two functions:
 
 - `area(...)` — calculates the area of the shape
 - `perimeter(...)`— calculates the perimeter of the shape
@@ -30,10 +30,10 @@ A module for calculating circle parameters.
 Calculates the area of a circle using the formula **S = π·r2**.
 
 **Parameters:**
-- `r` (float) is the radius of the circle.
+- `r` is the radius of the circle.
 
 **Returns:** 
-- `float` — the area of the circle.
+- the area of the circle.
 
 **Example:**
 
@@ -49,10 +49,10 @@ print(result)   # 78.53981633974483
 Calculates the circumference using the formula **P = 2·π·r**.
 
 **Parameters:**
-- `r` (float) is the radius of the circle.
+- `r` is the radius of the circle.
 
 **Returns:** 
-- `float` — the circumference.
+- the circumference.
 
 **Example:**
 
@@ -75,10 +75,10 @@ A module for calculating the parameters of a square.
 Calculates the area of a square using the formula **S = a²**.
 
 **Parameters:**
-- `a` (float) — the length of the square's side.
+- `a` — the length of the square's side.
 
 **Returns:** 
-- `float` — the area of the square.
+- the area of the square.
 
 **Example:**
 
@@ -94,10 +94,10 @@ print(result)   # 36
 Calculates the perimeter of a square using the formula **P = 4·a**.
 
 **Parameters:**
-- `a` (float) — the length of a side of the square.
+- `a` — the length of a side of the square.
 
 **Returns:** 
-- `float` — the perimeter of the square.
+- the perimeter of the square.
 
 **Example:**
 
@@ -110,10 +110,95 @@ print(result)   # 16
 
 ---
 
+## rectangle.py
+
+A module for calculating the parameters of a rectangle.
+
+## `area(a, b)`
+Calculates the area of a rectangle using the formula **S = a·b**.**Parameters:**
+- `a` — the length of the rectangle.
+- `b` — the width of the rectangle.
+
+**Returns:** the area of the rectangle.
+
+**Example:**
+
+```python
+from rectangle import area
+
+result = area(3, 5)
+print(result)   # 15
+```
+
+### `perimeter(a, b)`
+
+Calculates the perimeter of the rectangle using the formula **P = 2·(a + b)**.
+
+**Parameters:**
+- `a` — the length of the rectangle.
+- `b` — the width of the rectangle.
+
+**Returns:** the perimeter of the rectangle.
+
+**Example:**
+
+```python
+from rectangle import perimeter
+
+result = perimeter(3, 5)
+print(result)   # 16
+```
+
+---
+
+## triangle.py
+
+A module for calculating triangle parameters.
+
+### `area(a, h)`
+
+Calculates the area of a triangle using the formula **S = a·h / 2**.
+
+**Parameters:**
+- `a` - the length of the base.
+- `h` — the height dropped onto this base.
+
+**Returns:** the area of the triangle.
+
+**Example:**
+
+```python
+from triangle import area
+
+result = area(6, 4)
+print(result)   # 12
+```
+
+### `perimeter(a, b, c)`
+
+Calculates the perimeter of a triangle using the formula **P = a + b + c**.
+
+**Parameters:**
+- `a` — the first side
+- `b` — the second side
+- `c` — the third side
+
+**Returns:** the perimeter of the triangle.
+
+**Example:** 
+
+```python
+from triangle import perimeter
+result = perimeter(3, 4, 5)
+print(result)   # 12
+```
+
 # The history of changes to the project with commit hashes
 - 8ba9aeb L-03: Circle and square added
 - d078c8d (origin/main, origin/HEAD, main) L-03: Docs added
 - 13e12e4 (new_features_558152) gfd
 - 8eb42d3 (HEAD -> docs_558152) square.py and circle.py were added with dockstrings
-
+- 7a8a815 The docs directory has added, containing the README.md  with project documentation
+- 7abdf4e (myorigin/docs_558152) delete rectangle.py
+- a0ff099 (HEAD -> docs_558152) rectangle.py and triangle.py with docstring were added
 ---
