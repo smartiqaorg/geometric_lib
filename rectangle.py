@@ -1,5 +1,15 @@
-def area(a, b): 
-    return a * b 
+def perimeter(a, b):
+    """
+    Вычисляет периметр прямоугольника.
 
-def perimeter(a, b): 
-    return a + b
+    Параметры:
+        a (float): длина прямоугольника.
+        b (float): ширина прямоугольника.
+
+    Возвращает:
+        float: периметр прямоугольника.
+
+    Пример:
+        perimeter(5, 10) -> 30
+    """
+    return 2 * (a + b)
