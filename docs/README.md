@@ -8,3 +8,7 @@
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+
+## Notes
+- Lab work on Git/GitHub: asdfgh qwerty zxcvbn lkjhgf
+- Triangle: S = ah/2 (added in docs-update branch)
