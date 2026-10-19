@@ -8,3 +8,6 @@
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+## Usage
+
+Use the formulas above to calculate area and perimeter of geometric figures.
