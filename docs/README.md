@@ -8,3 +8,7 @@
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+
+# Laboratory work 1.6
+
+This section was added while practicing Git and GitHub commands.
