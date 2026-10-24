@@ -7,4 +7,5 @@
 ## Perimeter
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
-- Square: P = 4a
+- Square: P = 4a# Practice note
+This repository is a fork of geometric_lib made while doing the Git practice task.
