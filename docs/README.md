@@ -1,3 +1,5 @@
+# Some change for Lesson 6 practice
+
 # Math formulas
 ## Area
 - Circle: S = πR²
