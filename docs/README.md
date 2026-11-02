@@ -8,6 +8,7 @@
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+
 ## Repository structure
 - `circle.py` - area and perimeter of a circle
 - `square.py` - area and perimeter of a square
