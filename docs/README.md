@@ -11,3 +11,6 @@
 
 # Git laboratory update
 Documentation was updated during laboratory work.
+
+## Usage
+Use these formulas to calculate areas and perimeters of geometric figures.
