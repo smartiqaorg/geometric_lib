@@ -1,3 +1,7 @@
+# Lab 6: fork & pull request
+
+This change was made in a fork to practice the pull-request workflow.
+
 # Math formulas
 ## Area
 - Circle: S = πR²
