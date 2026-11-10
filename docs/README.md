@@ -20,3 +20,8 @@ import circle, square
 print(circle.area(1))     # 3.141592653589793
 print(square.perimeter(2))  # 8
 ```
+
+## Local run
+
+1. Clone the repository: `git clone https://github.com/cnn13/geometric_lib.git`
+2. Run `python calculate.py`
