@@ -8,3 +8,7 @@
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+## Notation
+- R - radius of a circle
+- a, b - sides of a rectangle
+- a - side of a square
