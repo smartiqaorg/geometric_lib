@@ -32,21 +32,3 @@ def perimeter(a, b):
         16
     """
     return 2 * (a + b)
-
-
-
-    def area(a):
-    """
-    Calculates the area of a square given the length of its side.
-
-    Parameters:
-        a : The length of the square's side.
-
-    Return value:
-        The area of the square, calculated using the formula S = a².
-
-    Example input and output:
-        >>> area(6)
-        36
-    """
-    return a * a
