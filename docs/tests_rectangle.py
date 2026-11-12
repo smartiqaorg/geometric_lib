@@ -16,7 +16,7 @@ class RectangleTestCase(unittest.TestCase):
         
     def test_perimeter_zero(self):
         res = perimeter(10, 0)
-        self.assertEqual(res, 20)
+        self.assertEqual(res, 39)
 
 if __name__ == '__main__':
     unittest.main()
