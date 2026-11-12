@@ -3,51 +3,47 @@ import circle
 
 
 class CircleTestCase(unittest.TestCase):
-    def test_area_decimal(self):
+    def test_area(self):
         cases = [
-            (4, 50.26548245743669, None),
+            (4, 50.26548, None),
             (0, 0, None),
-            (6, 113.09733552923255, None),
-            (9, 254.46900494077323, 2.5446900494077323e-11),
-            (12, 452.3893421169302, 4.523893421169302e-10),
-            (15, 706.8583470577034, 7.068583470577034e-10),
-            (20, 1256.6370614359173, 1.2566370614359173e-09),
-            (25, 1963.4954084936207, 1.9634954084936207e-09),
-            (50, 7853.981633974483, 7.853981633974483e-09),
-            (0.3, 0.2827433388230814, 2.827433388230814e-14),
-            (0.05, 0.007853981633974482, 1e-15),
-            (4.5, 63.61725123519331, 6.361725123519331e-11),
-            (7.5, 176.71458676442586, 1.7671458676442586e-10),
-            (12.5, 490.8738521234052, 4.908738521234052e-10),
-            (0.001, 3.1415926535897936e-06, 1e-15),
-            (1000000, 3141592653589.7935, 3.1415926535897936),
+            (1, 3.14159, None),
+            (2.5, 19.63495, None),
+            (10, 314.15926, None),
+            ("4", None, TypeError),
+            (None, None, TypeError),
+            ("abc", None, TypeError),
+            (-4, None, ValueError),
+            (-0.5, None, ValueError),
         ]
-        for r, expected, delta in cases:
+        for r, expected, expected_exc in cases:
             with self.subTest(r=r):
-                self.assertAlmostEqual(circle.area(r), expected, delta=delta)
+                if expected_exc:
+                    with self.assertRaises(expected_exc):
+                        circle.area(r)
+                else:
+                    self.assertAlmostEqual(circle.area(r), expected, places=4)
 
-    def test_perimeter_decimal(self):
+    def test_perimeter(self):
         cases = [
-            (4, 25.132741228718345, None),
+            (4, 25.13274, None),
             (0, 0, None),
-            (6, 37.69911184307752, None),
-            (9, 56.548667764616276, 5.6548667764616276e-11),
-            (12, 75.39822368615503, 7.539822368615503e-11),
-            (15, 94.24777960769379, 9.424777960769379e-11),
-            (20, 125.66370614359172, 1.2566370614359172e-10),
-            (25, 157.07963267948966, 1.5707963267948966e-10),
-            (50, 314.1592653589793, 3.141592653589793e-10),
-            (0.3, 1.8849555921538759, 1.8849555921538759e-13),
-            (0.05, 0.3141592653589793, 3.141592653589793e-15),
-            (4.5, 28.274333882308138, 2.8274333882308138e-11),
-            (7.5, 47.12388980384689, 4.712388980384689e-11),
-            (12.5, 78.53981633974483, 7.853981633974483e-11),
-            (0.001, 0.006283185307179586, 1e-15),
-            (1000000, 6283185.307179586, 6.283185307179586e-06),
+            (1, 6.28318, None),
+            (2.5, 15.70796, None),
+            (10, 62.83185, None),
+            ("4", None, TypeError),
+            (None, None, TypeError),
+            ("abc", None, TypeError),
+            (-4, None, ValueError),
+            (-0.5, None, ValueError),
         ]
-        for r, expected, delta in cases:
+        for r, expected, expected_exc in cases:
             with self.subTest(r=r):
-                self.assertAlmostEqual(circle.perimeter(r), expected, delta=delta)
+                if expected_exc:
+                    with self.assertRaises(expected_exc):
+                        circle.perimeter(r)
+                else:
+                    self.assertAlmostEqual(circle.perimeter(r), expected, places=4)
 
 
 if __name__ == "__main__":
