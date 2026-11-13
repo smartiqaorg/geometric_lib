@@ -12,7 +12,6 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 25)
 
     def test_typical_area_hero(self):
-        # если площадь считается по трём сторонам (формула Герона)
         res = area(3, 4, 5)
         self.assertEqual(res, 6)
 
@@ -25,7 +24,6 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 12)
 
     def test_invalid_triangle(self):
-        # 1+1 < 10 — треугольник невозможен
         with self.assertRaises(ValueError):
             perimeter(1, 1, 10)
 
