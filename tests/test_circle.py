@@ -26,6 +26,26 @@ class CircleTestCase(unittest.TestCase):
     def test_negative_radius(self):
         with self.assertRaises(ValueError):
             area(-1)
+    
+    def test_negative_radius(self):
+        with self.assertRaises(ValueError):
+            perimeter(-1)
+
+    def test_string_radius_area(self):
+        with self.assertRaises(TypeError):
+            area("5")
+
+    def test_string_radius_perimeter(self):
+        with self.assertRaises(TypeError):
+            perimeter("5")
+
+    def test_invalid_string_area(self):
+        with self.assertRaises((TypeError, ValueError)):
+            area("abc")
+
+    def test_invalid_string_perimeter(self):
+        with self.assertRaises((TypeError, ValueError)):
+            perimeter("qwqewrt")
 
 
 if __name__ == '__main__':

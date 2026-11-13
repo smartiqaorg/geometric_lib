@@ -10,7 +10,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_typical_area(self):
         res = area(10, 5)
         self.assertEqual(res, 25)
-        
+
     def test_zero_perimeter(self):
         res = perimeter(0, 0, 0)
         self.assertEqual(res, 0)
@@ -22,6 +22,47 @@ class TriangleTestCase(unittest.TestCase):
     def test_invalid_triangle(self):
         with self.assertRaises(ValueError):
             perimeter(1, 1, 10)
+    
+    def test_negative_height_area(self):
+        with self.assertRaises(ValueError):
+            area(10, -5)
+
+    def test_both_negative_perimeter(self):
+        with self.assertRaises(ValueError):
+            perimeter(-10, -5)
+    
+    def test_negative_height_perimeter(self):
+        with self.assertRaises(ValueError):
+            perimeter(10, -5)
+
+    def test_both_negative_area(self):
+        with self.assertRaises(ValueError):
+            area(-10, -5)
+
+    def test_string_base_area(self):
+        with self.assertRaises(TypeError):
+            area("10", 5)
+
+    def test_string_height_area(self):
+        with self.assertRaises(TypeError):
+            area(10, "5")
+
+    def test_string_base_perimeter(self):
+        with self.assertRaises(TypeError):
+            perimeter("10", 5)
+
+    def test_string_height_perimeter(self):
+        with self.assertRaises(TypeError):
+            perimeter(10, "5")
+
+    def test_invalid_string_area(self):
+        with self.assertRaises((TypeError, ValueError)):
+            area("abc", "123q")
+
+    def test_invalid_string_perimeter(self):
+        with self.assertRaises((TypeError, ValueError)):
+            perimeter("abc", "52qwer")
+
 
 
 if __name__ == '__main__':
