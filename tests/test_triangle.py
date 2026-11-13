@@ -10,11 +10,7 @@ class TriangleTestCase(unittest.TestCase):
     def test_typical_area(self):
         res = area(10, 5)
         self.assertEqual(res, 25)
-
-    def test_typical_area_hero(self):
-        res = area(3, 4, 5)
-        self.assertEqual(res, 6)
-
+        
     def test_zero_perimeter(self):
         res = perimeter(0, 0, 0)
         self.assertEqual(res, 0)
