@@ -22,3 +22,4 @@ Please check out License Agreement for personal usage terms and limitations
 - Square: `P = 4a`
 - Triangle: `P = a + b + c`
 
+# Some change for Lesson 6 practice
