@@ -8,3 +8,4 @@
 - Circle: P = 2πR
 - Rectangle: P = 2a + 2b
 - Square: P = 4a
+Edited from Arch Linux VM for lab work
