@@ -20,7 +20,7 @@ def area(a,b,c):
     Пример использования:
     area(3,4,5) = 6.0
     '''
-    if is_triangle:
+    if is_triangle(a,b,c):
         p=(a+b+c)/2
         return (p*(p-a)*(p-b)*(p-c))**0.5
     return 0

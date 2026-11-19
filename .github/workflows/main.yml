@@ -1,0 +1,24 @@
+name: Unit tests
+
+on: [push]
+
+jobs:
+  test:
+    name: tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+
+      - name: setup python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: test
+        run: python -B -m unittest -v test
