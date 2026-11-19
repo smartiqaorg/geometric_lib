@@ -1,0 +1,24 @@
+name: Unit tests
+
+on: [push]
+
+jobs:
+  test-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: tests (ubuntu)
+        run: python -B -m unittest -v test
+
+  test-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: tests (windows)
+        run: python -B -m unittest -v test
