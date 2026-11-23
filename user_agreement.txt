@@ -1,0 +1,14 @@
+License Agreement
+
+This License Agreement is made and effective as of 10 march 2021 by and between Smartiqa Group, a company organized and existing in Russian Federation, with a registered address at Moscow and User, a company organized and existing in Russian Federation, with a registered address at Moscow.
+
+1.1 “Agreement” means this License Agreement including the attached Schedule.
+
+1.2 “Confidential Information” means information that:
+a. is by its nature confidential;
+b. is designated in writing by Licensor as confidential;
+c. the Licensee knows or reasonably ought to know is confidential;
+d. Information comprised in or relating to any Intellectual Property Rights of Licensor.
+
+1.3 “Asset” means the Asset provided by Licensor as specified in Item 6 of the Schedule in the form as stated in Item 7 of the Schedule.
+
