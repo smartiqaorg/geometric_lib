@@ -1,0 +1,25 @@
+name: Тесты geometric_lib
+
+on: [push]
+
+jobs:
+  tests:
+    name: Тесты на ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Скачать код проекта
+        uses: actions/checkout@v7
+
+      - name: Подготовить Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+
+      - name: Запустить все тесты
+        run: python -m unittest discover -v
